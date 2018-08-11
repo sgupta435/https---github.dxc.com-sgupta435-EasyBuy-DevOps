@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[NT$]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C##P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">直接向 HP 購買</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# 價格由#PF#起</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# 價格#PF#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[準備購買?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[建議售價]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[或]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[選擇經銷商]]>
+		</field>
+		<field func="warning">
+			<![CDATA[請選擇經銷商]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[購買]]></label>
+			<txt id="sub">
+				<txt><![CDATA[查詢線上經銷商, 搜尋本地經銷商或直接購買]]></txt>
+				<txt><![CDATA[查詢線上經銷商或搜尋本地經銷商]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[現在購買]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[如何購買]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[加入購物車]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[向HP經銷商購買]]></label>
+			<txt id="sub">
+				<txt><![CDATA[查詢線上經銷商或搜尋本地經銷商]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[現在購買]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[如何購買]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[加入購物車]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[我的購物車及付款]]></label>
+			<txt id="pre">
+				<txt><![CDATA[這項商品已加到您的購物車]]></txt>
+			</txt>
+		</btn>
+	</buttons>
+</root>

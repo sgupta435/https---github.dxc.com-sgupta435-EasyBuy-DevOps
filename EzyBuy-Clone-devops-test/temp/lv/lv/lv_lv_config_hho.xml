@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[LVL]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold"></span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# Cena sākot no #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# Cena #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Gatavi pirkt?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Cena]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[bez PVN]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[vai]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Izvēlēties veikalu (bez PVN)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Izvēlieties veikalu]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[ierobežots daudzums]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Paldies, ka izvēlējāties]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[5 sekunžu laikā jūs iziesiet no HP Web vietas.]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Pirkt]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Skat. ieteiktos online tirgotājus Vai meklēt vietējo tirdz. vietu]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Pirkt tagad]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Meklēt vietējo partneri]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Meklēt vietējo partneri]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Iet tagad]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Pirkt tieši no HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Pirkt no HP partnera]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Skat. ieteiktos online tirgotājus Vai meklēt vietējo tirdz. vietu]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Pirkt tieši no HP]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Meklēt vietējo partneri]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Meklēt vietējo partneri]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Iet tagad]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Ielikt pirkumu grozā]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Skat. ratiņus & norēķināties]]></label>
+			<txt id="pre">
+				<txt><![CDATA[Prece tika ielikta jūsu pirkumu ratiņos]]></txt>
+			</txt>
+		</btn>
+	</buttons>
+</root>

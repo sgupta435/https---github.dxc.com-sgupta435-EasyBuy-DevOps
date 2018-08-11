@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">desde #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">preço #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Pronto para comprar?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Preço indicativo]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[sem IVA]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Directo HP: 808 200 808]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[disponível em:]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Por favor seleccione uma loja]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Stock limitado]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Obrigado por escolher um ]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Vai sair do website HP]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Compre a um parceiro HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Parceiros online recomendados Parceiro HP mais próximo de si]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Compre agora]]></label>
+			<action>buy</action>
+		</btn>	
+    <btn func="customize" type="primary">
+			<label><![CDATA[Personalizar]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Personalize ou compre directamente à HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Encontre um parceiro]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Encontre um parceiro]]></txt>
+			</txt>		
+     </btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Compre agora]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Compre directamente à HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+    		<label>Personalize este produto</label>
+		    <action>config</action>
+    	</link>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Compre a um parceiro HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Parceiros online recomendados Parceiro HP mais próximo de si]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Compre agora]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="customize" type="primary">
+      <label><![CDATA[Personalizar]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Personalize ou compre directamente à HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Encontre um parceiro]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Encontre um parceiro]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Compre agora]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Cesto das compras]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		 <link>
+    		<label>Personalize este produto</label>
+		    <action>config</action>
+     </link> 
+    </btn>
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Personalizar]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Personalize ou compre directamente à HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+
+</root>

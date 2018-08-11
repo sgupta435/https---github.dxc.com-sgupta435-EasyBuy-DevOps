@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">Kaufen direkt bei HP:</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# ab #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# Preis #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="decimalsymbol">
+      <![CDATA[,]]>
+    </setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Produkt kaufen]]>
+		</field>
+		<field func="promo">
+		<![CDATA[TOP-Angebot]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[inkl. MwSt.<br><a target="_blank" href=http://www.hp.com/de/ho-store/versandkosten>Versandkostenfrei<br>im HP Store</a>]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Produkt momentan nicht im HP Store verfügbar.]]>
+		</field>
+		<field func="or">
+			<![CDATA[oder]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Online-Shop auswählen:]]>
+		</field>
+		<field func="lbvat">
+			<![CDATA[(alle Preise inkl. MwSt.)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Bitte Shop auswählen]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[beschränkt verfügbar]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Vielen Dank für die Auswahl eines]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 Sekunden verlassen Sie die HP Website.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[kaufen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Direkt bei HP kaufen / empfohlene Web-Händler + in Ihrer Nähe]]></txt>
+				<txt><![CDATA[Weitere Online-Händler / Fachhändler in Ihrer Nähe]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[kaufen]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Fachhändler suchen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Fachhändler suchen]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Weiter]]></label>
+			<action>buy</action>
+			</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[In den Warenkorb]]></label>
+			<txt id="sub">
+				<txt><![CDATA[An Lager, schnelle Lieferung]]></txt>
+				<txt><![CDATA[Innerh. 14 Tage verfügbar]]></txt>
+				<txt><![CDATA[Innerh. 4 Wochen verfügbar]]></txt>								
+			</txt>
+			<link>
+				<label>HP Produkt konfigurieren</label>
+				<action>config</action>
+			</link>                  
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Kaufen beim HP Partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Weitere Online-Händler / Fachhändler in Ihrer Nähe]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[kaufen]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="customize" type="primary">
+			<label><![CDATA[Konfigurieren]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Konfigurieren und online kaufen]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Fachhändler suchen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Fachhändler suchen]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Weiter]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[In den Warenkorb]]></label>
+			<txt id="sub">
+				<txt><![CDATA[An Lager,               schnellstmögliche Lieferung]]></txt>
+				<txt><![CDATA[Innerh. 14 Tage verfügbar]]></txt>
+				<txt><![CDATA[Innerh. 4 Wochen verfügbar]]></txt>								
+			</txt>
+			<link>
+				<label>Jetzt HP Produkt konfigurieren</label>
+				<action>config</action>
+			</link>                  
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Bestellen]]></label>
+			<txt id="pre">
+				<txt><![CDATA[Produkt in Warenkorb gelegt]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Konfigurieren]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Konfigurieren und online kaufen]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>	
+	<!-- START OF DYNAMIC PARAMETERS -->
+   <dynamic>
+ 	<jscontext>
+		<text>
+		<field func="force_promo" cond="s_ProductLine=1N">
+	    <![CDATA[Versandkostenfrei!]]> 
+    </field>
+    <field func="force_promo" cond="s_ProductLine=5T">
+	    <![CDATA[Versandkostenfrei!]]> 
+    </field>
+    <field func="telnr" cond="s_ProductLine=83">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2N">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5M">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7T">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C2">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DL">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DU">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+    <field func="telnr" cond="s_ProductLine=T4">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T5">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=1N">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2A">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AU">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=B7">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DE">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HQ">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KN">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=M3">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R6">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=WS">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=A5">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=TT">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=UI">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9G">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KV">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2G">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2H">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6J">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2T">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=E1">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KX">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ME">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MF">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MM">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MN">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=TD">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01805 707 600*]]>
+		</field>
+
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[Produkt aktuell nicht im HP Store verfügbar. Für mögliche Alternativen 01803 001 780*]]>
+		</field>
+		</text>
+	</jscontext>
+ </dynamic>
+</root>

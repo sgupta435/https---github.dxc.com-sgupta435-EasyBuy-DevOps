@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[en ligne chez hp]]>
+		</setting>
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">Commandez en direct:</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# à partir de #PF# #VAT#**</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# prix #PF# #VAT#**</span>]]>
+		</setting>
+                <setting func="decimalsymbol">
+      			<![CDATA[,]]>
+    		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Acheter en ligne]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Prix Boutique HP**]]>
+		</field>
+		<field func="pricedescinfo">
+			<![CDATA[]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[TTC]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Non disponible en direct Appelez nous au 0826.00.4000]]>
+		</field>
+		<field func="or">
+			<![CDATA[ou]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Sélectionnez un revendeur]]>
+		</field>
+		<field func="lbvat">
+			<![CDATA[(Tous les prix sont TTC)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Sélectionnez un partenaire]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Stock limité]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Merci de choisir un]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Vous quitterez le site HP dans 5 secondes.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Vendu aussi en ligne par]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Trouvez un distributeur en ligne ou à proximité, ou achetez chez HP]]></txt>
+				<txt><![CDATA[Plus de choix pour commander ce produit:]]></txt>
+			</txt>			
+			<link>
+				<label>Configurer son produit</label>
+				<action>config</action>
+			</link>                  
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Acheter en ligne]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Trouver un partenaire]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Plus de choix pour commander ce produit:]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Acheter en ligne]]></label>
+			<txt id="sub">
+				<txt><![CDATA[En stock - Chez vous en 48h]]></txt>
+				<txt><![CDATA[Livraison sous 15 jours]]></txt>
+				<txt><![CDATA[Livraison sous 3 à 4 semaines]]></txt>								
+			</txt>
+			<link>
+				<label>Configurer son produit</label>
+				<action>config</action>
+			</link>                  
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Vendu aussi en ligne par]]></label>
+			<txt id="sub">	
+				<txt><![CDATA[Plus de choix pour commander ce produit:]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Acheter en ligne]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configurer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configurer et acheter son produit]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Trouver un partenaire]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Plus de choix pour commander ce produit:]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Acheter en ligne]]></label>
+			<txt id="sub">
+				<txt><![CDATA[En stock - Chez vous en 48h]]></txt>
+				<txt><![CDATA[Livraison sous 15 jours]]></txt>
+				<txt><![CDATA[Livraison sous 3 à 4 semaines]]></txt>								
+			</txt>
+			<link>
+				<label>Configurer son produit</label>
+				<action>config</action>
+			</link>                  
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Commander]]></label>
+			<txt id="pre">
+				<txt><![CDATA[Article ajouté à votre panier]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configurer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configurer et acheter son produit]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+   <dynamic>
+ 	<jscontext>
+		<text>
+		<field func="vat" incl="1" cond="s_ProductLine=1N">
+			<![CDATA[TTC]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=1N">
+			<![CDATA[Livraison gratuite]]> 
+		</field>
+		<field func="vat" incl="1" cond="s_ProductLine=5T">
+			<![CDATA[TTC]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=5T">
+			<![CDATA[Livraison gratuite]]> 
+		</field>
+		<!-- START OF IPG specific telephone numbers -->
+		<field func="telnr" cond="s_ProductLine=ML">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KS">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=66">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=04">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=1N">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AU">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=03">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5T">
+			<![CDATA[Actuellement non commandable à la Boutique HP.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2A">
+			<![CDATA[Actuellement non commandable à la Boutique HP.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KL">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7A">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		
+		<field func="telnr" cond="s_ProductLine=65">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=43">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C2">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KN">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=44">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=A5">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DE">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HM">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=M3">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=64">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=20">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HI">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=JP">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=42">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DN">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KP">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=SR">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=24">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5J">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DA">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=B7">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=40">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=46">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4X">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7T">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9C">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DU">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=45">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2N">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5M">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=83">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DL">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HN">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=68">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=21">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9D">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		
+		<field func="telnr" cond="s_ProductLine=47">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		
+		<field func="telnr" cond="s_ProductLine=HP">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		
+		<field func="telnr" cond="s_ProductLine=MC">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=01">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=27">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2B">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2Q">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[Actuellement non commandable à la Boutique HP.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LF">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MB">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		
+		<field func="telnr" cond="s_ProductLine=67">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=26">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2D">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=3G">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HQ">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MK">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MQ">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R6">
+			<![CDATA[Actuellement non commandable à la Boutique HP.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=32">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HO">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KU">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T8">
+			<![CDATA[Non disponible en direct.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KV">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7S">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7V">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6V">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6X">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6J">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5U">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6U">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7F">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AN">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5X">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=TA">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2C">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=UV">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=BO">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=TB">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2G">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		
+		<field func="telnr" cond="s_ProductLine=SB">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=K5">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=UR">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=1Y">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=3C">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LI">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4U">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LA">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=SI">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=SY">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=J3">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=06">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R8">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=UW">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6H">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R4">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0810.500.500.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9G">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2H">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MN">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MP">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MG">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9F">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9H">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8W">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9J">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=52">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5M">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DL">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2N">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=US">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=UT">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=IN">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=UK">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0826.800.400.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=TW">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0800.945.772.]]>
+		</field>
+
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[Actuellement non commandable à la Boutique HP Plus de choix au 0820 086 602.]]>
+		</field>
+		<!-- END OF IPG specific telephone numbers -->
+		</text>
+	</jscontext>
+	</dynamic>
+</root>

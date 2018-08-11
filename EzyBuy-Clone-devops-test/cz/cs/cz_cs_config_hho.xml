@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[Kč]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[Online nákup]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">od #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Chcete koupit tento produkt?]]>
+		</field>
+		<field func="promo">
+			<![CDATA[Promo cena]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Cena]]>
+		</field>
+		<field func="pricedescinfo">
+			<![CDATA[Uvedená cena je doporučená koncová včetně DPH. HP si vyhrazuje právo na změnu ceny bez předchozího upozornění. Cena produktu se u jednotlivých autorizovaných HP prodejců může lišit.]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[s DPH]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Produkt není aktuálně dostupný pro nákup online.]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Místo nákupu (ceny s DPH)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Vyberte si místo nákupu]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limitované množství]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Děkujeme, že jste zvolili]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Během 5 vteřin budete přesměrováni do HPmarketu.]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Online nákup]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nakupujte online přímo u HP nebo si vyberte nejbližšího HP partnera.]]></txt>
+				<txt><![CDATA[Nakupujte online přímo u HP nebo si vyberte nejbližšího HP partnera.]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Nákup]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Výběr HP partnera]]></label>
+			<tooltip><![CDATA[http://hp.infonow.net/bin/findNow?CLIENT_ID=HP_EUROPE&FTR0_COUNTRY=CZE]]></tooltip>
+			<txt id="sub">
+				<txt><![CDATA[Výběr HP partnera]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Potvrdit]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Online nákup]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nakupujte online přímo u HP nebo si vyberte nejbližšího HP partnera.]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Nákup]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">			
+			<label><![CDATA[Výběr HP partnera]]></label>
+			<tooltip><![CDATA[http://hp.infonow.net/bin/findNow?CLIENT_ID=HP_EUROPE&FTR0_COUNTRY=CZE]]></tooltip>
+			<txt id="sub">
+				<txt><![CDATA[Výběr HP partnera]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Potvrdit]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Online nákup]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nakupujte přímo online v obchodě HPMarket.]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Výběr HP partnera]]></label>
+			<tooltip><![CDATA[http://hp.infonow.net/bin/findNow?CLIENT_ID=HP_EUROPE&FTR0_COUNTRY=CZE]]></tooltip>
+			<txt id="sub">
+				<txt><![CDATA[Vyberte si dodavatele zboží HP dle názvu, specializace či produktu.]]></txt>
+			</txt>			
+		</btn>					
+	</buttons>
+</root>

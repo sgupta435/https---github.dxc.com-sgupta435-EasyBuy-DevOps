@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[Lt]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">Kainos prasideda nuo #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">Kaina #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Pasirengę įsigyti?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Kaina]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[Be PVM]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[arba]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Pasirinkite (kainos be PVM)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Prašome pasirinkti parduotuv?]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Kiekis ribotas]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[D?kojame, kad pasirinkote]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Po 5 sekundžių išeisite iš HP interneto svetainės.]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Pirkti]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Rekomendacijos, pasirinkimas pagal vietą, pirkimas tiesiogiai]]></txt>
+				<txt><![CDATA[Mūsų rekomendacijos arba pasirinkite parduotuvę pagal vietą]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Pirkti dabar]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Rasti vietinį partnerį]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Rasti vietinį partnerį]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Eiti dabar]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Pirkti tiesiai iš HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Yra, išsiunčiama tą pačią dieną]]></txt>
+				<txt><![CDATA[Paprastai išsiunčiama per 2 sav.]]></txt>
+				<txt><![CDATA[Paprastai išsiunčiama per 4 sav.]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Pirkti iš HP partnerio]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Mūsų rekomendacijos arba pasirinkite parduotuvę pagal vietą]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Pirkti tiesiai iš HP]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Rasti vietinį partnerį]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Rasti vietinį partnerį]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Eiti dabar]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Įdėti į krepšelį]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Yra, išsiunčiama tą pačią dieną]]></txt>
+				<txt><![CDATA[Paprastai išsiunčiama per 2 sav.]]></txt>
+				<txt><![CDATA[Paprastai išsiunčiama per 4 sav.]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Peržiūrėti krepšelio turinį ir ]]></label>
+			<txt id="pre">
+				<txt><![CDATA[Ši prekė įdėta į jūsų krepšelį]]></txt>
+			</txt>
+		</btn>
+	</buttons>
+</root>

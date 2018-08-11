@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P##C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">alkaen #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">hinta #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Haluatko ostaa?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Keskihinta]]>
+		</field>
+		<field func="pricedescinfo">
+			<![CDATA[Keskihinta: Valtuutettujen online-jälleenmyyjien ilmoittamien hintojen keskiarvo, joka voi poiketa lopullisesta jälleenmyyntihinnasta. HP ei vastaa näistä hinnoista tai niiden muutoksista.]]>
+		</field>		
+		<field func="vat" incl="1">
+			<![CDATA[sis. ALV]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Jälleenmyyjähaku]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Valitse online jälleenmyyjä]]>
+		</field>
+		<field func="warning">
+			<![CDATA[ole hyvä ja valitse jälleenmyyjä]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[rajoitettu erä]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Kiitos, että valintasi on HP online-kumppani]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Siirryt pois HP:n sivuilta 5 sekunnin kuluttua.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Osta HP jälleenmyyjältä]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Näytä online-jälleenmyyjät]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Osta Online]]></label>
+			<action>buy</action>
+		</btn>		
+	    <btn func="customize" type="primary">
+	      <label><![CDATA[Konfiguroi]]></label>
+	        <txt id="sub">
+	          <txt><![CDATA[Customize and buy directly from HP - CD2 -]]></txt>
+	        </txt>
+		    <action>config</action>
+		</btn>	
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Etsi kumppani]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Etsi kumppani]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Siirry]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+    			<label>Konfiguroi tuote</label>
+			    <action>config</action>
+		   	</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Osta HP jälleenmyyjältä]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Näytä online-jälleenmyyjät]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Osta Online]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Etsi kumppani]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Etsi kumppani]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Siirry]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+    			<label>Konfiguroi tuote</label>
+			    <action>config</action>
+		   	</link> 
+		</btn>
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+	    <btn func="customize" type="primary">
+	      <label><![CDATA[Konfiguroi]]></label>
+	        <txt id="sub">
+	          <txt><![CDATA[Customize and buy directly from HP - CD2 -]]></txt>
+	        </txt>
+		    <action>config</action>
+		</btn>	
+	</buttons>
+
+</root>

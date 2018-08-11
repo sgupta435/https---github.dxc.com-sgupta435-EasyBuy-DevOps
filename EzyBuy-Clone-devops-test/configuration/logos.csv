@@ -1,0 +1,53 @@
+#LABELS:code,file to use (in ZIP file),processor name (english),processor logo pop up link
+#VARIABLES:id,src,text,page
+amd_A,amd_A.jpg,AMD Athlon processor,http://www.amd.com/
+amd_Afx,amd_Afx.jpg,AMD Athlon 64 FX processor,http://www.amd.com/
+amd_Am,amd_Am.jpg,Mobile AMD Athlon 64 processor,http://www.amd.com/
+amd_Ax2,amd_Ax2.jpg,AMD Athlon 64 X2 Dual-Core processor,http://www.amd.com/
+amd_D,amd_D.jpg,AMD Duron processor,http://www.amd.com/
+amd_G,amd_G.jpg,AMD Geode processor,http://www.amd.com/
+amd_I,amd_I.jpg,AMD Imageon processor,http://www.amd.com/
+amd_L,amd_L.jpg,AMD LIVE! processor,http://www.amd.com/
+amd_logo,amd_logo.jpg,basic AMD logo,http://www.amd.com/
+amd_O,amd_O.jpg,AMD Opteron processor,http://www.amd.com/
+amd_Oq,amd_Oq.jpg,Quad-Core AMD Opteron processor,http://www.amd.com/
+amd_P,amd_P.jpg,AMD Phenom processor,http://www.amd.com/
+amd_Pfx,amd_Pfx.jpg,AMD Phenom FX processor,http://www.amd.com/
+amd_Px3,amd_Px3.jpg,AMD Phenom X3 processor,http://www.amd.com/
+amd_Px4,amd_Px4.jpg,AMD Phenom X4 processor,http://www.amd.com/
+amd_S,amd_S.jpg,AMD Sempron processor,http://www.amd.com/
+amd_Tm,amd_Tm.jpg,AMD Turion 64 Mobile Technology,http://www.amd.com/
+amd_Tmx2,amd_Tmx2.jpg,AMD Turion 64 X2 Mobile Technology,http://www.amd.com/
+amd_Tmx2g,amd_Tmx2g.jpg,AMD Turion 64 X2 Mobile Technology (golden logo),http://www.amd.com/
+amd_Tx2n,amd_Tx2n.jpg,AMD Turion&#153; Neo X2,http://www.amd.com/
+amd_Tu,amd_Tu.jpg,AMD Turion 64 Ultra,http://www.amd.com/
+amd_Tx2,amd_Tx2.jpg,AMD Turion 64 X2,http://www.amd.com/
+amd_X,amd_X.jpg,AMD Xilleon processor,http://www.amd.com/
+amd_Tx2u,amd_Tx2u.jpg,AMD Turion 64 X2 Ultra,http://www.amd.com/
+amd_bc,amd_bc.jpg,AMD Business Class,http://www.amd.com/
+amd_An,amd_An.jpg,AMD Athlon Neo Processor,http://www.amd.com/
+amd_P2x3,amd_P2x3.jpg,AMD Phenom X3,http://www.amd.com/
+amd_P2x4,amd_P2x4.jpg,AMD Phenom X4,http://www.amd.com/
+amd_A2x2,amd_A2x2.jpg,AMD Athlon&#153; II X2,http://www.amd.com/
+amd_A2x3,amd_A2x3.jpg,AMD Athlon&#153; II X3,http://www.amd.com/
+amd_A2x4,amd_A2x4.jpg,AMD Athlon&#153; II X4,http://www.amd.com/
+amd_P2x2,amd_P2x2.jpg,AMD Phenom&#153; II X2,http://www.amd.com/
+cel,cel.jpg,Intel&reg; Celeron&reg; processor,icp.htm
+cen,cen.jpg,Intel&reg; Centrino&reg; processor technology,special_IIP_019020695
+cenvp_pm,cenvp_pm.jpg,Intel&reg; Centrino&reg; with vPro&#153; technology - Protect. Manage.,special_IIP_019020700
+cen2,cen2.jpg,Intel&reg; Centrino&reg; 2 processor technology,special_IIP_019020758
+cen2vp_pm,cen2vp_pm.jpg,Intel&reg; Centrino&reg; 2 with vPro&#153; technology - Protect. Manage.,special_IIP_019020763
+cor2d,cor2d.jpg,Intel&reg; Core&#153; 2 Duo Processor,special_IIP_019020787
+cor2q,cor2q.jpg,Intel&reg; Core&#153; 2 Quad processor,special_IIP_019020698
+cor2vp_pm,cor2vp_pm.jpg,Intel&reg; Core&#153;2 processor with vPro&#153; technology - Protect. Manage.,special_IIP_019020788
+cor2e,cor2e.jpg,Intel&reg; Core&#153; 2 Extreme processor,special_IIP_019020670
+cor2s,cor2s.jpg,Intel&reg; Core&#153; 2 Solo processor,special_IIP_019021034
+ci5,ci5.jpg,Intel&reg; Core&#153; i5 processor,special_IIP_019021198
+ci7,ci7.jpg,Intel&reg; Core&#153; i7 processor,special_IIP_019020871
+ci7x,ci7x.jpg,Intel&reg; Core&#153; i7 processor Extreme Edition,special_IIP_019020872
+pen,pen.jpg,Intel&reg; Pentium&reg; processor,special_IIP_019020717
+atom,atom.jpg,Intel&reg; Atom&#153; processor,special_IIP_019020876
+ita_pi,ita_pi.jpg,Intel&reg; Itanium&reg; processor - Powerful. Intelligent.,special_IIP_019020716
+xeon_pi,xeon_pi.jpg,Intel&reg; Xeon&reg; processor - Powerful. Intelligent.,special_IIP_019020991
+ex_fullHD,ex_fullHD.jpg,FullHD logo,
+ci5_fs,ci5_fs.jpg,Intel&reg;Core&153; i5 Faster Smarter processor,http://intelinside.intel.com/index.htm

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!--  START OF PRICE INFO PARAMETERS   --> 
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[Ft]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#PF# - tól #VAT# <br></span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">HP által javasolt<br>#VAT#: #PF#</span>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[.]]>
+		</setting>
+		<setting func="decimalsymbol">
+			<![CDATA[.]]>
+		</setting>
+	</ctryconfig>
+	<text>
+<!-- START OF SCREEN INFO PARAMETERS -->	
+		<field func="intro">
+			<![CDATA[Készen áll a vásárlásra?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[HP által javasolt ár]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[ÁFA-val]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Bolt választása (bruttó árak)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Bolt kiválasztás]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Amíg a készlet tart]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Köszönjük választását]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Ön elhagyja a HP weboldalát]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->	
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Vásároljon]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Vegye meg most]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Vásárlás HP partnertől]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Viszonteladó]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Tovább]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->	
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Termék testreszabása</label>
+				<action>config</action>
+			</link>			
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Vásároljon]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Vegye meg most]]></label>
+			<action>buy</action>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Testreszabá]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Termék testreszabása és megvásárlása]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>				
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Vásárlás HP partnertől]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Viszonteladó]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Tovább]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->	
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Vásároljon]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>	
+			</txt>
+			<link>
+				<label>Termék testreszabása</label>
+				<action>config</action>
+			</link>			
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Kosár megtekintése, kilépés]]></label>
+			<txt id="pre">
+				<txt><![CDATA[A termék a kosárba került]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Testreszabá]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Termék testreszabása és megvásárlása]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Vásárlás HP partnertől]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+	</buttons>
+</root>

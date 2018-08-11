@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">A partire da #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">Prezzo #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[]]>
+		</field>
+		<field func="promo">
+			<![CDATA[PROMOZIONE]]>
+		</field>		
+		<field func="pricedesc">
+			<![CDATA[Prezzo indicativo]]>
+		</field>
+   	<field func="pricedescinfo">
+			<![CDATA[Prezzi indicativi di vendita al pubblico. I prezzi variano in base alle configurazioni, si intendono per pagamento alla consegna e non sono comprensivi di trasporto e installazione. Il prezzo di vendita puo' variare da un rivenditore all'altro poiche' i Rivenditori HP stabiliscono i prezzi da praticare in funzione delle rispettive politiche commerciali e dei metodi di distribuzione adottati. I prezzi di vendita e le caratteristiche tecniche sono quelli in vigore al momento della pubblicazione e possono subire modifiche anche senza preavviso. Salvo errori ed omissioni. Le offerte sono disponibile fino ad esuarimento scorte.]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[Iva inclusa]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Acquista da un negozio di zona o online da un e-retailer]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Seleziona un negozio online]]>
+		</field>
+		<field func="lbvat">
+			<![CDATA[(all prices include VAT)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Selezionate uno shop]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Disponibilità limitata]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Grazie per aver scelto un e-Preferred Specialist]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Entro 5 secondi uscirete dal sito HP.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->	
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Acquista]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Acquista da un negozio di zona o online da un e-retailer]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Acquista ora]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Negozio di zona]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Cerca un negozio di zona]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Acquista ora]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+    		<label>Acquista da un negozio di zona o online da un e-retailer</label>
+		    <action>config</action>
+   	  </link>                  
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Acquista]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Acquista da un negozio di zona o online da un e-retailer]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Acquista ora]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Negozio di zona]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Cerca un negozio di zona]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Acquista ora]]></label>
+			<action>buy</action>
+		</btn>
+		<btn func="customize" type="primary">
+      <label><![CDATA[Configura]]></label>
+      <txt id="sub">
+        <txt><![CDATA[Configura e acquista]]></txt>
+      </txt>
+      <action>config</action>
+    </btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+    		<label>Acquista da un negozio di zona o online da un e-retailer</label>
+		    <action>config</action>
+   	  </link>
+		</btn>
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+      			<label><![CDATA[Configura]]></label>
+      			<txt id="sub">
+        			<txt><![CDATA[Configura e acquista]]></txt>
+      			</txt>
+      			<action>config</action>
+   		 </btn>
+	</buttons>
+
+</root>

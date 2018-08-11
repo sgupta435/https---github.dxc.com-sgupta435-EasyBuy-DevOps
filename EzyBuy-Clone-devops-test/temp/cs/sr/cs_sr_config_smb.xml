@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P#   #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">HP preporučena cena od:* <br>#PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">HP preporučena cena: <br>#PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Želite da kupite?]]>
+		</field>
+		<field func="promo">
+		<![CDATA[]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[HP preporučena cena]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[+ PDV]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Nađite lokalnog partnera]]>
+		</field>
+		<field func="or">
+			<![CDATA[ili]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Izaberite prodavnicu]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Molimo izaberite prodavnicu]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Ograni?ene zalihe]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Hvala što ste izabrali]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Za 5 sekundi napuštate HP sajt]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Kupite]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kupite sada]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Nađite lokalnog partnera]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nađite lokalnog partnera]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Dalje]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Kupite od HP partnera]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Kupite od HP partnera]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kupite online]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Nađite lokalnog partnera]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nađite lokalnog partnera]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Dalje]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+	</buttons>
+</root>

@@ -1,0 +1,492 @@
+/**
+ * HP easyBuy Redesign 2006
+ *
+ * Common styles used by all easyBuy boxes
+ *
+ * @author  Ralf Barth <r.barth@21torr.com>; Silke Stolle <s.stolle@21torr.com>
+ * @version 0.1 2006-07-20
+ */
+
+ 
+div.box div,
+div.box h1,
+div.box p,
+div.box ul,
+div.box ol,
+div.box form,
+div.box input,
+div.box select {
+  margin: 0;
+  padding: 0;
+  font: normal 11px/13px Arial, Verdana, Helvetica, sans-serif;
+}
+
+div.box {
+  /* Remove the 2 lines below here - they're only for the demo page! */
+  width: 185px;
+  height: auto;
+  font: normal 11px Arial, Verdana, Helvetica, sans-serif;
+  position: relative;
+}
+
+div.box .sc2 label {
+  font-weight: bold;
+}
+
+div.box .sc2 label.err {
+  font-weight: bold;
+  color:#F00;
+}
+
+div.box .sc2 select {
+  width: 99%;
+}
+
+div.box .sc2 .btn {
+  margin: 2px 0;
+  float: right;
+  text-align: right;
+  background-color:#000;
+  text-decoration:none;
+  border: 1px solid #CCC;
+  color:#FFF;
+}
+
+div.box .sc2 .btnSec {
+  width:18px;
+  height:18px;
+  text-align: center;
+  background-color:#666;
+  text-decoration:none;
+  border: 1px solid #CCC;
+  color:#FFF;
+  float:left;
+}
+
+div.box .sc2 .bold{
+  font-weight:bold;
+}
+
+div.box .header {
+  height: 30px;
+}
+
+div.box .header h1 {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 0 0 0;
+  margin: 0;
+}
+
+div.box .content {
+  background: white url(http://cdn-h41213.www4.hp.com/ezbuy/html/img/ezb.v3/white/bg.png) top left repeat-y;
+  padding: 6px 10px;
+  height: 1%;
+}
+
+div.box .content .priceContainer {
+  color: rgb(51, 102, 102);
+  background: white;
+  height: 93px;
+  font-weight: bold;
+  margin-left: 1px;
+}
+
+div.box .content .priceContainer span.priceNum {
+  display: block;
+  font-size: 22px;
+  margin-top:2px;
+  margin-bottom:3px;
+}
+
+div.box .content .priceContainer span.priceNum span.small {
+  font-size: 16px;
+}
+
+div.box .content .priceContainer span.priceNum span.promosmall {
+  font-size: 12px;
+}
+
+div.box .content .priceContainer span.priceNum sup {
+  font-size: 14px;
+}
+
+div.box .content .priceContainer .logo {
+  float: right;
+  border: 0;
+  margin-left: 0px;
+	position:absolute;
+	right:4px;
+	top:20px;
+}
+
+div.box .content .priceContainer img {
+  border: 0;
+  margin-left: 3px;
+}
+
+div.box .content .addToBasket {
+  margin-top: 5px;
+}
+
+div.box .content .noBasket {
+  visibility: hidden;
+}
+
+
+div.box .content .addToBasket input {
+  font: normal 11px Arial, Verdana, Helvetica, sans-serif;
+}
+
+div.box .content .addToBasket input.txt, 
+div.box .simple input.txt,
+div.box .simple_rtl input.txt  {
+  width: 20px;
+  text-align: center;
+  border: 1px solid #aaa;
+  padding: 2px 1px;
+  margin-right:3px;
+  vertical-align: middle;
+  float:left;
+}
+
+
+div.box .content .delivery {
+  font-size: 10px;
+  line-height:100%;
+}
+
+div.box .content .addToBasket a {
+  text-decoration: none;
+  color: rgb(0, 51, 102);
+  font-size: 12px;
+  vertical-align: -1px;
+  font-weight: bold;
+}
+
+div.box .content .addToBasket a.btn, 
+div.box .simple a.btn,
+div.box .simple_rtl a.btn  {
+  float:left;
+  width:auto;
+  height: 17px;
+  padding: 1px 2px 1px 2px;
+  color: #FFFFFF;
+  border: 1px solid #999999;
+  font-weight: bold;
+  vertical-align: middle;
+  margin:0;
+  font-size: 11px;
+}
+
+div.box .content .addToBasket a.btn img,
+div.box .simple a.btn img, 
+div.box .simple_rtl a.btn img {
+  margin-left:5px;
+  border:0;
+  vertical-align:middle;
+}
+
+div.box .content .customiseButton {
+  color: rgb(51, 102, 102);
+  font-weight: bold;
+  margin: 5px -8px 0 -8px;
+  padding: 5px 8px 5px 8px;
+}
+
+div.box .content a.btn {
+  color: white;
+  text-decoration: none;
+  background: rgb(51, 51, 51);
+  padding: 2px 3px;
+  margin-top:2px;
+  width: auto;
+  text-align: center;
+  border: 1px solid rgb(153, 153, 153);
+  font-weight: bold;
+}
+
+div.box .sc2 input.red,
+div.box .content .footer a.red {
+  width:auto;
+  background-color: #c00;
+  border-color: #e00;
+}
+
+
+div.box .content .line {
+	border-top: 1px solid #ccc;
+	margin: 5px -8px 0 -8px;
+  padding: 5px 8px 0 8px;
+}
+
+div.box .content .footer {
+  color: rgb(51, 102, 102);
+  font-weight: bold;
+  margin: 0px -8px 0 -8px;
+  padding: 0px 8px 0 8px;
+}
+
+div.box .content .footer2 {
+  color: rgb(51, 102, 102);
+   font-weight: bold;
+  margin: 5px -8px 0 -8px;
+  padding: 10px 8px 0 8px;
+}
+
+div.box .content p {
+  padding-bottom:7px;
+  font-weight:bold;
+}
+
+
+div.box .content .footer2 a.btn {
+  color: white;
+  text-decoration: none;
+  background: rgb(51, 51, 51);
+  width: auto; 
+  text-align: center;
+  border: 1px solid rgb(153, 153, 153);
+  font-weight: bold;
+}
+
+div.box .boxend {
+  height: 13px;
+  background: white url(http://cdn-h41213.www4.hp.com/ezbuy/html/img/ezb.v3/white/footer.png) top left no-repeat;
+}
+
+div.box .strikeThrough {
+  text-decoration: line-through;
+}
+
+/* Dealer Box ***********************/
+div.box .selectDealer {
+  position:relative;
+  overflow: auto;
+  overflow-x: hidden;
+  width:99%;
+  height:75px;
+  border: 1px solid rgb(102, 153, 204);
+  margin-top:10px;
+  cursor: default;
+}
+
+div.box .selectDealer img{
+  margin-left:1px;
+  border:none;
+}
+
+  div.box .unselected {
+    background-color:rgb(255, 255, 255);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  div.box .selectDealer .selected{
+    background-color:rgb(178, 180, 191);
+    border-top: 1px dotted rgb(0, 0, 0);
+    border-bottom: 1px dotted rgb(0, 0, 0);
+  }
+
+    div.box .selectDealer input {
+      position:absolute;
+      left:-1000px;
+      float:left;
+    }
+
+    div.box div.radio {
+      float:left;
+      margin-left:1px;
+      font-weight:bold;
+    }
+    
+    div.box .dealerPriceCont {
+      float:right;
+      margin-right:2px;
+    }
+
+      div.box .dealerPrice {
+        float:left;
+        text-align:right;
+        width:auto;
+      }
+      div.box .dealerStock {
+        float:left;
+        text-align:right;
+        width:8px;
+      }
+
+    div.box .radio a{
+      color:#000;
+      text-decoration:none;
+    }
+
+
+/* info-tooltip ***********************/
+.tooltip {
+  position:absolute;
+	top:0;
+	left:0;
+  width:120px;
+  height:80px;
+  border: 1px solid #000;
+  visibility:hidden;
+  display:block;
+  z-index:666;
+  background-color:#FFF;
+  font: normal 11px Arial, Verdana, Helvetica, sans-serif;
+}
+  div.tooltip .header {
+    background-color: rgb(0, 51, 102);
+    background-image: url(http://cdn-h41213.www4.hp.com/ezbuy/html/img/ezb.v3/icon.info.gif);
+    background-repeat: no-repeat;
+    background-position:left;
+    height:15px;
+    text-align: right;
+    color: #FFF;
+  }
+  div.tooltip .toolcontent {
+    height:65px;
+    overflow: auto;
+    margin:0 1px 0 2px;
+  }
+
+/* non Promo */
+.nonpromo .header {
+  color: black;
+  background: white url(http://cdn-h41213.www4.hp.com/ezbuy/html/img/ezb.v3/white/header.grey.png) top left no-repeat;
+}
+
+.nonpromo .content .priceContainer {
+  color: rgb(51, 102, 102);
+  line-height: 14px;
+  margin-left: 4px;
+}
+
+/* Promo */
+
+
+div.box .promo .header {
+  color: #FFF;
+}
+
+div.box .promo .priceHeader {
+  display:block;
+  height:1em;
+}
+
+div.box .promo .priceBadgeContainer {
+}
+
+div.box .promo .priceBadge {
+  background: #FFF url(http://cdn-h41213.www4.hp.com/ezbuy/html/img/ezb.v3/bg.badge.red.png) top left no-repeat;
+  float: left;
+  height: 68px;
+  width: 70px;
+  color: #FFF;
+  text-align: center;
+}
+
+div.box .promo .priceBadgeLarge {
+  background: #FFF url(http://cdn-h41213.www4.hp.com/ezbuy/html/img/ezb.v3/bg.badgelarge.red.png) top left no-repeat;
+  float: left;
+  height: 68px;
+  width: 107px;
+  color: white;
+  text-align: center;
+}
+
+div.box .priceBadgeContainer .priceHeader {
+  display: block;
+  margin: 10px 0 2px 0;
+  font-size: 10px;
+}
+
+div.box .promo .priceBadgeContainer .priceNum {
+  font-size: 18px !important;
+  margin: 2px 0;
+}
+
+div.box .promo .priceBadgeContainer .priceVat {
+  font-size: 10px;
+}
+
+div.box .promo .priceBadgeContainer .priceLasts {
+  position: absolute;
+  color: #c00;
+  left: 76px;
+  top: 25px;
+  width:100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.box .promo .priceBadgeContainer .priceBadge .priceLasts  {
+  width:42px;
+}
+
+
+
+/* simple template *********************************************/
+
+div.simple, 
+div.simple_rtl {
+	color: #000;
+}
+div.simple .price, 
+div.simple_rtl .price {
+	font-weight:bold;
+	float:left;
+	font-size:16px;
+	margin: 4px 15px 4px 0;
+}
+div.simple .price .priceVat,
+div.simple_rtl .price .priceVat {
+	font-weight:bold;
+	font-size:11px;
+}
+div.simple_rtl .price {
+	float:right;
+	margin: 4px 0 4px 15px;
+}
+
+div.box .simple form, 
+div.box .simple_rtl form {
+	white-space:nowrap;
+	float:left;
+}
+
+div.box .simple_rtl form {
+	float:right;
+}
+
+
+div.box .simple a.btn, 
+div.box .simple_rtl a.btn {
+	background-color: #000;
+	border-style: outset;
+	text-decoration:none;
+}
+
+div.box .simple_rtl a.btn{
+	float:left;
+}
+
+div.box .simple input.txt, 
+div.box .simple_rtl input.txt {
+	border: 1px solid #000;
+}
+div.box .simple_rtl input.txt {
+	float:left;
+	margin-left:4px;
+}
+
+/** Ireleand Product Recycling Fund Fee Footoer **/
+div.box .content .footer3 {
+  color: rgb(51, 102, 102);
+  font-size:10px;
+  margin: 0px -8px 0 -8px;
+  padding: 0px 8px 0 8px;
+}
+

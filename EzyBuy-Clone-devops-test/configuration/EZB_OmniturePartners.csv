@@ -1,0 +1,237 @@
+#LABELS:Merchant ID,Merchant Name
+#VARIABLES:id,name
+cz-cs-2h,#2H
+dk-da-2i,#2IG DK
+7268023|dk-da-2w,#2WaysIT DK
+dk-da-waci,#AC Intellicom DK
+no-no-am,#Amentio NO
+pl-pl-ap,#APN Promise
+3785723|at-de-ar,#ARP AT
+dk-da-wbcp,#BCP DK
+3423123|nl-nl-bi,#Beat-It NL
+3748323|at-de-bc,#Bechtle AT
+3922123|be-al-bc,#Bechtle BE-fr
+3922623|be-al-bc,#Bechtle BE-nl
+3611823|de-de-bc,#Bechtle DE
+8410123,#Bechtle IE
+3604123|it-it-bc,#Bechtle IT
+3590123|nl-nl-bc,#Bechtle NL
+5775723|nl-nl-bs,#Bestel NL
+dk-da-wblu,#BlueIT DK
+8567823,#Bol NL
+8098323,#Boon Lay Stationery SG
+dk-da-wbpk,#BPK DK
+dk-da-wbm,#BusinessMann DK
+3419823|nl-nl-bd,#Buy It Direct NL
+8861523,#TeamSolutions FR
+dk-da-ca,#Caslon-IT DK
+es-es-ci,#CIC ES
+dk-da-wcli,#Clicksalg DK
+dk-da-cy,#Comby DK
+dk-da-wce,#ComElektro DK
+dk-da-c2,#Comm2 DK
+dk-da-wcom,#Comwir DK
+8326523,#Cozumnoktasi TR
+dk-da-wcre,#Credocom DK
+dk-da-do,#Danoffice DK
+7267723|dk-da-da,#Datacon DK
+dk-da-wdata,#Datatech DK
+dk-da-wdesc,#Descom DK
+8225123,#Dick Smith Electronics Pty Limited AU
+7649123,#DiskontComputer AT
+dk-da-wdkmc,#dk Mobil Center DK
+cz-cs-dl,#DLNK CZ
+3693923|no-no-dz,#DropZone NO
+3957923|no-no-dt,#DTN NO
+4601323,#Dustin DK
+dk-da-dy,#Dynacom DK
+6596523,#Ebuyer UK
+dk-da-wedd,#ED-Data DK
+fi-fi-ek,#eKanava
+dk-da-el,#Elbek DK
+3695923|no-no-ep,#ePartner NO
+7241123|ie-en-er,#Ergo IE
+es-es-cm,#ES_Coremain
+dk-da-fi,#Fifo DK
+7538423,#Findmysupplies AT
+7538523,#Findmysupplies CH DE
+7538923,#Findmysupplies CH FR
+7538723,#Findmysupplies FR
+7539623,#Findmysupplies UK
+5663923|dk-dk-fl,#FLC DK
+dk-da-4s,#Four Systems DK
+pl-pl-ga,#Galaxy
+8202123,#Gimba BR
+fr-fr-gt,#GlobalTechnologies FR
+pl-pl-he,#HENVAR PL
+5277023,#HP Online PL
+3612823,#HP OOV CH
+3612823-1314,#HP OOV CH
+3619999,#HP OOV CH
+3691423,#HP OOV CH
+3719023,#HP OOV DE
+3812923,#HP OOV ES
+4042523,#HP OOV FR
+7150123,#HP OOV SE
+7150223,#HP OOV SE
+3392423,#HP OOV UK
+5148823,#HPmarket CZ
+6744623,#HPmarket SK
+dk-da-i2,#I2I DK
+es-es-id,#IdGrup ES
+es-es-in,#Inforein ES
+7796523,#InkClub DK
+7796723,#InkClub NO
+3419623|nl-nl-in,#Inmac NL
+gb-en-ic|3425723,#Inmac UK
+dk-da-pa,#IT Partner DK
+dk-da-pl,#IT Planeten DK
+dk-da-wita,#Itavis DK
+dk-da-it,#Iteo DK
+no-no-it,#Itum
+3946223,#Ivellio-Vellin AT
+dk-da-wjum,#Jumbo DK
+dk-da-wjun,#JuNit DK
+4598423|dk-da-kf,#Kerfi DK
+dk-da-ko,#Kompetera DK
+dk-da-wksyd,#Kontor Syd DK
+3419523|nl-nl-ms,#MegaSellers NL
+8098423,#Mellon Commercial SG
+dk-da-mi,#MentorIT DK
+4716323|it-it-mi,#Misco IT
+4095723|se-se-mi,#Misco SE
+dk-da-mt,#Motus DK
+5886923,#MPX NO
+no-no-md,#Multidata NO
+7899023|fi-fi-mt,#Multitronic FI
+dk-da-mu,#Munk DK
+dk-da-wnet,#Necom DK
+5693323|dk-dk-dc,#Netkoncept DK
+dk-da-np,#NetPartner DK
+dk-da-ns,#NetSolutions DK
+se-se-of,#OfficeStore SE
+8162823,#OpenStorage DE
+8098123,#Oregon Prime SG
+3695923|no-no-pc,#PC Express NO
+dk-da-pc,#PCS DK
+dk-da-wpcsys|dk-da-wpcsys,#PCSys DK
+7241223|ie-en-pw,#PCWB IE
+pl-pl-ax,#PL_AXel
+4864523|pt-pt-pm,#pmelink PT
+3655523,#PMIstore IT
+6744823,#Polaris RU
+7769323,#Printus DE
+dk-da-wproc,#Pro Computer DK
+dk-da-wproi,#Proinfo DK
+3938423|be-de-rc,#Redcorp BE FR
+3939823|be-de-rc,#Redcorp BE NL
+es-es-sm,#SEMIC ES
+dk-da-wsiol,#ShopItOnline DK
+pl-pl-sm,#SMK PL
+no-no-sd,#SnorreData NO
+6840323|de-de-se,#SoftExpress DE
+7935723,#Solutions IN
+6124223,#Staples PT
+no-no-st,#Stretto NO
+dk-da-tb,#Techbiz DK
+no-no-tt,#TelenorTelehuset
+8093523,#Titaco DE
+8819223,#Toner Expres CZ
+9076723,#TonerJet DE
+dk-da-tn,#TopNordic DK
+tr-tr-tu,#Turkom
+dk-da-wunit|dk-da-wunit,#Uniteam DK
+6840223|fr-fr-vp,#Vepenet FR
+4586423,#Wehkamp NL
+3414923|fr-fr-in,#WStore fr
+3384123|gb-en-ws,#WStore UK
+8642723,#LojaViva PT
+7150623,#Caboodle UK
+7617823,#Eureca RU
+9188423,#Nagem BR
+9318223,#HP Obchod SK
+8709223,#Dorcom Computerland IL
+9326323,#Bechtle PT
+9116423,#Pedidos MX
+9077023,#SmartIT FI
+9481323,#Elara IE
+4157023,#FNAC FR
+9669123,#ABsupplies BE NL
+9669023,#ABsupplies BE FR
+5551323,#HP Shop HU
+9255523,#PcCity ES
+9508923,#Kalunga BR
+9795023,#Worten PT
+9957423,#Eurieka IE
+9325923,#CDiscount
+10202323,#Monclick IT
+10494223,#Cartridges Direct AU
+10759523,#Staples BR
+10825723,#360buy CN
+4337723,#Osilog FR
+10416723,#Alza CZ
+10932723,#Atoz MY
+10953923,#eFacil BR
+11020623,#Plaisio GR
+7618123,#Buy direct from hp JP
+9363623,#Wupti DK
+10971023,#HP Shop online ZA
+11225023,#HP Store
+11367623,#IntegratedComputerSystemsInc PH
+11389123,#OfficeMate TH
+10957823,#Expert Asa FI
+9666723,#HP Store
+11145023,#Saraiva BR
+11662113,#ShimaUma UK
+11675713,#MySureSupply UK
+11573813,#Eurosys BE NL
+11573913,#Eurosys BE FR
+11736113,#ShimaUma BE NL
+11736213,#MySureSupply BE NL
+11655413,#Infoquest GR EL
+11785313,#CentralPoint BE
+11788013,#HpCentre RU
+11696313,#HP Online CL
+11931913,#ShimaUma PT
+11707013,#Telemedia PT
+11949513,#Panther Data AU
+4399523,#Komplett NO
+9880523,#Komplett DK
+11983813,#Msystems GR
+11655713,#myHP South Africa ZA
+12003513,#Tonerjet AT
+11831513,#Cartridges Direct HK ZH
+11831613,#Cartridges Direct HK EN
+12085513,#MySureSupply AT
+12085913,#ShimaUma AT
+12345413,#HPOnlineStore NZ
+12342913,#Domisys FR
+6745023,#ElCorteIngles ES
+9669123-SmartFinder,#ABsupplies(smartfinder) BE NL
+9669023-SmartFinder,#ABsupplies(smartfinder) BE FR
+11530213,#Port BR
+5952223,#HP Shop DE
+12011913,#Darty FR
+9363623-SmartFinder,#Wupti(SmartFinder) DK DA
+12710513,#Loja Online HP BR
+12766913,#SolutionsIntegratedMarketingPvtltd IN
+12742124,#HPOnlineStore PE
+11736513,#ShimaUma BE FR
+11736613,#MySureSupply BE FR
+12742113,#WarehouseStationery NZ
+12766964,#FirstTechnologyGroup ZA
+12766954,#HPOnlineStore MX
+11536413,#Mvideo RU
+12766934,#Evergreen SG
+12766984,#Bhinneka ID
+12766944,#Alkosto CO
+12766974,#thinkINK ME
+12767144,#Staples CN
+8567423,#PrimusOffice AT
+14874524,#Hartono ID
+14874594,#TokoTintaAsli ID
+12767154,#OfficeDepot US
+14874564,#Verkkokauppa FI
+14874664,#Abyz KR
+14874574,#AKSupplies TH
+6534623,#HPStore HK

@@ -1,0 +1,860 @@
+[GENERAL]
+dataserver=all-hp.kelkoo.com/uk
+kelkooserver=all-hp.kelkoo.com/uk
+ezbCurrencyCode=USD
+classicBtnName=Buy online
+
+searchXmlQuery="HPEzBuy/HPEzBuyLite?productNumber=#PN#&m_s=smb&country=us&enable_spn=true"
+shopbotURL="http://h20465.www2.hp.com/gpl/search.aspx?language_code=en&country_code=us&SearchType=smb"
+elocatorURL="http://www8.hp.com/us/en/store-finder/index.do"
+goXmlQuery="HPEzBuyGo?country=us&m_s=smb&from=lite"
+
+configXmlFile=us_en_config_smb.xml
+
+//partnersExcludeIds=14874604
+//partnersRestrictIds=11303,11251,12767034,11371,14874634
+
+//Marketplace Only
+partnersExcludeIds=14874604,11303,11251,11371
+partnersRestrictIds=14874634,12767034
+
+fullHTMLdirect=true
+
+indPriceOrder = "pp;sto;mea;stp;lp"
+priceDecimal=true 
+option=promoPriceHighlight
+
+//ETR US HHO Production
+ETR="yes"
+Userid="EasyBuy"
+Password="527138634F616F7242592F32664357726650414C394976303963336151526A765953544933634C5850466B3D202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020"
+StoreURL="https://store.hp.com/webapp/wcs/stores/servlet/HPAddToCartService?storeId=10151&aoid=20575"
+mStoreURL="https://store.hp.com/webapp/wcs/stores/servlet/HPAddToCartService?storeId=10151&aoid=20575"
+STOREENT_ID=10151
+EtrCurrency=USD
+Language="en_US"
+
+//disablePNs="252663-D75;234672-B21;235604-001;341177-B21;JC097B;403626-B21;419569-B21;452348-B21;458941-B21;459005-B21;467799-B21;351655-B21;468640-B21;468418-B21;481043-B21;487655-B21;498385-B21;498385-B24;498385-B27;498386-B25;498386-B26;499243-B21;507014-B21;507750-B21;507772-B21;507774-B21;510143-001;512766-B21;516824-B21;532068-B21;536841-B21;538084-B21;574879-B21;581284-B21;589150-001;605865-B21;609326-B21;619291-B21;622224-B21;624189-B21;625031-B21;617858-B21;485192-B21;519254-B21;534562-B21;626448-B21;J9732AS;626449-B21;628065-B21;634972-B21;641146-B21;642135-001;647871-S21;647905-S21;647909-B21;649282-B21;649283-B21;650048-B21;652238-B21;652241-B21;652564-B21;652564-S21;652572-B21;652745-B21;652749-B21;653745-001;653746-001;653747-001;653976-B21;654948-B21;655095-B21;655516-B21;656596-B21;658247-B21;662080-B21;662081-B21;662083-001;663375-B21;663498-B21;668668-001;670279-B21;670658-S01;670759-B22;670759-B23;670759-B25;672621-B21;674787-001;675596-B21;675597-B21;676331-B21;679115-B21;681840-B21;682632-B21;684539-B21;686785-001;690829-B21;693689-B21;694374-B21;695793-B21;696729-001;696910-B21;698723-B21;699045-B21;699068-B21;704559-001;704963-B21;708090-B21;708643-S21;708924-B21;709942-001;711307-B21;711970-B21;713975-B21;713979-S21;717359-B21;717364-B21;721458-B21;724082-B21;724083-B21;724085-B21;724087-B21;724088-B21;726974-B21;632698-B21;634983-B21;637343-B21;637705-B21;637838-B21;644172-B21;654408-B21;664011-B21;724181-B21;724182-B21;726547-B21;734206-B21;737394-B21;740895-B21;740896-B21;748303-S01;748919-B21;752687-B21;752689-B21;779168-B21;779172-B21;784099-S01;793310-B21;801882-B21;802582-B21;A1L26AAE;AF430A;AF440A;AF468A;AF471A;AF618A;AF630A;AH051C;AH331A;AJ907A;AH334A;AK379A;AM422A;AM424A;AM429A;AM431A;AM445A;AM866B;AP863B;AW564A;AW586A;B6958CAE;B6958CA;B7031AA;B7E16A;B7E19SB;B7E26B;BB618AAE;BC345AAE;BC346AAE;BC745AAE;BC753AAE;BC757AAE;BC771AAE;BC783AAE;BC905AAE;BC989AAE;BD252BAE;BD512A;BD515A;BD527A;BD534A;BD549A;BD558A;BD564A;BD690A;BD715A;BD776AAE;BK780B;BS580B;BW942A;C3914A;C5708A;C5709A;C7533A;C7536A;C7971AL;C7972A;C7974AJ;C7976AD;C7976AL;C7976BL;C7976WL;C7982A;C8R09A;C8R43A;C8R44A;C8S46A;C8S56A;C8S72A;CE977A;D4U07AAE;D9N53A;D9N59A;D9Y36AAE;D9Y37AAE;D9Y39A;D9Y44AAE;D9Y52AAE;D9Y60AAE;D9Y64AAE;D9Y74AAE;D9Z11AAE;E2D53A;E7W73A;E7W77A;E7W88A;E7W89A;E7X03A;EJ013B;F0P36AAE;H5481E;H5M70A;H6J72A;H6J82A;HH245E;HT656E;HT868E;HV461E;HW240E;HW345E;HW703E;HW748E;HX606E;J0G90A;J4860C;J8437A;J8474A;J8700A;J8999A;J9093A;J9171A;J9265AZ;J9283B;J9302A;J9312A;J9393A;J9452A;J9480A;J9575A;J9586A;J9588A;J9626A;J9640AC;J9650A;J9695A;J9696A;J9720A;J9728A;J9731A;J9747A;J9748A;J9772A;J9781A;J9782A;J9792A;J9834A;J9836AS;J9845A;J9855A;J9898A;J9917A;JC100AC;JC105A;JC173A;JC691A;JC694A;JC709A;JC714A;JD196A;JD201A;JD220A;JD235A;JD236A;JD319B;JD431A;JD433A;JD443A;JD563A;JD632A;JD653A;JD858A;JD866A;JF229A;JF231A;JF290A;JF640A;JF806A;JF807A;JF814A;JF816A;JG148AAE;JG150AAE;JG151AAE;JG207A;JG209A;JG211A;JG213A;JG216A;JG221A;JG222A;JG223A;JG242AC;JG243AC;JG245AC;JG248AC;JG249A;JG250A;JG252AC;JG253A;JG257AC;JG316A;JG411A;JG494AAE;JG507A;JG510A;JG548AAE;JG587A;JG647A;JG726A;JG729A;JG748AAE;JG761AAE;JG838A;JG927A;JG930AAE;JG962A;JG971A;JL022A;K2R12A;Q1575A;Q2010A;Q2041A;QR480A;QR481B;QU625A;QW928A;TC224A;TC392A;TC403AAE;TC444AAE;TC445AAE;TK766A;TK767A;TL253A;U0BN0E;U0EL3E;U0FW2E;U0QP0E;U0YE0E;U1AE1E;U1FT5PE;U1JJ1PE;U1V61E;U2GC7E;U2JR2PE;U2JT3PE;U2L06E;U2M86E;U2M95E;U2Q11E;U2S00E;U2S09E;U2VQ6PE;U2Z74E;U3A84E;U3B38E;U3BX1E;U3C36E;U3FZ4E;U3GH5E;U3N53E;U3QJ6E;U3S73E;U4444E;U4823E;U4G34E;U4UN1E;U4UN6E;U6303E;U6E25E;U6H50E;U6RC7PE;U6UF8PE;U6VE4PE;U7BF5E;U7RP3E;EJ026AAE;J9883A;J9891A;J9893A;J9894A;J9922A;J9926A;J9931A;J9932A;J9935A;J9941A;J9946A;J9950A;J9956A;JD364B;JD511A;JD598A;A0R60A;BW906A;BW927A;BW929A;BW933A;J9577A;J9947A;JD365A;JD517A;T5514AAE;TK802A;TL254A;741213-B21;776883-B21;783009-B21;785991-B21;AF612A;JG413A;JG522A;U7U88E;U8K83E;UE493E;UF450PE;UR861E;UR960E;UR965E;UW806E;UW807E;378928-B21;574547-B21;589481-B21;590636-001;736947-001;741447-S01;BC324A;D9Y51BAE;J9964A;J9966A;J9969A;JG317A;TA688BAE;221691-B23;JD240B;TC236A;U7E01E;263474-B21;274338-B22;310777-B21;324394-B21;443942-B21;444454-B21;448018-B21;451871-B21;452150-B21;454146-B21;458928-B21;461718-B21;462864-B21;462967-B21;462968-B21;464063-B21;488100-B21;488234-B21;494331-B21;498442-B21;507021-B21;507794-B21;508783-B21;512489-B21;516434-B21;518852-B21;518868-B21;518873-B21;572532-B21;581785-B21;583106-B21;585320-B21;585322-B21;585324-B21;585326-B21;585330-B21;588139-B21;588150-B21;588152-B21;588154-B21;588156-B21;589088-B21;589478-B21;590485-B21;595245-B21;595727-B21;601353-B21;603254-B21;603976-B21;608477-B21;609142-B21;612207-B21;615729-B21;621024-B21;625072-B21;625073-B21;625074-B21;625075-B21;625077-B21;626902-B21;629135-B21;629236-B21;630839-B21;631645-B21;631660-B21;631681-B21;631884-B21;632693-B21;632700-B21;632893-B21;632983-B21;632986-B21;633410-B21;633412-B21;633414-B21;633783-B21;633785-B21;634970-B21;635583-B21;635811-B21;636082-B21;636205-B21;636206-B21;636237-B21;637235-001;637345-B21;637408-B21;637412-B21;637414-B21;637437-B21;637439-B21;637615-B21;638013-B21;638015-B21;638017-B21;638021-B21;638314-B21;638859-B21;638861-B21;638867-B21;638871-B21;638880-B21;638884-B21;638892-B21;638896-B21;641512-B21;642190-B21;643071-B21;643075-B21;643079-B21;643081-B21;643778-B21;644501-B21;647594-B21;650768-B21;652632-B21;654764-B21;654766-B21;654774-B21;654776-B21;655618-B21;655624-B21;660582-B21;660597-B21;661069-B21;661530-B21;661618-B21;662065-B21;662069-B21;662076-B21;662079-B21;662334-B21;662336-B21;662883-B21;662921-B21;663278-B21;663478-B21;663809-001;664644-B21;666029-B21;667374-B21;667375-B21;667762-B21;667805-B21;668955-B21;669777-B21;670768-B21;674278-B21;674281-B21;674283-B21;674764-B21;686169-B21;686822-B21;688928-B21;688930-B21;691860-B21;691864-B21;691998-B21;699050-B21;699053-B21;699055-B21;699072-B21;699073-B21;699077-B21;701839-B21;707865-B21;708483-B21;708495-B21;708497-B21;709487-B21;712495-B21;712498-B21;712743-B21;715228-B21;718192-B21;720863-B21;721428-B21;722284-B21;722313-B21;724190-B21;724865-B21;725572-B21;725578-B21;726191-S01;726563-B21;726809-B21;728427-B21;728726-B21;728735-B21;728737-B21;728743-B21;728969-S21;729272-B21;729274-B21;729278-B21;730055-B21;730061-B21;730065-B21;733668-B21;733732-001;734364-B21;734368-B21;734807-B21;736823-B21;737293-S01;739894-B21;739896-B21;741140-B21;741146-B21;742682-B21;744134-B21;756604-B21;756621-B21;762263-B21;764644-B21;764646-B21;766199-B21;766207-B21;769635-B21;774619-B21;774621-B21;A0R56A;A0R59A;A1L30A;A5S97A;AF048A;AF049A;AF076A;AF438A;AF531A;AF532A;AF547A;AF556A;AF575A;AG119A;AG576B;AJ717A;AJ838A;AK344A;AK864B;AN211A;AP769B;AP823A;AP859A;AT120A;AW525A;AW538A;BB864A;BB909A;BC415A;BC756A;BC892A;BC987A;BD247B;BD269A;BD327A;BD329A;BD337A;BD340A;BD355A;BD725AAE;BD731AAE;BD794AAE;BD797A;BD810AAE;BD813AAE;BD819AAE;BK782A;BK798B;BL540B;BV899A;BW862A;BW891A;BW900A;BW903A;BW908A;BW916A;BW917A;BW918A;BW920A;BW944A;BW963A;C2362B;C9A82AAE;D4J67A;D8A89AAE;D9Y24A;D9Z10A;D9Z15A;E2D54A;E7W92SB;E7W95SB;E7X07A;E7X08A;F0P28AAE;F6M50AAE;H5M54A;H5M59A;H5M60A;H5M64A;H5M67A;H5M75A;H6J83A;HX602E;J8993A;J9089A;J9289A;J9532A;J9700A;J9712A;J9715A;J9752A;J9766B;J9869A;J9870A;J9876A;J9881A;J9882A;J9887A;J9920A;J9924A;J9925A;J9943A;J9944A;J9952A;J9988A;J9V68A;JC091A;JC098A;JC101A;JC103A;JC127A;JC151A;JC153A;JC154A;JC156A;JC159A;JC160A;JC669A;JD069A;JD074A;JD079A;JD080A;JD088A;JD091A;JD092B;JD094B;JD099B;JD100A;JD101A;JD103A;JD109A;JD110A;JD115A;JD117B;JD174A;JD190A;JD192B;JD194B;JD212A;JD213A;JD225A;JD263A;JD264A;JD267A;JD375A;JD442A;JD512A;JD536A;JD537A;JD544A;JD557A;JD558A;JD561A;JD567A;JD572A;JD573B;JD587A;JD608A;JD609A;JD610A;JD613A;JD618A;JD619A;JD621A;JD628A;JD634B;JD639A;JD641A;JD642A;JD647A;JD902A;JD908A;JD911A;JF385A;JF410AAE;JF415AAE;JF828A;JF830A;JF840A;JG245A;JG256A;JG297A;JG318A;JG429A;JG435A;JG436A;JG438A;JG442A;JG446A;JG512A;JG514A;JG529A;JG530A;JG590AAE;JG597A;JG661A;JG663A;JG664A;JG769AAE;JG878A;K2R82A;QB-6FAAB-SB;QK729A;QK732A;QK735A;QK736A;QK771A;QK772A;QQ700A;QW923A;SG506A;SG508A;SG511A;SG512A;T4261A;T5169A;T5517A;T5519A;T5520A;T5529A;TA747A;TA748A;TA804A;TC274A;TC275A;TC320A;TC351A;TC356A;TC406A;TC407A;TC469A;TD444AAE;TD449AAE;TK739A;TK740A;TK741A;TK743A;TK744A;TK772A;U3N08E;U4830E;U4832E;U7D43E;U7D46E;U7D51E;UR959E;UR970E;419573-B21;432239-B21;657787-B21;702552-B21;730874-B21;737226-B21;J9640A;JC476B;JC857A;JD193B;JD210A;JD231A;JD237A;JF254B;JF832A;JG667A"
+
+[SureSupply]
+priceDecimal=true
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11251,11303,11371
+
+[Click-to-Order] //temporary client ID
+priceDecimal=true
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11251,11303,11371
+
+[CS]
+//searchXmlQuery="HPEzBuy/HPEzBuyLite?productNumber=#PN#&m_s=smb&country=us" 
+
+[cs]
+//searchXmlQuery="HPEzBuy/HPEzBuyLite?productNumber=#PN#&m_s=smb&country=us" 
+
+[SureSupplyAD]
+priceDecimal=true
+partnersExcludeIds=14874544
+partnersRestrictIds=12767034,11251,11303,14874534,14874604,11371
+
+[helpmechoose]
+priceDecimal=true
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11251,11303,11371
+
+[helpmechooseww]
+partnersExcludeIds=14874604,12767034,11251,11303,11371
+indPriceOrder = "lp" 
+
+[helpmechooseOD]
+partnersExcludeIds=14874604,12767034,11251,11303
+partnersRestrictIds=11371
+
+[SalesCentral]
+partnersExcludeIds=14874544,12767034,11251,11303,14874534,14874604,11371
+indPriceOrder = "lp"
+
+[SalesCentralp]
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11251,11303,11371
+
+[helpmechooseww]
+partnersExcludeIds=
+indPriceOrder = "lp" 
+
+[eSupplies-mobile]
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11303,11251,11371
+
+[eSupplies-tablet]
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11303,11251,11371
+
+[eSupplies-mobile36]
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11303,11251,11371
+
+[eSupplies-tablet36]
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11303,11251,11371
+
+[PrintSupplies-mobile]
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11303,11251,11371
+
+[PrintSupplies-tablet]
+partnersExcludeIds=14874604
+partnersRestrictIds=12767034,11303,11251,11371
+
+[PL==3Y] //Street price available
+indPriceOrder = "pp;sto;mea;stp;lp"
+
+[PL==6A] //show only Street price
+indPriceOrder = "stp"
+[PL==65] //show only Street price
+indPriceOrder = "stp"
+
+[PL==KV]
+option=disableEZBuy
+indPriceOrder = "pp;sto;mea;stp"
+
+[PL==MP]
+indPriceOrder = "pp;sto;lp;stp"
+
+[PL==UZ]
+indPriceOrder = "pp;sto;mea"
+
+
+
+
+[PL==9T]
+disablePNs="N9K77AA;N2Z64AA;N9K76AA"
+
+[PL==6X]
+disablePNs="G4H12AA"
+
+[PL==18] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==23] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+
+indPriceOrder = "pp;sto;mea"
+[PL==24] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==25] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==28] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==31] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==32] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==33] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==34] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==35] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==43] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==49] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==50] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==59] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==60] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==62] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==64] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==65] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==66] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==67] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==68] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==69] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==70] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==72] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==75] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==78] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==79] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==81] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==84] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==85] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==87] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==91] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==96] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==1N] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==1U] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==1W] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==1X] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==1Y] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==1Z] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==2E] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==2F] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==2G] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==2M] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==2T] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==2Z] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==3B] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==3C] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==3P] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==3S] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==3V] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==3W] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==3Z] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4A] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4F] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4I] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4J] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4K] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4Q] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4S] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4U] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==4Y] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==5C] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==5G] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==5O] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==5P] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==5Q] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==5U] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==5W] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==6C] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==6F] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==6H] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==6I] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==6J] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==6L] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==6N] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==6W] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==7A] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==7F] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==7G] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==7P] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==7W] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==8C] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==8L] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==8S] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==8W] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==9O] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==9P] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==9Q] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==9W] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==9X] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==9Y] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==A1] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==A2] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==A7] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==A8] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==AE] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==AG] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==AN] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==AO] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==AV] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==B3] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==B5] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==BA] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==BD] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==BK] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==D0] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==D1] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==D3] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==D7] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==D9] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==E1] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==EA] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==EF] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==EX] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==F9] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FA] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FC] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FE] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FI] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FJ] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FM] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FQ] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FS] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==FT] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==G3] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==G4] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==G5] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==G6] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==HA] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==I5] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==I6] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==I7] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==I8] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==I9] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==J2] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==J3] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==J9] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==JN] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==K3] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==KV] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LA] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LH] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LI] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LJ] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LK] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LL] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LM] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LN] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==LV] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==MV] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==NT] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==NW] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==OC] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==PD] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==PQ] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==PR] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==R6] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==R8] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==RD] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==SD] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==SH] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==SI] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==SY] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==TD] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==TE] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==TF] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==TH] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==TN] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==TQ] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==TR] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==U3] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==U4] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==UW] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==UX] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==UY] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==UZ] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==VC] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==VE] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==VS] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==WB] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"
+[PL==ZD] //Enterprise PL only Marketplace enabled
+partnersExcludeIds=14874604,11303,11251,11371,12767034
+partnersRestrictIds=14874634
+indPriceOrder = "pp;sto;mea"

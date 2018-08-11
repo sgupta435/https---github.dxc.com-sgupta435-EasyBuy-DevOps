@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!--  START OF PRICE INFO PARAMETERS   --> 
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">Comprar en HP:</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# Precios desde #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# Precio #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+<!-- START OF SCREEN INFO PARAMETERS -->
+		<field func="intro">
+			<![CDATA[¿Preparado para comprar?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Precio]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[IVA incl.]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[LLame al 902 234 468 para consultar opciones de compra]]> 
+		</field>
+		<field func="or">
+			<![CDATA[o]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Seleccionar tienda (con IVA)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Selecciona y pulsa comprar]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Stock limitado]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Gracias por seleccionar un/una]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[En 5 segundos, estarás abandonando la web de HP]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[comprar]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Busca tu distribuidor online, local o compra a HP]]></txt>
+				<txt><![CDATA[Tiendas online o ver tiendas cercanas]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Comprar ahora]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configura]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configura y compra tu producto HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Buscar distribuidor]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Buscar distribuidor]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Ir]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Comprar en HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Entrega en 48 horas]]></txt>
+				<txt><![CDATA[Entrega en 2 semanas]]></txt>
+				<txt><![CDATA[Entrega en 4 semanas]]></txt>								
+			</txt>
+			<link>
+				<label>Configura su producto HP</label>
+				<action>config</action>
+			</link>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Comprar a distribuidor HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Localiza tu distribuidor HP online o local]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Comprar ahora]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configura]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configura y compra tu producto HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Buscar distribuidor]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Buscar distribuidor]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Ir]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Añadir al carrito]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Entrega en 48 horas]]></txt>
+				<txt><![CDATA[Entrega en 2 semanas]]></txt>
+				<txt><![CDATA[Entrega en 4 semanas]]></txt>
+			</txt>
+			<link>
+				<label>Configura su producto HP</label>
+				<action>config</action>
+			</link>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Actualizar el carrito]]></label>
+			<txt id="pre">
+				<txt><![CDATA[Este artículo ha sido incluido]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configura]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configura y compra tu producto HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+   <dynamic>
+ 	<jscontext>
+		<text>
+		 
+		<field func="telnr" cond="s_ProductLine=2A">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R6">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7T">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DU">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=83">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2N">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5M">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C2">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DL">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=M3">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9C">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4X">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2B">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2Q">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MC">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+			<field func="telnr" cond="s_ProductLine=5T">
+				<![CDATA[No disponible actualmente en la Tienda HP]]>
+			</field>
+			<field func="telnr" cond="s_ProductLine=AU">
+				<![CDATA[No disponible actualmente en la Tienda HP]]>
+			</field>
+			<field func="telnr" cond="s_ProductLine=1N">
+				<![CDATA[LLame al 902 234 468 para consultar opciones de compra]]>
+			</field>
+			<field func="telnr" cond="s_ProductLine=9G">
+				<![CDATA[]]>
+			</field>
+			<field func="telnr" cond="s_ProductLine=2H">
+				<![CDATA[]]>
+			</field>
+			<field func="vat" incl="1" cond="s_ProductLine=1N">
+			  <![CDATA[IVA incl.]]>
+		  </field>
+		  <field func="force_promo" cond="s_ProductLine=1N">
+      	<![CDATA[GASTOS DE ENVÍO GRATUITOS]]> 
+      </field>
+		  <field func="vat" incl="1" cond="s_ProductLine=5T">
+			  <![CDATA[IVA incl.]]>
+		  </field>
+		  <field func="force_promo" cond="s_ProductLine=5T">
+	      <![CDATA[GASTOS DE ENVÍO GRATUITOS]]> 
+      </field>
+		  <field func="vat" incl="1" cond="s_ProductLine=AU">
+			  <![CDATA[IVA incl. (Envíos gratis!)]]>
+		  </field>
+		  <field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		</text>
+	</jscontext>
+ </dynamic>
+</root>

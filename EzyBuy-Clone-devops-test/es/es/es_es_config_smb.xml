@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!--  START OF PRICE INFO PARAMETERS   --> 
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C##P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[Tienda online HP]]>
+		</setting>
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">Comprar en HP:</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# desde<br>#PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# precio<br>#PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+<!-- START OF SCREEN INFO PARAMETERS -->
+		<field func="intro">
+			<![CDATA[Compre ahora]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Precio]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[IVA no inc]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[LLame al 902 234 468 para consultar opciones de compra]]>
+		</field>
+		<field func="or">
+			<![CDATA[o]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Seleccione tienda (sin IVA)]]>
+		</field>
+		<field func="lbvat">
+			<![CDATA[(todos los precios son sin IVA)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Seleccione y pulse comprar]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Stock limitado]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Gracias por escoger un e-Preferred Specialist]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[En 5 segundos, abandonará la página web de HP.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Compre en un distribuidor]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Busca tu distribuidor online, local o compra a HP]]></txt>
+				<txt><![CDATA[Busque su distribuidor HP online o local]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Compre online]]></label>
+			<action>buy</action>			
+		</btn>		
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configure]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configure y compre directamente en HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Encuentre un socio]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Encuentre un socio]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Continuar]]></label>
+			<action>buy</action>			
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Comprar en HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Entrega en 48 horas]]></txt>
+				<txt><![CDATA[Entrega en dos semanas]]></txt>
+				<txt><![CDATA[Entrega en cuatro semanas]]></txt>								
+			</txt>
+			<link>
+				<label>Configure su producto HP</label>
+				<action>config</action>
+			</link>			
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Compre en un distribuidor]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Busque su distribuidor HP online o local]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Compre online]]></label>
+			<action>buy</action>			
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configure]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configure y compre directamente en HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>			
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Encuentre un socio]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Encuentre un socio]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Continuar]]></label>
+			<action>buy</action>			
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Comprar en HP]]></label>
+			<tooltip><![CDATA[Comprar online en HP]]></tooltip>
+			<txt id="sub">
+				<txt><![CDATA[Entrega en 48 horas]]></txt>
+				<txt><![CDATA[Entrega en dos semanas]]></txt>
+				<txt><![CDATA[Entrega en cuatro semanas]]></txt>								
+			</txt>
+			<link>
+				<label>Configure su producto HP</label>
+				<action>config</action>
+			</link>			
+		</btn>
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[ver carrito y pagar]]></label>
+			<txt id="pre">
+				<txt><![CDATA[Producto añadido al carrito]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configure]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configure y compre directamente en HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>	
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+   <dynamic>
+ 	<jscontext>
+		<text>
+		<field func="promo" cond="ezbuyExperience=epp">
+		  <![CDATA[Your special price]]> 
+		</field>
+		<field func="telnr" cond="s_ProductLine=SY">
+			<![CDATA[LLame al 902 101 414 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=SI">
+			<![CDATA[LLame al 902 101 414 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MV">
+			<![CDATA[LLame al 902 101 414 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4U">
+			<![CDATA[LLame al 902 101 414 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LA">
+			<![CDATA[LLame al 902 101 414 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5T">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AU">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=1N">
+			<![CDATA[LLame al 902 234 468 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2A">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R6">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7T">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DU">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=83">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2N">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5M">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C2">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DL">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=M3">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9C">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4X">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2B">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2Q">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MC">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[No disponible actualmente en la Tienda HP]]>
+		</field>
+		<field func="vat" incl="0" cond="s_ProductLine=1N">
+			<![CDATA[IVA no inc]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=1N">
+      	<![CDATA[GASTOS DE ENVÍO GRATUITOS]]> 
+      </field>
+		<field func="vat" incl="0" cond="s_ProductLine=5T">
+			<![CDATA[IVA no inc]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=5T">
+	      <![CDATA[GASTOS DE ENVÍO GRATUITOS]]> 
+    </field>
+		<field func="vat" incl="0" cond="s_ProductLine=AU">
+			<![CDATA[IVA no inc (Envíos gratis!)]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=21">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=2C">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=2G">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=5X">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=6J">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=7F">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=AN">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+			<field func="pricedesc" cond="s_ProductLine=BO">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=KV">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=KX">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=6H">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="pricedesc" cond="s_ProductLine=TB">
+			<![CDATA[<a href="#" onclick="window.open('http://h41112.www4.hp.com/smb-fin-calc/es/es/index.php', 'HPSmartFinance', 'width=400,height=570,toolbar=no,directories=no,scrollbars=yes,location=no,resizable=no,menubar=no');">Calculo de la<br> cuota mensual</a><br>Precio]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[LLame al 902 010 333 para consultar opciones de compra]]>
+		</field>
+		</text>
+	</jscontext>
+ </dynamic>
+</root>

@@ -1,0 +1,40 @@
+---
+
+- hosts: itgserver 
+  tasks:
+  - name: transfering data from Github repository to itgserver   
+    copy:
+      src: ./EzyBuy.tar
+      dest: /opt/cloudhost/apache/www/html/Ansible-test
+      
+  - name: Extracting EzyBuy.tarz 
+    unarchive:
+      src: EzyBuy.tar
+      dest: /opt/cloudhost/apache/www/html/Ansible-test
+      
+  - name: Deleting EzyBuy.tarz file from ITG servers
+    file:
+      path: /opt/cloudhost/apache/www/html/Ansible-test/EzyBuy.tar
+      state: absent
+      
+  - name: Deleting unwanted files
+    file:
+      state: absent
+      path: /opt/cloudhost/apache/www/html/Ansible-test/Ansible-playbook.yml
+  - name: Deleting unwanted files
+    file:
+      state: absent	  
+      path: /opt/cloudhost/apache/www/html/Ansible-test/hosts
+  - name: Deleting unwanted files
+    file:
+      state: absent	  
+      path: /opt/cloudhost/apache/www/html/Ansible-test/Jenkinsfile
+   
+  
+      
+  
+      
+
+      
+  
+  

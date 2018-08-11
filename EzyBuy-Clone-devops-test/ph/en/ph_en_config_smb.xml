@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[PHP ]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C##P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# starting from #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# price #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[,]]>
+		</setting>
+		<setting func="decimalsymbol">
+			<![CDATA[.]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Ready to buy?]]>
+		</field>
+		<field func="promo">
+		  <![CDATA[]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Price]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[Including VAT]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[Find a local partner or Call HP toll free: 1800-1441-6688 (Philippines number only)]]>
+		</field>
+		<field func="or">
+			<![CDATA[or]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Select shop (prices incl. GST)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a shop]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limited stock]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Find Resellers]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local partner or Call HP toll free: 1800-1441-6688 (Philippines number only)]]></txt>
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Find a local partner]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local partner or Call HP toll free: 1800-1441-6688 (Philippines number only)]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Buy direct from HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy direct from HP]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local partner or Call HP toll free: 1800-1441-6688]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Buy direct from HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[View and Checkout]]></label>
+			<txt id="pre">
+				<txt><![CDATA[The product was added to your basket.]]></txt>
+			</txt>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local partner]]></txt>
+			</txt>			
+		</btn>					
+	</buttons>
+</root>
+

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[£]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>		
+    <setting func="startpricedirect">
+			<![CDATA[<span class="bold">Available Direct:</span><BR>]]>
+		</setting>		
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# starting from #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# price #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Ready to buy?]]>
+		</field>
+		<field func="promo">
+		<![CDATA[HP Best Buy]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[SRP]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[Ex. VAT]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Call 0845 270 4215 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<field func="or">
+			<![CDATA[or]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[SELECT A STORE:]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a shop]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limited stock]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Thank you for selecting an e-Preferred Specialist]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 seconds you will leave the HP website.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Buy now]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Recommended online resellers or find a local partner]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+			<action>buy</action>
+		</btn>
+    <btn func="customize" type="primary">
+			<label><![CDATA[Customize]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customize and buy directly from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a partner]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Add to basket]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Immediate Availability]]></txt>
+				<txt><![CDATA[Normally within 2 weeks]]></txt>
+				<txt><![CDATA[Normally within 4 weeks]]></txt>								
+			</txt>
+			<link>
+    		<label>Customise with HP</label>
+		    <action>config</action>
+    	</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Buy now]]></label>
+			<txt id="sub">
+					<txt><![CDATA[]]></txt>
+			</txt>			
+	  </btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+			<action>buy</action>
+		</btn>		
+	  <btn func="customize" type="primary">
+      <label><![CDATA[Customise]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Customise and buy direct from HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>
+    <btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a partner]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Add to basket]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Immediate Availability]]></txt>
+				<txt><![CDATA[Normally within 2 weeks]]></txt>
+				<txt><![CDATA[Normally within 4 weeks]]></txt>								
+			</txt>
+			<link>
+    		<label>Customise with HP</label>
+		    <action>config</action>
+    	</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[View and Checkout]]></label>
+			<txt id="pre">
+				<txt><![CDATA[The product was added to your basket.]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+      <label><![CDATA[Customize]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Customize and buy directly from HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>
+    <btn func="customize" type="primary">
+			<label><![CDATA[Customise]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customise and buy direct from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+   <dynamic>
+ 	<jscontext>
+		<text>
+		<field func="startpricemultiple" cond="page_generic_id=18964-304618-305392-321328-326828">
+			<![CDATA[]]>
+		</field>
+		<field func="promo" cond="ezbuyExperience=epp">   
+		  <![CDATA[Your special price]]> 
+		</field>
+		<field func="telnr" cond="s_prop3=Mobile Products/HP Compaq 2133 Mini-Note PC">
+			<![CDATA[]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PL">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328080-4122731-4122732">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328079-352386-352387">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328079-352386-352387">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-5200069-5053949-5053950">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-5200069-5149445-5149446">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328080-4122731-4122732">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MP">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9F">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9G">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2H">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9J">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9H">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=M3">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=1X">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=23">
+		  <![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=61">
+		  <![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HA">
+	   	<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=NW">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LA">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MV">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=SI">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=SY">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=1Y">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=3C">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LH">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LI">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LJ">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LK">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LL">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LM">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LN">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4U">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=87">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8L">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8S">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=D3">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=EF">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KK">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4K">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=79">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6N">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7P">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LP">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LV">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=06">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=25">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4J">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6L">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=72">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7G">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=91">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=JN">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R8">
+			<![CDATA[Please call 0845 270 4222 to discuss purchase options]]>
+		</field>
+		<field func="vat" incl="0" cond="s_ProductLine=1N">
+			<![CDATA[Ex. VAT]]>
+		</field>
+		<field func="vat" incl="0" cond="s_ProductLine=5T">
+			<![CDATA[Ex. VAT]]>
+		</field>
+		<field func="vat" incl="0" cond="s_ProductLine=AU">
+			<![CDATA[Ex. VAT (Free Delivery!)]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=1N">
+	      <![CDATA[Free delivery]]> 
+    </field>
+    <field func="force_promo" cond="s_ProductLine=5T">
+    	  <![CDATA[Free delivery]]> 
+    </field>
+	<!-- START OF IPG specific telephone numbers -->
+		<field func="telnr" cond="s_ProductLine=ML">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KS">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=66">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=04">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=1N">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AU">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=03">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5T">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2A">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KL">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7A">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=65">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=43">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C2">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KN">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=44">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=A5">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DE">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HM">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=M3">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=64">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=20">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HI">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=JP">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=42">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DN">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KP">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=SR">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=24">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5J">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DA">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=B7">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=40">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=46">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4X">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7T">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9C">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DU">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=45">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2N">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5M">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=83">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DL">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HN">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=68">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=21">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9D">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=47">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HP">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MC">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=01">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=27">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2B">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2Q">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LF">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MB">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=67">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=26">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2D">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=3G">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HQ">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MK">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MQ">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R6">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=32">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HO">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KU">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T8">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=TW">
+			<![CDATA[]]>
+		</field>
+		<field func="telnr" cond="page_generic_id=18972-3328061-5200069-5053949-5053950">
+      <![CDATA[]]>
+		</field>
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328080-4122731-4122732">
+      <![CDATA[]]>
+		</field>
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328080-4122731-4122732">
+      <![CDATA[]]>
+		</field>
+		<!-- END OF IPG specific telephone numbers -->
+	</text>
+	</jscontext>
+ </dynamic>
+</root>

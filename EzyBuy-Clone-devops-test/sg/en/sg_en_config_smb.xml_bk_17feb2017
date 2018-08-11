@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[S$]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# starting from #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# price #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[,]]>
+		</setting>
+		<setting func="decimalsymbol">
+			<![CDATA[.]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Ready to buy?]]>
+		</field>
+		<field func="promo">
+		  <![CDATA[]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Price]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[Inc. GST]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[or]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Select shop (prices Inc. GST)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a shop]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limited stock]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Thank you for selecting an]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 seconds you will leave the HP website]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Buy Online]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local store]]></txt>
+				<txt><![CDATA[Find a local store or buy direct from HP]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find an HP Reseller]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local store]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Buy direct from HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy direct from HP]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find an HP Reseller]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local store]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Buy direct from HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[View and Checkout]]></label>
+			<txt id="pre">
+				<txt><![CDATA[The product was added to your basket]]></txt>
+			</txt>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find an HP Reseller]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local store]]></txt>
+			</txt>			
+		</btn>		
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+ <dynamic>
+   <jscontext>
+      <text>
+        
+       <field func="vat" incl="1" cond="s_ProductLine=6J">
+			   <![CDATA[Inc. GST (Includes Monitor)]]>
+      </field>
+
+      </text> 
+    </jscontext>
+ </dynamic>
+</root>

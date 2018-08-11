@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[EEK]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold"></span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# Hinnad alates #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# Hind #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Kas olete valmis ostma?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Hind]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[Ei sisalda KM]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[või]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Valige pood (hinnad ilma KM)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Valige pood]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[piiratud kogus]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Täname teid, et valisite]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[5 sekundi pärast lahkute HP kodulehelt.]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Ostke]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Vt soovitatud võrgujaemüüjaid, leidke kohalik ladu või ostke otse]]></txt>
+				<txt><![CDATA[Vt soovitatud võrgujaemüüjaid või otsige kohalik ladu]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Ostke nüüd]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Otsige kohalik partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Otsige kohalik partner]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Lahkuge nüüd]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Ostke otse HP-lt]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Laos, tarnitakse samal päeval]]></txt>
+				<txt><![CDATA[Tavaline tarne on 2 nädalat]]></txt>
+				<txt><![CDATA[Tavaline tarne on 4 nädalat]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Ostke HP partnerilt]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Vt soovitatud võrgujaemüüjaid või otsige kohalik ladu]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Ostke otse HP-lt]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Otsige kohalik partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Otsige kohalik partner]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Lahkuge nüüd]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Lisa ostukorvi]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Laost tarnitakse samal päeval]]></txt>
+				<txt><![CDATA[Tavaline tarne on 2 nädalat]]></txt>
+				<txt><![CDATA[Tavaline tarne on 4 nädalat]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Vt ostukorvi & hinna arvestust]]></label>
+			<txt id="pre">
+				<txt><![CDATA[See toode lisati teie ostukorvi]]></txt>
+			</txt>
+		</btn>
+	</buttons>
+</root>

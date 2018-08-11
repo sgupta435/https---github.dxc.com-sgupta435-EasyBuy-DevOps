@@ -1,0 +1,215 @@
+.ezb{
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	margin-left: 5px;
+}
+.ezb-info, .ezb-info1, .ezb-info2, .ezb-priceinfo{
+	display: none;
+}
+.ezb-pricing, .ezb-messaging, .ezb-add-basket{
+	display: block;
+	margin-top: 0px;
+}
+.ezb-currency, .ezb-price, .ezb-qty, .ezb-btn{
+	display: inline;
+}
+.ezb-priceinfo a{
+	vertical-align: 40%;
+}
+.ezb-priceinfo div{
+	visibility: hidden;
+	position: absolute;
+	width: 150px;
+	color: black;
+	font-size: 11px;
+	font-weight: normal;
+	border: solid 1px black;
+	background-color: #F0F0F0;
+}
+.ezb-pricing{
+	color: #ff0000;
+}
+.ezb-messaging {
+	font-size: 12px;
+	font-weight: normal;
+}
+.ezb-vat,.ezb-messaging2{
+	font-size: 11px;
+}
+.ezb-qty input{
+  	width: 18px;
+	color: #666;
+	background-color: white;
+	border: solid 1px red;
+}
+.ezb-qty input:hover{
+	background-color: #ccffff;
+	border: solid 1px #006600;
+	color: #000;
+	cursor: pointer;
+}
+.ezb-qty input:focus {
+	color: #000;
+	background-color: #ffffff;
+	border: solid 1px #006600;
+	cursor: text;
+}
+.ezb-btn input {
+	width: 130px;
+	margin-left: 8px;
+	border-right: #CC0000 2px solid;
+	border-top: #FF9899 2px solid;
+	border-left: #FF9899 2px solid;
+	border-bottom: #CC0000 2px solid;
+	font-size: 11px; font-weight: bold;
+	color: white;
+	font-family: Arial, Verdana, Helvetica, Sans-serif;
+	background-color: #FF0000;
+	text-align: center;
+	padding-right: 0px;
+	padding-left:6px;
+	margin-right: 0px;
+	cursor: pointer;
+}
+.ezb-btn input:focus {
+	border-right: #000000 2px solid;
+	border-top: #999999 2px solid;
+	border-left: #999999 2px solid;
+	border-bottom: #000000 2px solid;
+	background-color: #333333;
+}
+.ezb-btn input:hover {
+	background-color: gray;
+}
+/*************************/
+/* ezbuy normal specific */
+.ezb-normal-direct-available,.ezb-normal-direct-not-available,.ezb-normal-direct-available-soon,.ezb-normal-direct-available-late,.ezb-normal-forced-direct-available{
+	width: 190px;
+	height: 80px;
+}
+.ezb-normal-direct-not-available .ezb-add-basket{
+	display: none;
+}
+.ezb-normal-forced-direct-not-available .ezb-messaging{
+	display: none;
+}
+.ezb-normal-direct-available-soon .ezb-messaging2,.ezb-normal-direct-available-late .ezb-messaging2{
+	display: none;
+}
+.ezb-normal-forced-direct-available{
+	height: 120px;
+}
+.ezb-normal-forced-direct-available .ezb-messaging2{
+	display:none;
+}
+.ezb-normal-forced-direct-available .ezb-qty{
+	display: none;
+}
+.ezb-normal-forced-direct-available .ezb-priceinfo{
+	display: inline;
+}
+.ezb-normal-forced-direct-available .ezb-btn input{
+  	margin-left: 0px;
+}
+.ezb-normal-forced-direct-available .ezb-info, .ezb-normal-forced-direct-available .ezb-info1, .ezb-normal-forced-direct-available .ezb-info2{
+	display: block;
+}
+.ezb-normal-forced-direct-available .ezb-info1{
+	font-size: 12px;
+}
+.ezb-normal-forced-direct-available .ezb-info2{
+	font-size: 11px;
+	color: red;
+}
+.ezb-normal-forced-direct-not-available .ezb-qty, .ezb-normal-forced-direct-not-available .ezb-pricing{
+	display: none;
+}
+.ezb-normal-forced-direct-not-available .ezb-btn input{
+  	margin-left: 0px;
+	border-right: #000000 2px solid;
+	border-top: #999999 2px solid;
+	border-left: #999999 2px solid;
+	border-bottom: #000000 2px solid;
+	background-color: #333333;
+}
+.ezb-normal-forced-direct-not-available .ezb-info, .ezb-normal-forced-direct-not-available .ezb-info1{
+	display: block;
+}
+.ezb-normal-forced-direct-not-available .ezb-info1{
+	font-size: 12px;
+}
+/************************/
+/* ezbuy small specific */
+.ezb-small-price,.ezb-small-no-price {
+	width: 90px;
+	height: 35px;
+}
+.ezb-small-no-price, .ezb-small-price .ezb-add-basket, .ezb-small-price .ezb-messaging{
+	display: none;
+}
+/*************************/
+/* ezbuy simple-direct specific */
+
+.ezb-simple-direct-available{
+	width: 220px;
+	margin-left: 3px;
+}
+.ezb-simple-direct-not-available .ezb-add-basket,.ezb-simple-direct-not-available .ezb-vat{
+	display: none;	
+}
+.ezb-simple-direct-not-available .ezb-price{
+	float: left;	
+}
+.ezb-simple-direct-not-available .ezb-messaging1{
+	display: block;
+}
+.ezb-simple-direct-available .ezb-price, .ezb-simple-direct-available .ezb-currency, .ezb-simple-direct-available .ezb-btn, .ezb-simple-direct-available .ezb-qty{
+float: left;
+}
+.ezb-simple-direct-available .ezb-price,.ezb-simple-direct-not-available .ezb-price{
+width: 50px;
+}
+.ezb-simple-direct-available .ezb-btn input{
+	width: 125px;
+}
+.ezb-simple-direct-available .ezb-messaging, .ezb-simple-direct-available .ezb-info, .ezb-simple-direct-available .ezb-vat, .ezb-simple-direct-available .ezb-priceinfo{
+	display: none;
+}
+.ezb-simple-direct-available .ezb-pricing, .ezb-simple-direct-available .ezb-add-basket{
+	display: inline;
+}
+
+.ezb-simple-direct-available .ezb-qty input, .ezb-simple-direct-available .ezb-btn input{
+  	margin-left: 3px;
+}
+/************************/
+/* ezbuy added specific */
+.ezb-added{
+	width: 180px;
+}
+.ezb-added .ezb-messaging, .ezb-added .ezb-pricing{
+	display: none;
+}
+.ezb-added .ezb-info, .ezb-added .ezb-info1{
+	display: block;
+}
+.ezb-added .ezb-info1{
+	color: black;
+	font-size: 12px;
+}
+.ezb-added .ezb-add-basket{
+	display: inline;
+}
+.ezb-added .ezb-qty{
+	display: none;
+}
+.ezb-added .ezb-btn input{
+	margin-left: 0px;
+	border-right: #000000 2px solid;
+	border-top: #999999 2px solid;
+	border-left: #999999 2px solid;
+	border-bottom: #000000 2px solid;
+	background-color: #333333;
+}

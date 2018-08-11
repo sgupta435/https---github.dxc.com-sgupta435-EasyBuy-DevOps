@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold"> ab #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">Preis #PF# #VAT# </span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->	
+	<text>
+		<field func="intro">
+			<![CDATA[Online Kaufen]]>
+		</field>
+		<field func="promo">
+			<![CDATA[HP Crazy Day]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[UVP]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[inkl. MwSt]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Derzeit nicht lieferbar]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Alle Preise inkl. MwSt.]]>
+		</field>
+		<field func="lbvat">
+			<![CDATA[(all prices exclude VAT)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Bitte Shop auswählen]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[beschränkt verfügbar]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Vielen Dank für die Wahl eines HP e-Preferred Partner]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 Sekunden verlassen Sie die HP Website]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->	
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Kaufen bei HP Partnern]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Online kaufen oder Nach einem Partner suchen]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kaufen]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Nach einem Partner suchen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nach einem Partner suchen]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Weiter]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->	
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[In den Warenkorb]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Beschränkt verfügbar]]></txt>
+				<txt><![CDATA[Lieferung in 2 Wochen]]></txt>
+				<txt><![CDATA[Lieferung in 4 Wochen]]></txt>								
+			</txt>
+			<link>
+				<label>Individuell Konfigurieren</label>
+				<action>config</action>
+			</link>                  			
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Kaufen bei HP Partnern]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Online kaufen oder Nach einem Partner suchen]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kaufen]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="customize" type="primary">
+			<label><![CDATA[Konfigurieren]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Konfigurieren und Kaufen]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Nach einem Partner suchen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nach einem Partner suchen]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Weiter]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->	
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[In den Warenkorb]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Beschränkt verfügbar]]></txt>
+				<txt><![CDATA[Lieferung in 2 Wochen]]></txt>
+				<txt><![CDATA[Lieferung in 4 Wochen]]></txt>								
+			</txt>
+			<link>
+				<label>Individuell Konfigurieren</label>
+				<action>config</action>
+			</link>                  			
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Konfigurieren]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Konfigurieren und Kaufen]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>		
+	</buttons>
+
+</root>

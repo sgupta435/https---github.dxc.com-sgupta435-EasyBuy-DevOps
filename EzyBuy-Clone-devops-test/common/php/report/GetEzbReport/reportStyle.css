@@ -1,0 +1,155 @@
+#cc_ll_template {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+
+#template_template {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#experience_template {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+
+#client_template {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#cc_ll_code {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#template_code {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#m_s_code {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#cc_ll_report {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#client_report {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#cc_ll_settings {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+
+#client_settings {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#cc_ll {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#client {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+
+
+#cc_ll_data {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#client_data {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+
+#cc_ll_cleansheet {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+
+#client_cleansheet {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#cc_ll_scenario {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+
+#client_template {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#scenario_scenario {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#experience_scenario {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+#client_scenario {
+font-family:'HP Simplified', Arial, Helvetica, sans-serif;
+}
+
+
+.text {
+	font-family:HP Simplified, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align:left;
+}
+.textSmall {
+	font-family:HP Simplified, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: 900;
+	color: #666666;
+	text-align:left;
+}
+.textBold {
+	font-family:HP Simplified, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 900;
+text-align:left;
+}
+.button {
+	font-family:HP Simplified, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 900;
+	width: 100px;
+	background-color: #E5E5E5;
+text-align:left;
+}
+	
+.header {
+	font-family:HP Simplified, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #000000;
+	background-color: rgb(153,153,153);
+	padding: 3px;
+	text-align: center;
+text-align:left;
+}
+.content {
+	font-family:HP Simplified, Verdana, Arial, Helvetica, sans-serif;
+	font-size: .7em;
+	color: #000000;
+	padding-top: 3px;
+	padding-right: 10px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+text-align:left;
+}
+.default{
+	background-color: #FFFFFF;
+} 
+.onchange{
+	background-color: rgb(204,204,204);
+}
+body{
+
+		font-family:HP Simplified, Verdana, Arial, Helvetica, sans-serif;
+		font-size:0.8em;
+		line-height:110%;
+		background-color:White;
+text-align:left;
+		
+
+	}
+	h1{
+		line-height:110%;
+	}
+	a:link { color:#33c }	
+a:visited { color:#339 }	
+
+/* This is where you can customize the appearance of the tooltip */
+div#tipDiv {
+  position:absolute; visibility:hidden; left:0; top:0; z-index:10000;
+  background-color:#dee7f7; border:1px solid #336; 
+  width:300px; padding:4px;
+  color:#000; font-size:12px; line-height:1.2;
+}
+/* These are optional. They demonstrate how you can individually format tooltip content  */
+div.tp1 { font-size:12px; color:#336; font-style:italic }
+div.tp2 { font-weight:bolder; color:#337; padding-top:4px }

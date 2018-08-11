@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">vanaf #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">prijs #PF#<br>#VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Voor particulieren]]>
+		</field>
+		<field func="promo">
+			<![CDATA[]]>
+		</field>		
+		<field func="pricedesc">
+			<![CDATA[Aanbevolen winkelprijs]]>
+		</field>
+		<field func="pricedescinfo">
+			<![CDATA[Incl. BTW, Reprobel en Recupel. Prijzen van HP retailers kunnen verschillen van de aanbevolen HP prijzen gepubliceerd op hp.be. Voor desktop PC’s is de monitor niet inbegrepen in de prijs.]]>
+		</field>				
+		<field func="vat" incl="1">
+			<![CDATA[Inclusief BTW]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Koop online bij een e-reseller]]>
+		</field>
+		<field func="lbvat">
+			<![CDATA[]]>
+		</field>
+		<field func="warning">
+			<![CDATA[]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Beperkte voorraad]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Bedankt voor uw keuze van een e-preferred specialist]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Binnen 5 seconden zal u de HP website verlaten]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA["Offline" kopen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Zoek een retailer]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Zoek een retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[in uw buurt of online]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Ga direct]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Configureer</label>
+				<action>config</action>
+			</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA["Offline" kopen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Zoek een retailer]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Zoek een retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[in uw buurt of online]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Ga direct]]></label>
+			<action>buy</action>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configureer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configureer & koop]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Configureer</label>
+				<action>config</action>
+			</link> 
+		</btn>
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configureer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configureer & koop]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+
+</root>

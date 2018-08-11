@@ -1,0 +1,9 @@
+#!/bin/ksh
+for dir in `ls -d ??`
+do
+#	echo Processing $dir ...
+	cd ./$dir
+	CC=`find . -name *smb.ini -exec grep -i currency {} \;`
+	echo "$dir	$CC"
+	cd ..
+done

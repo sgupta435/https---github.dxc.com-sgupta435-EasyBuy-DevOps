@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!--  START OF PRICE INFO PARAMETERS   --> 
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[,-]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">vanaf #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">prijs #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+<!-- START OF SCREEN INFO PARAMETERS -->
+		<field func="intro">
+			<![CDATA[Gereed om te kopen?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Adviesprijs]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[incl. BTW]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[momenteel niet op voorraad]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Kies een online shop]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Kies een online shop]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[beperkte voorraad]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Bedankt voor uw keuze van]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Binnen 5 seconden zal u de HP website verlaten]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Koop]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Zoek online verkooppunten of selecteer een winkel]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Koop online]]></label>
+			<action>buy</action>			
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Zoek een HP retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Zoek een HP retailer]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Ga direct]]></label>
+			<action>buy</action>			
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Stel product samen</label>
+				<action>config</action>
+			</link>		
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Koop]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Zoek online verkooppunten of selecteer een winkel]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Koop online]]></label>
+			<action>buy</action>			
+		</btn>		
+		<btn func="customize" type="primary">
+			<label><![CDATA[Stel product samen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Stel uw HP product samen en koop direct bij HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>	
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Zoek een HP retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Zoek een HP retailer]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Ga direct]]></label>
+			<action>buy</action>			
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Stel product samen</label>
+				<action>config</action>
+			</link>
+		</btn>
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Stel product samen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Stel uw HP product samen en koop direct bij HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>		
+	</buttons>
+</root>

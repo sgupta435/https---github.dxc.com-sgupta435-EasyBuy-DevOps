@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[Kr]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">Veiledende pris fra<br>#PF#<br>#VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">Veiledende pris<br>#PF#<br>#VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Ønsker du å handle nå?]]>
+		</field>
+		<field func="promo">
+			<![CDATA[BESTE TILBUD]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Prisindikasjon]]>
+		</field>
+		<field func="pricedescinfo">
+			<![CDATA[Dette er en veiledende pris. HP produkter kan kun kjøpes gjennom en forhandler, og prisene kan variere mellom forhandlerne.]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[Inkl. mva]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Kundesenter: 815 62 070]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Velg butikk (pris ink. mva)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Velg en butikk]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Begrenset lager]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Takk for at du velger en]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Om 5 sekunder vil du forlate HPs nettside]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->	
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Handle]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Kjøp på nett,                                   eller finn din HP-forhandler.]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Handle nå]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Finn en forhandler]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Kjøp fra en HP-partner]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Gå videre nå]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->	
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+	  	<link>
+		    <label>Tilpass ditt HP-produkt</label>
+		    <action>config</action>
+      </link>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Handle]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Kjøp på nett,                                   eller finn din HP-forhandler.]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Handle nå]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Finn en forhandler]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Finn en forhandler]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Gå videre nå]]></label>
+			<action>buy</action>
+		</btn>
+		<btn func="customize" type="primary">
+      <label><![CDATA[Tilpass]]></label>
+      <txt id="sub">
+         <txt><![CDATA[Tilpass og kjøp fra HP]]></txt>
+      </txt>
+      <action>config</action>
+    </btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->	
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		 <link>
+		  <label>Tilpass ditt HP-produkt</label>
+		  <action>config</action>
+     		</link>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+      			<label><![CDATA[Tilpass]]></label>
+      			<txt id="sub">
+        			<txt><![CDATA[Tilpass og kjøp fra HP]]></txt>
+      			</txt>
+      			<action>config</action>
+    		</btn>
+	</buttons>
+</root>

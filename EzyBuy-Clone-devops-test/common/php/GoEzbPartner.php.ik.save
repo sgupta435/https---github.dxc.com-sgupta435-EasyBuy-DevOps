@@ -1,0 +1,556 @@
+<?php
+/**
+ * /ezbuy/common/php/GoEzbPartner.php
+ * $Date: 2009/03/24 08:13:39 $
+ * $Revision: 1.2 $
+ * $Author: ezbuydev $
+ * $Id: GoEzbPartner.php,v 1.2 2009/03/24 08:13:39 ezbuydev Exp $
+ * $Log: GoEzbPartner.php,v $
+ * Revision 1.2  2009/03/24 08:13:39  ezbuydev
+ * IT_3_0_1_2249_B with:
+ * fix EZB.RequestMaxProd issue
+ * fix usage of pr instead of res[0].pr
+ * introduce ForceDirectExperience new .ini option
+ * fix IL alignement right to left issue
+ * fix GetEzbData issue when space contained in product number parameter
+ * introduce special_ logos type
+ * fix reporting error with special characters
+ * introduce HP store revenue split recognition
+ *
+ * Revision 1.1.1.1.2.1  2009/03/24 07:51:16  ezbuydev
+ * IT_3_0_1_2249_B with:
+ * fix EZB.RequestMaxProd issue
+ * fix usage of pr instead of res[0].pr
+ * introduce ForceDirectExperience new .ini option
+ * fix IL alignement right to left issue
+ * fix GetEzbData issue when space contained in product number parameter
+ * introduce special_ logos type
+ * fix reporting error with special characters
+ * introduce HP store revenue split recognition
+ *
+ * Revision 1.9  2007/07/12 16:24:16  ezbuy
+ * update GDIC CVS with EZB Production. Contains preparation for Phase 3.2 and 3.4 with callbacks
+ *
+ * Revision 1.8  2007/05/16 10:43:35  ezbuy
+ * force no EZB display if product contains PRE
+ * stop forcing SHowAMDLogos
+ * introduce new Omniture as:
+ * - remove usage of event 15 as buy offline. Replace by s_eVar31
+ * - introduce event 20 as number of price requests to back-end
+ * - introduce eVar30 as HP.com first lead origin
+ *
+ * Revision 1.7.24.1  2007/05/16 10:37:01  ezbuy
+ * force no EZB display if product contains PRE
+ * stop forcing SHowAMDLogos
+ * introduce new Omniture as:
+ * - remove usage of event 15 as buy offline. Replace by s_eVar31
+ * - introduce event 20 as number of price requests to back-end
+ * - introduce eVar30 as HP.com first lead origin
+ *
+ * Revision 1.7  2007/02/16 00:17:43  ezbuy
+ * rel_1067_E_1068_PROD with:
+ * - new smartchoice omniture var
+ * - partner restriction takes precedence over exclusion in case both defined in ini files
+ *
+ * Revision 1.6.60.1  2007/02/16 00:13:50  ezbuy
+ * rel_1067_E_1068_PROD with:
+ * - new smartchoice omniture var
+ * - partner restriction takes precedence over exclusion in case both defined in ini files
+ *
+ * Revision 1.6  2006/10/18 10:15:54  slechner
+ * - new config from prod
+ * - new logos
+ * - update metrics data sent to DoubleClick and currency table
+ *
+ * Revision 1.5.68.1  2006/10/18 09:58:48  slechner
+ * - new config from prod
+ * - new logos
+ * - update metrics data sent to DoubleClick
+ *
+ * Revision 1.5  2006/05/24 12:50:32  slechner
+ * REL_708_B_PROD_7111
+ * Fixes:
+ * - redefined defalut values treatment for Omniture s_popn in shopping basket, ezb_metrics and GoEzbPartner following Omniture FIF project
+ * - fixed a typo in template name for template.html
+ * - introduced P3P for cookie set by set_order (omniture revenue tracking)
+ * Added:
+ * - latest files from Prod
+ * - new DoubleClick Partner live FR Wstore
+ *
+ * Revision 1.4.40.1  2006/05/24 12:40:29  slechner
+ * Fixes:
+ * - redefined defalut values treatment for Omniture s_popn in shopping basket, ezb_metrics and GoEzbPartner following Omniture FIF project
+ * - fixed a typo in template name for template.html
+ * - introduced P3P for cookie set by set_order (omniture revenue tracking)
+ * Added:
+ * - latest files from Prod
+ * - new DoubleClick Partner live FR Wstore
+ *
+ * Revision 1.4  2006/03/01 11:12:31  slechner
+ * REL_658_B_PROP_600 :
+ * - fix encoding issue for SureSupply redirect URLs
+ * - Allow for market segment to be upper case! as this was changed in SureSupply
+ *
+ * Revision 1.3.42.1  2006/03/01 11:01:54  slechner
+ * REL_658_B_PROP_600 :
+ * - fix encoding issue for SureSupply redirect URLs
+ * - Allow for market segment to be upper case! as this was changed in SureSupply
+ *
+ * Revision 1.3  2006/01/06 10:27:06  slechner
+ * Added experience Omniture Campaign eVar
+ * Initialize data at beginning of metrics.js
+ * release 615 close
+ *
+ * Revision 1.2.10.1  2006/01/06 10:21:47  slechner
+ * Added experience Omniture Campaign eVar
+ * Initialize data at beginning of metrics.js
+ *
+ * Revision 1.2  2005/12/22 13:55:50  slechner
+ * REL_602_C and REL_602_E merge into main + cofig update from Prod
+ * Changes:
+ * - limit quantity input inHTML template to 99
+ * - new metrics as per Omniture instructions
+ * - new back-end services
+ * - new FR shopping basket config
+ *
+ * Revision 1.1.2.1  2005/12/22 13:32:22  slechner
+ * Added EZbuy Back end services GetEzbData, GetEzbConfig, GoEzbPartnr
+ *
+ *
+ * $Name: HEAD $
+ * $State: Exp $
+ *
+ * +======================================================================================================+
+ * | EZB Partner redirect
+ * +======================================================================================================+
+ * +------------------------------------------------------------------------------------------------------+
+ * | Code Structure:
+ * | --------------
+ * | Read Input parameters (query string)
+ * | Build URLs
+ * | Detect MP2B
+ * | Declare JavaScript needed for Omniture
+ * | Load Shopping basket scripts if HP
+ * | Load AddBasket if partner and MP2B
+ * +------------------------------------------------------------------------------------------------------+
+ * | Usage:
+ * | ------
+ * | http://.../GetEzbConfig.php?cc=ch&lc=fr&m_s=hho
+ * |2-letter ISO country code: country=uk& (used to get right country settings/options/configuration)
+ * |2-letter ISO language code: lang=en& (3 letters possible as conversion to two letters done)
+ * |market segment: m_s=hho
+ * +------------------------------------------------------------------------------------------------------+
+ * | Glossary:
+ * | ---------
+ * +------------------------------------------------------------------------------------------------------+
+ * | Internals:
+ * | ----------
+ * |05/15/2007: add s_eVar30
+ * |02/14/2007: add s_eVar21 as 'buy'
+ * |10/18/2006: provide partner name to metrics
+ * |05/24/2006: define default values for Omniture following FIF Omniture project
+ * |12/19/2005: initial import
+ * |01/06/2006: added experience to Omniture campaign var16
+ * |
+ * +------------------------------------------------------------------------------------------+
+ * | Debug:
+ * | --------
+ * | &debug=whatever
+ * +------------------------------------------------------------------------------------------+
+ * | Assumptions:
+ * | ------------
+ * |MP2B partners URL in addbasket
+ * |ezb_AddBasket defined in .js files loaded
+ * +------------------------------------------------------------------------------------------+
+ * | JS Context used:
+ * | ---------------
+ * +------------------------------------------------------------------------------------------+
+ * | JS Context defined:
+ * | ------------------
+ * +------------------------------------------------------------------------------------------+
+ * | exceptions:
+ * | -----------
+ * +------------------------------------------------------------------------------------------+
+ * | caching:
+ * | -----------
+ * |Force caching
+ * +==========================================================================================+
+ *
+ **/
+
+/*
+ * Include Utils Library
+ */
+ 
+require_once "include/ezb_utils.ProcessParams.php.inc";
+/*
+ * Include Get Settings Library
+ */
+require_once "include/ezb_settings.php.inc";
+/*
+ * Include Get RefererUrl
+ */
+require_once "include/RefererUrl.php.inc";
+
+/*
+ * Process parameters
+ */
+$_req_mandatory_var_names = array("country","lang","partnr","m_s","id","price","type","url","client_id","pkey","availability","pname"); //mandatory parameters
+//$_req_optional_var_names = array("mp2b_partnr","debug","experience"); //optional parameters
+//$_req_optional_var_names = array("mp2b_partnr","debug","experience","template_type","aoid","jumpid","ETR"); //optional parameters
+/*
+//Added By Sunetra for mobile device-Start on 03/12/2014
+	$_req_optional_var_names = array("mp2b_partnr","debug","experience","template_type","aoid","jumpid","ETR","mobile");//optional parameters
+//End
+*/
+
+//Added By Manjunath on 11/03/2015-issue is adding ssad_id and ssad_url -star
+$_req_optional_var_names = array("mp2b_partnr","debug","experience","template_type","aoid","jumpid","ETR","mobile","ssad_id","ssad_url");//optional parameters
+//end
+
+foreach($_req_mandatory_var_names as $regname)
+{
+ urlencode($_REQUEST[$regname]);
+}
+
+
+
+$param_ok=UtilsProcessParams($_req_mandatory_var_names, $_req_optional_var_names,"debug");
+
+
+
+//Added by Manjunath on 11/03/2015-issue is adding ssad_id and ssad_url -start
+	 $SSAD_ID_and_SSAD_URL_append= "";
+		if (($client_id == "SureSupplyAD")&& ($ssad_id!=null) && ($ssad_url!=null))
+		{
+			$SSAD_ID_and_SSAD_URL_append = "&ssad_id=".$ssad_id."&ssad_url=".urlencode($ssad_url);
+		}
+//end
+$experience = isset($_req_experience)? "/" . $_req_experience:"BROWSE";//experience
+	if($debug) {
+	$debug_msg;
+	}
+
+	
+if($param_ok){
+
+	/*
+	 * Build Urls
+	 */
+	 
+
+	$m_s = strtolower($m_s);
+
+	$path=$_SERVER['PHP_SELF'];
+	$patha=explode("/",$path);
+	array_pop($patha);
+	$add_basket_url=implode("/",$patha).'/addbasket.php';
+	if($debug){
+		echo "basket url:" . $add_basket_url . "<BR>";
+	}
+
+	/*
+	 * Detect MP2B
+	 */
+	if($mp2b_partnr!=null){
+		if(strpos($mp2b_partnr, "__")===false){
+			$partnr=$mp2b_partnr;
+			$experience = $experience . "/Pass-through";
+			if($debug)
+				echo "real MP2B <BR>";
+		}else{
+			$experience = $experience . "/Indirect";
+		}
+	}else{
+		$experience = $experience . "/Indirect";
+	}
+
+	if($debug){
+		print $country."<br>".$lang."<br>".$partnr."<br>".$m_s."<br>".$id."<br>".$price."<br>".$type."<br>".$url."<br>".$client_id."<br>".$mp2b_partnr."<br>".$experience."<br>".$ssad_id."<br>".$ssad_url;
+	}
+	
+
+	/*
+	 * Declare JavaScript
+	 */
+	
+		$currUrl1 = $_SERVER['HTTP_REFERER'];
+
+	if($url!=null){
+		$refererUrl = getRefererUrl($country,$lang,$client_id,$currUrl1);
+		
+		//Added by Nithiyanandhan on 30/01/2015 - Metrics HTTP issue - Start
+		$servermetricpath='';
+		$countrylanguagemetrics='';
+		$metricfullpath='';
+	    $omniture_array = parse_ini_file("../../configuration/locale2regions.ini",TRUE);
+
+		foreach($omniture_array as $keys =>$omnivalues)
+		{
+			if($keys=="Genaral")
+			{
+				$servermetricpath=  $omnivalues["server"];
+			}
+			if($keys==$country.'/'.$lang)
+			{
+				$countrylanguagemetrics= $omnivalues["label"];
+			}
+		}
+		$metricfullpath = $servermetricpath.$countrylanguagemetrics;
+		
+		
+		
+			
+		echo "
+				<script>
+				var mySection='';
+
+				var refererUrl='$refererUrl';
+	//		if (!refererUrl) { refererUrl = document.referrer; }
+				var MM_FlashCanPlay=true;
+				var flashEnable=true;
+				l4='$client_id';
+				s_prop4=l4;
+				s_eVar4=l4;
+				l7='$country';
+				s_prop7=l7;
+				country=l7;
+				l8='$lang';
+				s_prop8=l8;
+				l9='$m_s';
+				s_prop9=l9;
+				var l_s_eVar16='in_R36_'+l9+'_'+l7+'_'+l8+'/sureSupply/'+'$experience';
+				s_eVar1=s_prop7+' | '+s_prop8+' | '+s_prop9;
+				s_eVar32=s_prop7+' | '+s_prop8+' | '+s_prop9+' | '+l4;
+				var id='$id';
+				var ezb_type='$type';
+				var price='$price';
+				var url='$url';
+				var partnr='$partnr|1';
+				var s_pageName=\"\";
+				var s_disable_metrics=true;
+				var _rm_page=\"do not load banners.js\";
+				var ezbloaded_not_needed=true;
+				window.countrysettingsLoaded=false;
+				var s_eVar30=\"HP.com->Buy\";
+				if(document.cookie.indexOf(\"_ezb_o\")==-1){
+					var theDate = new Date();
+					var oneMonthLater = new Date( theDate.getTime() + 30*24*3600*1000 );
+					var expiryDate = oneMonthLater.toGMTString();
+					document.cookie = \"_ezb_o=\"+\"$client_id\"+\";path=/;domain=.hp.com;expires=\"+expiryDate;
+				}
+
+
+		";
+		//Modifed by Nithiyanandhan on 30/01/2015 - Metrics HTTP issues - Start
+		/*<script src=\"http://welcome.hp.com/country/$country/$lang/js/metrics.js\"></script>*/
+		
+		echo "
+				window.countrysettingsLoaded=false;
+				</script>
+
+				<script src=\"$metricfullpath\"></script>
+				<script src=\"loadjs.php?country=$country&lang=$lang\"></script>
+
+				<script>
+				s_hp_optOut=false;
+				ezb_AddBasket(id,ezb_type,\"\",partnr,price,\"$pname\");
+				</script>
+		";
+		
+		//END
+		if($type=="hp"){
+			
+	/*
+	 * Load Shopping basket for hp
+	 */
+			/*
+				<script src=\"https://ssl.www8.hp.com/h10000/cma/ng/lib/bootstrap/metrics.js\"></script>
+                        //Added by Ivan Krempasky at 25.11.2014
+                        //Pull the minicart files from the local FS instead from h10171.
+                        echo '<script src="../../hpsb/'.$country.'_'.$lang.'_'.$m_s.'_psc/basketparameters.js"></script>';
+                        */
+                        echo '<script src="../../hpsb/minicart/'.$country.'_'.$lang.'_'.$m_s.'_cart.js"></script>';
+                        //End by Ivan Krempasky at 25.11.2014
+			echo '<script src="../../hpsb/common/basketmanager.js"></script>';
+			
+		/*
+			$goto="http://".$_SERVER['SERVER_NAME'].$add_basket_url."?clientId=". $client_id ."&m=".$id."&pn=".$partnr."&pkey=".$pkey."&m_s=".$m_s."&price=".$price."&country=".$country."&lang=".$lang."&type=".$type."&availability=".$availability;
+		*/
+		//Added by Manjunath on 10/02/2015-issue is adding SSAD_ID and SSAD_URL -start
+			$goto="http://".$_SERVER['SERVER_NAME'].$add_basket_url."?clientId=". $client_id ."&m=".$id."&pn=".$partnr."&pkey=".$pkey."&m_s=".$m_s."&price=".$price."&country=".$country."&lang=".$lang."&type=".$type."&availability=".$availability.$SSAD_ID_and_SSAD_URL_append;
+        //end
+			/* Get Store ID...*/
+			$storeId="";
+			$seek=strstr($url,'?partner=');
+			if($seek!==FALSE && substr($seek,13,1)=="&"){
+				$storeId=substr($seek,9,4);
+			}else{
+				$seek=strstr($url,'?p=');
+				if($seek!==FALSE && substr($seek,7,1)=="&"){
+				$storeId=substr($seek,3,4);
+				}
+			}
+			echo "
+				<script>
+				if(!window.storeUrlAdd) storeUrlAdd=storeUrl;
+				storeUrlAdd=((storeUrlAdd.replace(/&/g,\"S_AMP_E\")).replace(/\?/g/\"S_QM_E\")).replace(/#/g,\"S_POUND_E\"); //WSA
+				</script>
+			";
+			if($debug){
+				echo "
+					<script>
+					document.write(\"<BR>storeUrlAss\"+storeUrlAdd);
+					</script>
+				";
+			}
+
+			$command="window.setTimeout('window.top.location=\"'+'$goto'+'&siteId='+siteId+'&storeId='+";
+			if($storeId!="")
+				$command.="'$storeId'";
+			else
+				$command.="storeId";
+			$command.="+'&storeUrl='+storeUrlAdd+'&catalogUrl='+(window.catalogUrl?escape(catalogUrl):'')+'&refererUrl='+refererUrl+'\"',1000);";
+			if(!$debug){
+				echo "
+					<script>
+					$command;
+					</script>
+				";
+			}else{
+				echo $command;
+			}
+
+		}
+		//Added by Nithiyanandhan for USHHO integration - Start - 28/04/2014
+		else if($type=="ushho")
+		{
+			//echo "The userid is ".$userid;
+			//Added by Nithiyanandhan on 12/05/2014 - Start
+			if(strpos($partnr,"#")!==false)
+			{
+				$partnr = str_replace('#', '%23', $partnr);
+			}
+			 //End  			
+			echo '<script src="../../hpsb/'.$country.'_'.$lang.'_'.$m_s.'_psc/basketparameters.js"></script>'; 
+			echo '<script src="../../hpsb/common/basketmanager.js"></script>'; 
+/*			$goto="http://".$_SERVER['SERVER_NAME'].$add_basket_url."?clientId=". $client_id ."&m=".$id."&pn=".$partnr."&pkey=".$pkey."&m_s=".$m_s."&price=".$price."&country=".$country."&lang=".$lang."&type=".$type."&availability=".$availability."&url=".$url."&template_type=".$template_type."&aoid=".$aoid."&jumpid=".$jumpid;
+*/
+/*
+//Added by Sunetra for Mobile Device- Start  on 03/12/2014
+	$goto="http://".$_SERVER['SERVER_NAME'].$add_basket_url."?clientId=". $client_id ."&m=".$id."&pn=".$partnr."&pkey=".$pkey."&m_s=".$m_s."&price=".$price."&country=".$country."&lang=".$lang."&type=".$type."&availability=".$availability."&url=".$url."&template_type=".$template_type."&aoid=".$aoid."&jumpid=".$jumpid."&mobile=".$mobile;
+//End
+*/
+		
+	//Added by Manjunath on 10/02/2015-issue is adding SSAD_ID and SSAD_URL to goto -start
+		$goto="http://".$_SERVER['SERVER_NAME'].$add_basket_url."?clientId=". $client_id ."&m=".$id."&pn=".$partnr."&pkey=".$pkey."&m_s=".$m_s."&price=".$price."&country=".$country."&lang=".$lang."&type=".$type."&availability=".$availability."&url=".$url."&template_type=".$template_type."&aoid=".$aoid."&jumpid=".$jumpid."&mobile=".$mobile.$SSAD_ID_and_SSAD_URL_append;
+	//end		
+			
+			 /*Get Store ID...*/
+			$storeId="";
+			$seek=strstr($url,'?partner=');
+			if($seek!==FALSE && substr($seek,13,1)=="&")
+			{
+				$storeId=substr($seek,9,4);
+			}
+			else
+			{
+				$seek=strstr($url,'?p=');
+				if($seek!==FALSE && substr($seek,7,1)=="&")
+				{
+					$storeId=substr($seek,3,4);
+				}
+			}
+			
+
+			
+			echo "
+				<script>
+				if(!window.storeUrlAdd) storeUrlAdd=storeUrl;
+				storeUrlAdd=((storeUrlAdd.replace(/&/g,\"S_AMP_E\")).replace(/\?/g/\"S_QM_E\")).replace(/#/g,\"S_POUND_E\"); //WSA
+				</script>
+			";
+			if($debug){
+				echo "
+					<script>
+					document.write(\"<BR>storeUrlAss\"+storeUrlAdd);
+					</script>
+				";
+			}
+
+			$command="window.setTimeout('window.top.location=\"'+'$goto'+'&siteId='+siteId+'&storeId='+";
+			if($storeId!="")
+				$command.="'$storeId'";
+			else
+				$command.="storeId";
+			$command.="+'&storeUrl='+storeUrlAdd+'&catalogUrl='+(window.catalogUrl?escape(catalogUrl):'')+'&refererUrl='+'\"',1000);";
+			if(!$debug){
+				echo "
+					<script>
+					$command;
+					</script>
+				";
+			}else{
+				echo $command;
+			}
+		}
+			//End 
+		
+		
+		
+		
+		
+		
+		else{
+	/*
+	 * Partner treatment
+	 */
+	
+	 
+			$goto=$url;
+			
+			if($mp2b_partnr!="" && strpos($mp2b_partnr, "__")===false){
+			 //Added by Sunetra on 10/12/2014 - CDW issue - start
+						if($country=="us") {
+	
+								if(strpos($mp2b_partnr,"#")!==false) 
+								{ 
+										$mp2b_partnr = str_replace('#', '%23', $mp2b_partnr); 
+								} 
+								
+								if(strpos($price,"#")!==false) 
+								{ 
+										$price= str_replace('#', '%23', $price); 
+								} 
+ 
+						 }	 
+	 			//End
+			
+			
+			
+			
+			/*
+				$goto="http://".$_SERVER['SERVER_NAME'].$add_basket_url."?clientId=" . $client_id . "&m=".$id."&pn=".$mp2b_partnr."&pkey=".$pkey."&m_s=".$m_s."&price=".$price."&country=".$country."&lang=".$lang."&type=".$type."&availability=".$availability;
+			*/	
+			
+			//Added by Manjunath on 10/02/2015-issue is adding SSAD_ID and SSAD_URL to goto -start
+				$goto="http://".$_SERVER['SERVER_NAME'].$add_basket_url."?clientId=" . $client_id . "&m=".$id."&pn=".$mp2b_partnr."&pkey=".$pkey."&m_s=".$m_s."&price=".$price."&country=".$country."&lang=".$lang."&type=".$type."&availability=".$availability.$SSAD_ID_and_SSAD_URL_append;
+			//end
+			
+			}
+			$command="window.setTimeout('window.top.location=\"'+'$goto'+'\"',1000);";
+			if(!$debug){
+				echo "
+					<script>
+					$command;
+					</script>
+				";
+			}else{
+				echo $command;
+			}
+		}
+	}
+	
+}
+
+?>

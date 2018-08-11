@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[PLN]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">od #PF#<br>#VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">cena<br>#PF#<br>#VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->	
+	<text>
+		<field func="intro">
+			<![CDATA[]]>
+		</field>
+		<field func="promo">
+		<![CDATA[Promocja]]> 
+		</field>
+		<field func="promo">
+			<![CDATA[]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Cena]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[brutto (z VAT)]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Zadzwoń: 0801 522 622]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Wybierz sklep (ceny z VAT)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Wybierz sklep]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[ograniczona dostępność]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Dziękujemy za wybór]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Za chwilę zostniesz przeniesiony do Sklepu HP.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->	
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Kupuj]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Znajdź partnera HP, sklep lub kup bezpośrednio od HP]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kup teraz]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Znajdź partnera HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Znajdź partnera HP lub najbliższy sklep]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Przejdź teraz]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->	
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		<link>
+    		<label>Customise with HP</label>
+		    <action>config</action>
+    	</link> 		
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Kupuj]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Znajdź partnera HP, sklep lub kup bezpośrednio od HP]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kup teraz]]></label>
+			<action>buy</action>
+		</btn>		
+	  <btn func="customize" type="primary">
+      <label><![CDATA[Konfigurator HP]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Konfigurator HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Znajdź partnera HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Znajdź partnera HP]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Przejdź teraz]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->	
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Kupuj]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Zamów online w Sklepie HP]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		<link>
+    		<label>Customise with HP</label>
+		    <action>config</action>
+    	</link> 			
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Znajdź partnera HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Znajdź partnera HP lub najbliższy sklep]]></txt>
+			</txt>			
+		</btn>		
+	  <btn func="customize" type="primary">
+      <label><![CDATA[Konfigurator HP]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Konfigurator HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>			
+	</buttons>
+
+
+
+<!-- START OF DYNAMIC PARAMETERS -->
+   <dynamic>
+ 	<jscontext>
+		<text>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[Zadzwoń: 00800 112 44 17]]>
+		</field>
+	  </text>
+	</jscontext>
+ </dynamic>
+</root>

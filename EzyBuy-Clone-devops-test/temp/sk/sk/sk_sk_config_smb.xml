@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[EUR]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">od #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">Cena #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Chcete nakúpiť?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Cena]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[Bez DPH / <a href="#" onclick="window.open('http://www.euromena.sk/ek/kalkulacka.htm', 'eurokalkulacka', 'width=240,height=340,toolbar=no,directories=no,scrollbars=no,location=no,resizable=yes,menubar=no');">Eurokalkulačka</a>]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Vyberte si obchod]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Vyberte si obchod]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limitované množstvo]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Ďakujeme, že ste si vybrali]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[V priebehu 5 sekúnd opustíte stránku spoločnosti HP.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Kúpte u partnera]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kúpiť]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Nájdite partnera]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nájdite partnera]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Pokračovať ihneď]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Nakonfigurujte si produkt</label>
+				<action>config</action>
+			</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Kúpte u partnera]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Kúpte on-line u HP preferovaného partnera]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kúpiť]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Nájdite partnera]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nájdite partnera]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Pokračovať ihneď]]></label>
+			<action>buy</action>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Nakonfigurovať]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nakonfigurujte si produkt a kúpte ho priamo od HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Nakonfigurujte si produkt</label>
+				<action>config</action>
+			</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Nakonfigurovať]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Nakonfigurujte si produkt a kúpte ho priamo od HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+</root>

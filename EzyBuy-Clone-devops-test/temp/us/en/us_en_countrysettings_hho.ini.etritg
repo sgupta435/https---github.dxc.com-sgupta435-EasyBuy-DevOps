@@ -1,0 +1,64 @@
+[GENERAL]
+dataserver=all-hp.kelkoo.com/uk
+kelkooserver=all-hp.kelkoo.com/uk
+ezbCurrencyCode=USD
+classicBtnName=Buy online
+
+searchXmlQuery="HPEzBuy/HPEzBuyLite?productNumber=#PN#&m_s=hho&country=us&enable_spn=true&enable_logos=true"
+shopbotURL="http://h20465.www2.hp.com/gpl/search.aspx?language_code=en&country_code=us&SearchType=hho"
+elocatorURL="http://www8.hp.com/us/en/store-finder/index.do"
+goXmlQuery="HPEzBuyGo?country=us&m_s=hho&from=lite"
+
+configXmlFile=us_en_config_hho.xml
+
+partnersExcludeIds=
+partnersRestrictIds=12767034,11303
+
+fullHTMLdirect=true
+
+indPriceOrder = "pp;sto;stp;lp"
+priceDecimal=true 
+option=promoPriceHighlight
+
+ETR="yes"
+Userid="EasyBuy"
+//Dev6 c0048659 password
+//Password="3941754341373772697052434F784858533966576652583851664739362B2F6832346351395A3562586B493D202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020"
+//UAT2 g9t4347g password
+Password="583953795A5A6A395775367A2B4E66472F345A4157775A73696D677269736D416C4D4668637858692B48593D202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020"
+STOREENT_ID=10151
+EtrCurrency=USD
+Language="en_US"
+//Dev6
+//StoreURL="http://c0048659.itcs.hp.com/webapp/wcs/stores/servlet/HPAddToCartService?storeId=10151"
+//UAT2 g9t4347g
+StoreURL="https://g9t4347g.houston.hp.com/webapp/wcs/stores/servlet/HPAddToCartService?storeId=10151"
+
+[SureSupply]
+priceDecimal=true
+partnersExcludeIds=12767034
+partnersRestrictIds=11303
+
+[eSupplies-mobile]
+partnersExcludeIds=
+partnersRestrictIds=12767034,11303
+
+[eSupplies-tablet]
+partnersExcludeIds=
+partnersRestrictIds=12767034,11303
+
+[eSupplies-mobile36]
+partnersExcludeIds=
+partnersRestrictIds=12767034,11303
+
+[eSupplies-tablet36]
+partnersExcludeIds=
+partnersRestrictIds=12767034,11303
+
+[PrintSupplies-mobile]
+partnersExcludeIds=
+partnersRestrictIds=12767034,11303
+
+[PrintSupplies-tablet]
+partnersExcludeIds=
+partnersRestrictIds=12767034,11303

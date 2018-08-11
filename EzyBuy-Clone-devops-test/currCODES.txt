@@ -1,0 +1,67 @@
+aa	ezbCurrencyCode=USD
+ar	
+at	
+au	ezbCurrencyCode=AUD
+be	
+bg	ezbCurrencyCode=BGN
+bo	ezbCurrencyCode=COP
+br	ezbCurrencyCode=BRL
+by	ezbCurrencyCode=BYR
+cb	ezbCurrencyCode=PEN
+ce	ezbCurrencyCode=PEN
+ch	ezbCurrencyCode=CHF
+cl	ezbCurrencyCode=CLP
+cn	ezbCurrencyCode=CNY
+co	ezbCurrencyCode=COP
+cs	ezbCurrencyCode=CSD
+cz	ezbCurrencyCode=CZK
+de	
+dk	ezbCurrencyCode=DKK
+ec	
+ee	ezbCurrencyCode=EEK
+es	
+fi	
+fr	
+gr	
+hk	ezbCurrencyCode=HKD
+hr	ezbCurrencyCode=HRK
+hu	ezbCurrencyCode=HUF
+id	ezbCurrencyCode=IND
+ie	
+il	ezbCurrencyCode=ILS
+in	ezbCurrencyCode=INR
+it	
+jp	ezbCurrencyCode=JPY
+kr	ezbCurrencyCode=KRW
+kz	ezbCurrencyCode=KZT
+lt	ezbCurrencyCode=LTL
+lv	ezbCurrencyCode=LVL
+me	ezbCurrencyCode=USD
+mx	ezbCurrencyCode=MXN
+my	ezbCurrencyCode=MYR
+nl	
+no	ezbCurrencyCode=NOK
+nz	ezbCurrencyCode=NZD
+pe	ezbCurrencyCode=PEN
+ph	ezbCurrencyCode=PHP
+pl	ezbCurrencyCode=PLN
+pr	ezbCurrencyCode=USD
+pt	
+py	ezbCurrencyCode=PYG
+ro	
+rs	ezbCurrencyCode=CSD
+ru	ezbCurrencyCode=RUR
+sa	
+se	ezbCurrencyCode=SEK
+sg	ezbCurrencyCode=SGD
+si	ezbCurrencyCode=EUR
+sk	
+th	ezbCurrencyCode=THB
+tr	ezbCurrencyCode=USD
+tw	ezbCurrencyCode=TWD
+ua	ezbCurrencyCode=UAH
+uk	ezbCurrencyCode=GBP
+uy	ezbCurrencyCode=UYU
+ve	ezbCurrencyCode=VEF
+vn	ezbCurrencyCode=USD
+za	ezbCurrencyCode=ZAR

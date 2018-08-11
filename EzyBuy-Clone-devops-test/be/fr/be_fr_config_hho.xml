@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">à partir de<br>#PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">prix #PF#<br>#VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Pour particuliers]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Prix indicatif]]>
+		</field>
+		<field func="pricedescinfo">
+			<![CDATA[Prix recommandé TVA, Recupel et Reprobel inclus. Tout revendeur est libre de sa politique tarifaire. L'écran n’est pas inclus dans le prix recommandé pour les ordinateurs de bureau.]]>
+		</field>		
+		<field func="vat" incl="1">
+			<![CDATA[TVA inclus]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Chercher un retailer]]>
+		</field>
+		<field func="lbvat">
+			<![CDATA[]]>
+		</field>
+		<field func="warning">
+			<![CDATA[]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Stock limitée]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Merci de choisir un e-Preferred Specialist]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Vous quitterez le site HP dans 5 secondes]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Chercher un retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Chercher un retailer]]></txt>
+			</txt>	
+      <link>
+				<label>Configurez</label>
+				<action>config</action>
+			</link>  		
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Achetez]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Chercher un retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[local ou en ligne]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Configurez</label>
+				<action>config</action>
+			</link>  
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Chercher un retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Chercher un retailer]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Achetez]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Chercher un retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[local ou en ligne]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go]]></label>
+			<action>buy</action>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configurez]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configurez & achetez]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>customize this product</label>
+				<action>config</action>
+			</link>  
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Configurez]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Configurez & achetez]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+
+</root>

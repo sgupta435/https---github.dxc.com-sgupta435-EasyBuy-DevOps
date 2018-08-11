@@ -1,0 +1,867 @@
+@import url("hps-euro-fontface-core.css");
+
+div.box div, div.box h1, div.box p, div.box ul, div.box ol, div.box form, div.box input, div.box select {
+    font-family:'HPSimplified',arial !important;
+    font-size: 14px !important;
+    margin: 0;
+    padding: 0;
+}
+div.box {
+    font-family:'HPSimplified',arial !important;
+    font-size: 14px !important;
+    height: auto;
+    position: relative;
+    width: 189px;
+    background: #ffffff !important;
+    border: 2px solid #cccccc;
+    border-radius: 0;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    overflow: hidden;
+}
+div#body.body{
+position: inherit !important;
+}
+/*** this is an exception forhttp://g4t0539a.houston.hp.com/it/it/ad/architetti/workstationhp.html  **/
+
+
+div.box .sc2  {
+    background-color: #f5f5f5;
+    padding: 0 !important;
+    color: #000000 !important;
+    padding-top: 10px !important;
+}
+div.box .sc2 div.EzBuyContent form {
+    color: #666666 !important;
+    font-size: 12px !important;
+}
+div.box .sc2 label {
+    color: #000000 !important;
+    font-weight: bold;
+    font-size: 12px !important;
+    text-transform: capitalize;
+}
+div.box .sc2 label.err {
+    color: #FF0000;
+    font-weight: bold;
+}
+div.box .sc2 select {
+    width: 59% !important;
+}
+div.box .sc2 .bold {
+    font-weight: normal;
+    font-size: 12px !important;
+    margin-right: 8px !important;
+}
+div.box .sc2 .bold img {
+    display: inline-block;
+    padding: 10px 0;
+}
+div.box .EzBuyHeader {
+    height: 1%;
+    padding: 2px 0;
+    margin: 10px 8px 4px 8px;
+}
+div.box .EzBuyHeader h1 {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 20px !important;
+    margin: 0;
+    padding: 4px 0px 0px 0px;
+    color:#000000;
+    text-transform: capitalize;
+    text-align: inherit !important;
+
+}
+div.box .EzBuyContent {
+    position: relative !important;
+    background: none;
+    height: 1%;
+    padding: 0 0 10px 0 !important;
+    margin: 0 8px;
+	  color:#000000;
+}
+div.box .EzBuyContent strong {
+    font-size: 12px !important;
+    line-height:15px;
+    font-weight: normal !important;
+	  color: #5A5A5A !important;
+    margin: 0 0 10px 0 !important;
+    display: block !important;
+    width: 125px;
+}
+div.box .EzBuyContent .priceContainer {
+    background: none !important;
+    color: #000000 !important;
+    font-weight: bold;
+    height: auto !important;
+    margin-left: 1px;
+    /*position: relative;*/
+    width: auto;
+    text-align: left !important;
+}
+
+div.box .simple { overflow: hidden; }
+div.box .simple .EzBuyContent .priceContainer {
+    color: #d7410b;
+}
+
+div.box .EzBuyContent .priceContainer span.priceNum {
+    display: block;
+    font-size: 20px !important;
+    color: #d7410b !important;
+    margin-bottom: 10px;
+    margin-top: 4px;
+	  background:none !important;
+    width: 120px;
+}
+div.box .EzBuyContent .priceContainer span.priceNum span.small {
+    display: block;
+    font-size: 20px !important;
+    margin: 10px 0;
+	  font-weight: normal !important;
+}
+div.box .EzBuyContent .priceContainer span.priceNum span.promosmall {
+    font-size: 24px !important;
+    line-height: 30px;
+    font-weight: normal  !important;
+}
+div.box .EzBuyContent .priceContainer span.priceNum sup {
+    font-size: 14px;
+}
+div.box .EzBuyContent .priceContainer .logo {
+    border: 0 none;
+    float: right;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 40px;
+}
+div.box .EzBuyContent .priceContainer .priceHeader {
+    width: 160px;
+    height: auto;
+    display: block;
+    color: #5A5A5A;
+    font-size: 14px !important;
+    font-weight: bold;
+    padding-top: 10px !important;
+    margin: 15px 0 10px 0;
+    line-height: 15px;
+}
+div.box .EzBuyContent .priceContainer .priceHeader.promomessage {
+    color: #5A5A5A;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    padding-top: 0 !important;
+    margin: 15px 0 10px 0;
+    line-height: 18px;
+    text-decoration: line-through;
+}
+
+div.box .EzBuyContent .priceContainer img {
+    border: 0 none;
+    margin-left: 3px;
+}
+div.box .addToBasket {
+    clear: left;
+    margin-top: 15px;
+}
+div.box .EzBuyContent .addToBasketdone {
+    border: 2px solid #FF0000;
+    color: #000000;
+    font-weight: bold;
+    padding: 2px;
+}
+div.box .EzBuyContent .noBasket {
+    visibility: hidden;
+}
+div.box .addToBasket input {
+    font: 11px 'HPSimplified',arial !important;
+}
+div.box .addToBasket input.txt, div.box .simple input.txt, div.box .simple_rtl input.txt {
+  border: 2px solid #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  float:left; 
+  margin-right: 4px;
+  padding: 2px 1px;
+  vertical-align: middle;
+  width: 20px;
+  height: 18px;
+}
+div.box .addToBasket input.txt:hover, div.box .simple input.txt:hover, div.box .simple_rtl input.txt:hover { border: 2px solid #5a5a5a !important; }
+div.box .addToBasket a {
+  font-family:'HPSimplified',arial !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color:#fff; 
+  float:left; 
+  display:inline-block !important;
+  width:auto !important; 
+  height:26px !important; 
+  line-height:26px !important; 
+  background-color:#0096d6; 
+  -webkit-border-top-left-radius: 0; 
+  -khtml-border-top-left-radius: 0; 
+  -moz-border-radius-topleft: 0;
+  -o-border-top-left-radius: 0;
+  border-top-left-radius: 0; 
+  -webkit-border-top-right-radius: 4px; 
+  -khtml-border-top-right-radius: 4px; 
+  -moz-border-radius-topright: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; 
+  -webkit-border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-left-radius: 4px; 
+  -moz-border-radius-bottomleft: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-right-radius: 0; 
+  -moz-border-radius-bottomright: 0;
+  -o-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; 
+  text-transform: capitalize; 
+  white-space:nowrap; 
+  cursor:pointer; 
+  margin: 0 4px 0 0 !important;
+  padding:0 7px !important;
+  text-decoration: none !important;
+}
+div.box .addToBasket a:hover { background-color:#006699; text-decoration: none; }
+div.box .addToBasket a img, div.box .simple a img, div.box .simple_rtl a img {
+    display: none;
+}
+div.box .EzBuyContent .customiseButton {
+    color: #336666;
+    font-weight: bold;
+    margin: 5px -8px 0;
+    padding: 5px 8px;
+}
+div.box .sc2 input.red {
+    background-color: #CC0000;
+    border-color: #EE0000;
+    width: auto;
+}
+div.box .EzBuyContent .line {
+    border-top: none !important;
+    margin: 5px 0;
+}
+div.box .EzBuyContent .EzBuyFooter {
+    font-weight: bold;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: auto !important;
+    overflow: hidden;
+}
+/*div.box .content .EzBuyFooter p { width:170px;}*/
+div.box .EzBuyContent .footer2 {
+    color: #000000 !important;
+    font-weight: normal !important;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+div.box .EzBuyContent p {
+    color: #5A5A5A !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    padding: 0 0 10px 0;
+}
+div.box .boxend {
+    display: none;
+}
+div.box .strikeThrough {
+    text-decoration: line-through;
+}
+div.box .selectDealer {
+    background-color: transparent !important;
+    border: 0px solid #6699CC !important;
+    cursor: default;
+    height: auto !important;
+    margin: 10px 0 3px 0 !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    width: 173px;
+}
+div.box .selectDealer img {
+    border: medium none;
+    margin-left: 1px;
+}
+div.box .unselected {
+    background-color: transparent !important;
+    border-bottom: 0px solid white !important;
+    border-top: 0px solid white !important;
+}
+div.box .selectDealer .selected {
+    padding: 1px 0 !important;
+    background-color: #6e6e6e !important;
+    color: #ffffff !important;
+    line-height: 14px !important;
+    border-bottom: 0px dotted #000000 !important;
+    border-top: 0px dotted #000000 !important;
+}
+div.box .selectDealer .unselected {
+    padding: 1px 0 !important;
+    line-height: 14px !important;
+    background-color: transparent !important;
+    border-bottom: 0px dotted #000000 !important;
+    border-top: 0px dotted #000000 !important;
+	}
+div.box .selectDealer .unselected:hover {
+    background-color: #6e6e6e !important;
+    color: #ffffff !important;
+    border-bottom: 0px dotted #000000 !important;
+    border-top: 0px dotted #000000 !important;
+	}
+div.box .selectDealer input {
+    float: left;
+    left: -1000px;
+    position: absolute;
+}
+div.box div.radio {
+    float: left;
+    font-weight: normal !important;
+    margin-left: 1px;
+}
+div.box .dealerPriceCont {
+    color: #000000;
+    float: right;
+    margin-right: 2px;
+}
+div.box .dealerPrice {
+    float: left;
+    width: auto;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+div.box .selectDealer .unselected .dealerPrice { color: #000000 !important; }
+div.box .selectDealer .selected .dealerPrice, div.box .selectDealer .unselected:hover .dealerPrice { color: #ffffff !important; }
+
+div.box .dealerStock {
+    float: left;
+    width: 8px;
+    color: #000000;
+}
+div.box .dealerStock:hover {
+    color: #ffffff;
+}
+div.box .radio a {
+    font-size: 12px;
+    text-decoration: none;
+}
+div.box .selectDealer .unselected .radio a { color: #000000 !important; }
+div.box .selectDealer .selected .radio a, div.box .selectDealer .unselected:hover .radio a { color: #ffffff !important; }
+
+.tooltip {
+    background: transparent url("../img/tooltip.png") no-repeat scroll left top;
+    display: block;
+    font-family:'HPSimplified',arial !important;
+    font-size: 12px !important;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    width: 167px;
+    z-index: 666;
+    padding: 0 !important;
+}
+div.tooltip .EzBuyHeader {
+    height: 0;
+    padding: 0;
+    height: 10px !important;
+}
+div.tooltip .EzBuyHeader a {
+    display: none;
+}
+div.tooltip .EzBuyHeader a img, div.tooltip .header a img {
+    display: none !important;
+}
+div.tooltip .header {
+    height: 0;
+    padding: 0 !important;
+    margin: 11px 0 0 0 !important;
+}
+div.tooltip .toolcontent {
+    background: #ffffff !important;
+    border-left: 2px solid #cccccc !important;
+    border-bottom: 2px solid #cccccc !important;
+    border-right: 2px solid #cccccc !important;
+    color: #000000;
+    width: 139px !important;
+    height: auto !important;
+    margin: 0;
+    padding: 10px; 
+    overflow: auto;
+}
+a.infotip { 
+  background: url("../img/infotip.png") no-repeat scroll left top; 
+  width: 19px; 
+  height: 20px;
+  margin: 0 0 0 10px;
+  display: inline-block;
+}
+a.infotip img { display: none !important; }
+
+.box .nonpromo  {
+    margin: 0;
+}
+.nonpromo .EzBuyHeader {
+    background: none !important;
+    color: black;
+}
+.nonpromo .EzBuyContent .priceContainer {
+    color: #336666;
+    line-height: 14px;
+    margin-left: 4px;
+}
+div.box .promo  {
+    margin: 0;
+    overflow: hidden;
+}
+div.box .promo .EzBuyHeader {
+    xcolor: #FFFFFF;
+}
+div.box .promo .simple img { margin: 5px 0; }
+div.box .promo .priceHeader {
+    display: block;
+    height: 1em;
+    color: #767676 !important;
+}
+div.box .simple .priceHeader {
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #666666 !important;
+    text-align: inherit;
+}
+div.box .simple .promomessage {
+    color: #666666;
+}
+div.box .promo .priceBadgeContainer {
+}
+div.box .promo .priceBadge {
+    background:none !important;
+    //Priya : color: #FFFFFF;
+    color: #d7410b;
+    float: left;
+    height: 73px;
+    position: relative;
+    width: 70px;
+}
+div.box .promo .priceBadgeLarge {
+    background-color: #ffffff;
+    background-image: none;
+    color: white;
+    height: 83px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 120px;
+    height: auto;
+    text-align: inherit !important;
+}
+div.box .priceBadgeContainer .priceHeader {
+    color: #CCCCCC;
+    display: block;
+    font-size: 10px;
+    margin: 10px 0 2px 0;
+    text-align: inherit !important;
+}
+div.box .promo .priceBadgeContainer .priceNum {
+    font-size: 18px !important;
+    margin: 2px 0;
+}
+div.box .priceVat {
+    line-height: 15px;
+    font-size: 12px !important;
+    font-weight: normal;
+  	color:#5A5A5A;
+}
+div.box .priceVat a {
+    font-size: 12px !important;
+  	color:#007dba !important;
+    padding: 7px 0 0 0 !important;
+    display: inline-block;
+}
+div.box .priceVat a:visited { color:#822980; }
+div.box .priceVat a:hover { text-decoration:underline; }
+div.box .promo .priceBadgeContainer .priceVat {
+    font-size: 13x;
+    margin: 10px 0 0 0 !important;
+    display: inline-block;
+}
+div.box .promo .priceBadgeContainer .priceLasts {
+    color: #D7410B !important;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-transform: uppercase;
+    width: 100px;
+    margin-top: 5px;
+}
+div.box .promo .priceBadgeContainer .priceBadge .priceLasts {
+    width: 42px;
+}
+div.box .delivery {
+    display: inline-block;
+    margin: 3px 0 !important;
+    position: relative;
+    color: #5A5A5A;
+    font-size: 12px;
+    line-height: 15px !important;
+}
+div.simple, div.simple_rtl {
+    color: #000000;
+}
+div.simple .price, div.simple_rtl .price {
+    float: left;
+    font-size: 17px !important;
+    font-weight: bold;
+    margin: 4px 0;
+    overflow: hidden !important;
+}
+div.simple .price .priceVat, div.simple_rtl .price .priceVat {
+    font-size: 12px !important;
+    font-weight: normal;
+    white-space: nowrap;
+}
+div.simple_rtl .price {
+    float: right;
+    margin: 4px 0 4px 15px;
+}
+div.box .simple form, div.box .simple_rtl form {
+    white-space: normal;
+}
+div.box .simple_rtl form {
+    float: right;
+}
+div.box .simple_rtl input.txt {
+    float: left;
+    margin-left: 4px;
+}
+div.box .EzBuyContent a.primButtonEnhanced {
+    vertical-align: middle;
+}
+div.box .sc2 .primButtonEnhanced {
+  font-family:'HPSimplified',arial !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color:#fff !important; 
+  float:left; 
+  display:inline-block !important;
+  width:auto !important; 
+  height:26px !important; 
+  line-height:26px !important; 
+  background-color:#d7410b !important; 
+  -webkit-border-top-left-radius: 0; 
+  -khtml-border-top-left-radius: 0; 
+  -moz-border-radius-topleft: 0;
+  -o-border-top-left-radius: 0;
+  border-top-left-radius: 0; 
+  -webkit-border-top-right-radius: 4px; 
+  -khtml-border-top-right-radius: 4px; 
+  -moz-border-radius-topright: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; 
+  -webkit-border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-left-radius: 4px; 
+  -moz-border-radius-bottomleft: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-right-radius: 0; 
+  -moz-border-radius-bottomright: 0;
+  -o-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; 
+  text-transform: capitalize; 
+  white-space:nowrap; 
+  cursor:pointer; 
+  margin: 0 0 10px 2px !important;
+  padding:0 7px !important;
+  text-decoration: none !important;
+}
+div.box .sc2 .primButtonEnhanced:visited { color: #ffffff !important; }
+div.box .sc2 .primButtonEnhanced:hover { background-color:#c1401a !important; color: #ffffff !important; text-decoration: none !important; }
+div.box .sc2 .commButtonEnhanced {
+  font-family:'HPSimplified',arial !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color:#fff !important; 
+  float:left; 
+  display:inline-block !important;
+  width:auto !important; 
+  height:26px !important; 
+  line-height:26px !important; 
+  background-color:#0096d6 !important; 
+  -webkit-border-top-left-radius: 0; 
+  -khtml-border-top-left-radius: 0; 
+  -moz-border-radius-topleft: 0;
+  -o-border-top-left-radius: 0;
+  border-top-left-radius: 0; 
+  -webkit-border-top-right-radius: 4px; 
+  -khtml-border-top-right-radius: 4px; 
+  -moz-border-radius-topright: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; 
+  -webkit-border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-left-radius: 4px; 
+  -moz-border-radius-bottomleft: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-right-radius: 0; 
+  -moz-border-radius-bottomright: 0;
+  -o-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; 
+  text-transform: capitalize; 
+  white-space:nowrap; 
+  cursor:pointer; 
+  margin: 0 0 10px 2px !important;
+  padding:0 7px !important;
+  text-decoration: none !important;
+}
+div.box .sc2 .commButtonEnhanced:visited { color: #ffffff !important; }
+div.box .sc2 .commButtonEnhanced:hover { background-color:#006699 !important; text-decoration: none !important; }
+div.box .EzBuyContent .EzBuyFooter .secButtonEnhanced_ezb, div.box .EzBuyContent .simplefooter .secButtonEnhanced_ezb {
+  font-family:'HPSimplified',arial !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color:#fff; 
+  display:inline-block !important;
+  width:auto !important; 
+  height:26px !important; 
+  line-height:26px !important; 
+  background-color:#0096d6; 
+  -webkit-border-top-left-radius: 0; 
+  -khtml-border-top-left-radius: 0; 
+  -moz-border-radius-topleft: 0;
+  -o-border-top-left-radius: 0;
+  border-top-left-radius: 0; 
+  -webkit-border-top-right-radius: 4px; 
+  -khtml-border-top-right-radius: 4px; 
+  -moz-border-radius-topright: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; 
+  -webkit-border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-left-radius: 4px; 
+  -moz-border-radius-bottomleft: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+  -webkit-border-bottom-right-radius: 4px; 
+  -khtml-border-bottom-right-radius: 0; 
+  -moz-border-radius-bottomright: 0;
+  -o-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; 
+  text-transform: capitalize; 
+  white-space:nowrap; 
+  cursor:pointer; 
+  margin-right:0 !important; 
+  padding:0 7px !important;
+  text-decoration: none !important;
+}
+div.box  .EzBuyFooter .secButtonEnhanced_ezb:hover, div.box .EzBuyContent .simplefooter .secButtonEnhanced_ezb:hover { background-color:#006699 !important; text-decoration: none !important; }
+div.box .EzBuyContent .footer2 .secButtonEnhanced_ezb {
+  font-family:'HPSimplified',arial !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color:#fff !important; 
+  display:inline-block !important; 
+  width:auto !important; 
+  height:26px !important; 
+  line-height:26px !important; 
+  background-color:#767676 !important; 
+  -webkit-border-top-left-radius: 0; 
+  -khtml-border-top-left-radius: 0; 
+  -moz-border-radius-topleft: 0;
+  -o-border-top-left-radius: 0;
+  border-top-left-radius: 0; 
+  -webkit-border-top-right-radius: 4px; 
+  -khtml-border-top-right-radius: 4px; 
+  -moz-border-radius-topright: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; 
+  -webkit-border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-left-radius: 4px; 
+  -moz-border-radius-bottomleft: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-right-radius: 0; 
+  -moz-border-radius-bottomright: 0;
+  -o-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; 
+  text-transform: capitalize; 
+  white-space:nowrap; 
+  cursor:pointer; 
+  margin: 0 !important; 
+  padding:0 7px !important;
+  text-decoration: none !important;
+}
+div.box .EzBuyContent .footer2 .secButtonEnhanced_ezb:hover { background-color:#5a5a5a !important; text-decoration: none !important; }
+div.box .sc2 .secButtonEnhanced_ezb {
+    float:left; display:inline_block; width:auto !important; height:10px; background:none!important; padding:0px 0px 0px 0px !important; margin-right:25px; margin-left:-10px; font: bold 11px 'HPSimplified',arial !important; color:#186d94 !important; text-transform:uppercase; white-space:nowrap; cursor:pointer;
+}
+div.box .sc2 .secButtonEnhanced_ezb:visited { color: #ffffff !important; }
+div.box .sc2 .secButtonEnhanced_ezb:hover { text-decoration: underline !important; }
+.ezbFindPartnerLink {
+  font-family:'HPSimplified',arial !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color:#fff !important; 
+  display:inline-block !important; 
+  width:auto !important; 
+  height:26px !important; 
+  line-height:26px !important; 
+  background-color:#767676 !important; 
+  -webkit-border-top-left-radius: 0; 
+  -khtml-border-top-left-radius: 0; 
+  -moz-border-radius-topleft: 0;
+  -o-border-top-left-radius: 0;
+  border-top-left-radius: 0; 
+  -webkit-border-top-right-radius: 4px; 
+  -khtml-border-top-right-radius: 4px; 
+  -moz-border-radius-topright: 4px;
+  -o-border-top-right-radius: 4px;
+  border-top-right-radius: 4px; 
+  -webkit-border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-left-radius: 4px; 
+  -moz-border-radius-bottomleft: 4px;
+  -o-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+  -khtml-border-bottom-right-radius: 0; 
+  -moz-border-radius-bottomright: 0;
+  -o-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; 
+  text-transform: capitalize; 
+  white-space:nowrap; 
+  cursor:pointer; 
+  margin: 0 !important; 
+  padding:0 7px !important;
+  text-decoration: none !important;
+}
+.ezbFindPartnerLink:hover { background-color:#5a5a5a !important; text-decoration: none !important; }
+/* Backup as Link instead of Button
+.ezbFindPartnerLink {
+  font-family:'HPSimplified',arial !important;
+  color: #007dba !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+  float:left; 
+  padding: 0 !important; 
+  display:inline-block !important;
+  line-height:16px !important; 
+  text-transform: capitalize; 
+  white-space:nowrap; 
+  cursor:pointer; 
+}
+.ezbFindPartnerLink:hover { text-decoration: underline !important; }
+.ezbFindPartnerLink:visited { color: #822980 !important; }
+*/
+.ezbBackLink {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background: transparent url("../img/close.png") no-repeat 0 0;
+    width: 10px;
+    height: 10px;
+    color: #186d94 !important;
+    font-size: 0px !important;
+    display: inline-block;
+    padding: 0;
+    margin-top: 0px !important;
+}
+.ezbBackLink:hover { background-position: 0 -10px; }
+.ezbBackLink:visited { color: #822980; }
+.ezbPartnerBackLink {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    background: transparent url("../img/close.png") no-repeat 0 0;
+    width: 10px;
+    height: 10px;
+    color: #186d94 !important;
+    font-size: 0px !important;
+    display: inline-block;
+    padding: 0;
+    margin-top: 5px !important;
+}
+.ezbPartnerBackLink:hover { text-decoration: underline; }
+.ezbPartnerBackLink:visited { color: #822980; }
+div.box .simple .EzBuyContent {
+    position: relative !important;
+    background: none repeat scroll 0 0 transparent !important;
+    overflow: hidden;
+}
+div.box .simple .price {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    float: none;
+    color: #d7410b;
+    font-weight: normal !important;
+}
+div.box .simple .delivery {
+    display: inline-block;
+    margin: 3px 0 !important;
+    position: relative;
+    color: #5A5A5A;
+    font-size: 12px;
+    text-align: inherit !important;
+}
+div.simple .EzBuyContent {
+    position: relative !important;
+    background-image: none;
+}
+div.box .simple h1 {
+    font-weight: bold;
+}
+.addedtocart {
+    border: 1px solid #FF0000;
+    font-weight: bold !important;
+    margin: 10px !important;
+    padding: 10px !important;
+}
+.simplefooter {
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+div.box .EzBuyContent .footer3 {
+    color: #336666;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.ezb {
+    color: black;
+    font: 15px 'HPSimplified',arial !important;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.ezb-pricing {
+    color: #d7410b;
+    display: block;
+    margin-top: 0;
+}
+.ezb-price {
+    display: inline;
+    font-size: 16px;
+    line-height: 20px;
+}
+.ezb-vat {
+    font-size: 12px;
+    color: #5A5A5A;
+    font-weight: normal !important;
+}
+.ezb-vat a { color:#007dba; font-size: 12px !important; }
+.ezb-vat a:visited { color:#822980; }
+.ezb-vat a:hover { text-decoration:underline }
+.ok{
+	width:300px;
+	margin-right: 500px;
+}
+a:link {color:#007dba; text-decoration:none; }
+a:visited {color:#822980; text-decoration:none; }
+a:hover { text-decoration:underline; }
+a:focus { text-decoration:underline; }
+a:active { text-decoration:underline; }

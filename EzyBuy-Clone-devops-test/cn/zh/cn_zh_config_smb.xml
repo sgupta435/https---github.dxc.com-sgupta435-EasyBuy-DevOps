@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[RMB]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">Available Direct:</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# 起价 #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# 价格 #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[,]]>
+		</setting>
+		<setting func="decimalsymbol">
+			<![CDATA[.]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[准备购买？]]>
+		</field>
+		<field func="promo">
+		<![CDATA[优惠价]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[市场建议价]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[或]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[专卖店选择]]>
+		</field>
+		<field func="warning">
+			<![CDATA[请选择一个HP 专卖店]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[库存有限]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[感谢您的惠顾]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[5秒钟之后您将离开HP 网站]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[购买]]></label>
+			<txt id="sub">
+				<txt><![CDATA[查看推荐的在线零售商名单或搜索当地销售点]]></txt>
+				<txt><![CDATA[立即购买或寻找当地的 HPE 合作伙伴。]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[现在就购买]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[寻找当地的 HPE 合作伙伴。]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[现在就离开]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[从HP 购买]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[从HP 经销商处购买]]></label>
+			<txt id="sub">
+				<txt><![CDATA[查看推荐的在线零售商名单或搜索当地销售点]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[现在就购买]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[寻找当地的 HPE 合作伙伴。]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[现在就离开]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[我要购买 »]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>		
+        <txt><![CDATA[4星期内发货]]></txt>						
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[此商品已经加入您的购物车]]></label>
+			<txt id="pre">
+				<txt><![CDATA[查看购物车]]></txt>
+			</txt>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[寻找当地的 HPE 合作伙伴。]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+	</buttons>
+<dynamic>
+   <jscontext>
+      <text>
+           <field func="vat" cond="s_ProductLine=6J">
+           <![CDATA[此价格包含配套显示器产品的价格]]>
+           	</field>
+	  </text> 
+    </jscontext>
+ </dynamic>
+</root>

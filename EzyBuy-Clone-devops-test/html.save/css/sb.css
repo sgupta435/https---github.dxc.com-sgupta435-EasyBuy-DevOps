@@ -1,0 +1,143 @@
+div#shoppingbasket { z-index: 100;border: 1px solid #6a6a6a; padding: 10px; position: absolute; width: 123px; top: 73px; left: 829px; background-color: #333; font-size: 12px; }
+div#shoppingbasket a { text-decoration: none; color: #fff; display: block; margin-bottom: 2px; }
+div#shoppingbasket a:hover { text-decoration: underline; }
+div#SB_PRINT_left { float: left; }
+div#SB_PRINT_left_partner { float: left; }
+div#SB_PRINT_top { float: left; }
+
+/* Shopping basket small  */
+
+.shopping-basket-small {
+	background: #e7e7e7;
+	padding-bottom: 5px;
+}
+.sb-image-small {
+	padding-top:10px;
+	margin-left: 4px;
+	float: left;
+}
+.sb-link-small {
+	display:block;
+	float: left;
+	margin-top: 11px;
+	text-align:left;
+	text-decoration:underline;
+}
+.sb-link-small a {
+	text-decoration:underline;
+}
+.sb-small {
+	text-align: left;
+	font-size: 11px;
+	color: #000000;
+	clear: left;
+	padding-left: 20px;
+}
+.sb-messaging-small {
+	display: block;
+	margin: 0px;
+	float:left;	
+}
+.sb-messaging-small-nopadding {
+	display: inline;
+	
+	
+}
+.hard-line-small {
+	border-top:2px solid #cccccc;
+}
+.sbc-phone-small {
+	padding-left: 25px;
+	padding-top: 10px;
+}
+.sb-phone-small {
+	font-size: 11px;
+	color: #000000;
+}
+.sb-line-small {
+	border-bottom:1px solid #cccccc;
+	height: 10px;
+	width: 120px;
+}
+
+/* end of Shopping basket small  */
+
+
+
+
+/* Shopping basket big  */
+
+.shopping-basket-left {
+	background: #e7e7e7;
+	padding-bottom: 10px;
+	width: 170px;
+}
+.shopping-basket-right {
+	background: #e7e7e7;
+	padding-bottom: 10px;
+	width: 180px;
+}
+
+.sb-button { margin-top: 5px; }
+.sb-button a.commButton { margin: 0 0 0 20px; color: #fff; padding: 0 5px 0 5px; }
+
+
+.sb-image {
+	margin-left: 5px;
+	padding-top: 20px;
+	float: left;
+}
+.sb-link {
+	display:block;
+	float: left;
+	margin-top: 11px;
+	margin-bottom: 8px;
+	width:140px;
+	text-align:left;
+	font-size: 13px;
+	text-decoration:underline;
+
+}
+.sb-link a {
+	text-decoration:underline;
+}
+.sb {
+	text-align: left;
+	font-size: 11px;
+	color: #000000;
+	clear: left;
+	padding-left: 30px;
+}
+.sb-pricing, .sb-messaging {
+	display: block;
+	margin-top: 0px;
+}
+.sb-currency, .sb-price {
+	display: inline;
+	border: none !important;
+}
+.sb-messaging {
+	font-size: 11px;
+	font-weight: normal;
+	display: inline;
+}
+.new-line {
+	font-size: 11px;
+}
+
+.hard-line {
+	border-top:1px solid #cccccc;
+}
+.sbc-phone {
+	padding-left: 25px;
+	padding-top: 10px;
+}
+.sb-phone {
+	font-size: 11px;
+	color: #000000;
+}
+.sb-line {
+	border-bottom:1px solid #cccccc;
+	height: 10px;
+	width: 120px;
+}

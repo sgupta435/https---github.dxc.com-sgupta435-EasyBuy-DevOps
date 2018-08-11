@@ -1,0 +1,563 @@
+div.box div, div.box h1, div.box p, div.box ul, div.box ol, div.box form, div.box input, div.box select {
+    font: 11px/13px Arial,Verdana,Helvetica,sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+div.box {
+    font: 11px Arial,Verdana,Helvetica,sans-serif !important;
+    height: auto;
+    position: relative;
+    width: 189px;
+    background: #eeeeee url("../img/bright.bg.box.png") left top repeat-x !important;
+    border-radius: 3px 3px 3px 3px;
+    -moz-box-shadow: 3px 3px 9px #e7e7e7;
+    -webkit-box-shadow: 3px 3px 9px #e7e7e7;
+    box-shadow: 3px 3px 9px #e7e7e7;
+    overflow: hidden;
+}
+div#body.body{
+position: inherit !important;
+}
+/*** this is an exception forhttp://g4t0539a.houston.hp.com/it/it/ad/architetti/workstationhp.html  **/
+
+
+div.box .sc2  {
+    background-color: #fefefe;
+    padding: 10px;
+    color: #121212 !important;
+}
+div.box .sc2 div.EzBuyContent form {
+    color: #121212 !important;
+    text-align: left !important;
+}
+div.box .sc2 label {
+    color: #121212 !important;
+    font-weight: bold;
+}
+div.box .sc2 label.err {
+    color: #FF0000;
+    font-weight: bold;
+}
+div.box .sc2 select {
+    width: 59% !important;
+}
+div.box .sc2 .bold {
+    font-weight: bold;
+}
+div.box .sc2 .bold img {
+    display: inline-block;
+    padding: 10px 0;
+}
+div.box .EzBuyHeader {
+    height: 1%;
+    padding: 2px 0;
+}
+div.box .EzBuyHeader h1 {
+    font-weight: bold;
+    margin: 0;
+    padding: 4px 0px 0px 0px;
+    text-align: left !important;
+    color:#666666;
+    text-transform:uppercase;
+
+}
+div.box .EzBuyContent {
+    background: none;
+    height: 1%;
+    padding: 6px 0px !important;
+	  color:#121212;
+}
+div.box .EzBuyContent .priceContainer {
+    background: none !important;
+    color: #121212 !important;
+    font-weight: bold;
+    height: auto !important;
+    margin-left: 1px;
+    /*position: relative;*/
+    width: auto;
+}
+div.box .simple .EzBuyContent .priceContainer {
+    color: #1d6600;
+}
+
+div.box .EzBuyContent .priceContainer span.priceNum {
+    display: block;
+    font-size: 17px !important;
+    color: #1d6600 !important;
+    margin-bottom: 8px;
+    margin-top: 2px;
+	  background:none !important;
+    width: 120px;
+}
+div.box .EzBuyContent .priceContainer span.priceNum span.small {
+    display: block;
+    font-size: 17px !important;
+    margin: 5px 10px 5px 0;
+	  font-weight:bold;
+}
+div.box .EzBuyContent .priceContainer span.priceNum span.promosmall {
+    font-size: 17px !important;
+    font-weight: bold;
+}
+div.box .EzBuyContent .priceContainer span.priceNum sup {
+    font-size: 14px;
+}
+div.box .EzBuyContent .priceContainer .logo {
+    border: 0 none;
+    float: right;
+    margin-left: 0;
+    position: absolute;
+    right: 5px;
+    top: 19px;
+    width: 40px;
+}
+div.box .EzBuyContent .priceContainer .priceHeader {
+    width: 160px;
+    display: inline-block;
+}
+div.box .EzBuyContent .priceContainer img {
+    border: 0 none;
+    margin-left: 3px;
+}
+div.box .addToBasket {
+    clear: left;
+    margin-top: 20px;
+}
+div.box .EzBuyContent .addToBasketdone {
+    border: 2px solid #FF0000;
+    color: #000000;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+}
+div.box .EzBuyContent .noBasket {
+    visibility: hidden;
+}
+div.box .addToBasket input {
+    font: 11px Arial,Verdana,Helvetica,sans-serif;
+}
+div.box .addToBasket input.txt, div.box .simple input.txt, div.box .simple_rtl input.txt {
+    border-left: 1px solid #9b9b9b;
+    border-top: 1px solid #9b9b9b;
+    border-right: none;
+    border-bottom: none;
+    background-color: #dedede;
+    color: #121212;
+    margin-right: 3px;
+    padding: 2px 1px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+}
+div.box .addToBasket a {
+     display:inline; width:auto !important; height:10px; background-color:#007CA2; border-radius:3px; padding:4px 8px; font:bold 10px Arial,Verdana,Helvetica,sans-serif !important; color:#fff; text-transform:uppercase; white-space:nowrap; cursor:pointer; margin: 0 4px 0 2px !important;
+}
+div.box .addToBasket a:hover { background-color:#1a89ab; text-decoration: none; }
+div.box .addToBasket a img, div.box .simple a img, div.box .simple_rtl a img {
+    display: none;
+}
+div.box .EzBuyContent .customiseButton {
+    color: #336666;
+    font-weight: bold;
+    margin: 5px -8px 0;
+    padding: 5px 8px;
+}
+div.box .sc2 input.red {
+    background-color: #CC0000;
+    border-color: #EE0000;
+    width: auto;
+}
+div.box .EzBuyContent .line {
+    border-top: none !important;
+    margin: 5px 0;
+}
+div.box .EzBuyContent .EzBuyFooter {
+    font-weight: bold;
+    background-color: transparent;
+    margin: 0;
+    padding: 5px 0 0 0;
+    width: auto !important;
+    overflow: hidden;
+}
+/*div.box .content .EzBuyFooter p { width:170px;}*/
+div.box .EzBuyContent .footer2 {
+    color: #121212 !important;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+div.box .EzBuyContent p {
+    color: #121212 !important;
+    font-weight: bold;
+    padding-bottom: 7px;
+    padding-top: 4px;
+}
+div.box .boxend {
+    display: none;
+}
+div.box .strikeThrough {
+    text-decoration: line-through;
+}
+div.box .selectDealer {
+    background-color: transparent !important;
+    border: 0px solid #6699CC !important;
+    cursor: default;
+    height: auto !important;
+    margin-top: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    width: 150px;
+}
+div.box .selectDealer img {
+    border: medium none;
+    margin-left: 1px;
+}
+div.box .unselected {
+    background-color: transparent !important;
+    border-bottom: 0px solid white !important;
+    border-top: 0px solid white !important;
+}
+div.box .selectDealer .selected {
+    background-color: #dddddd !important;
+    border-bottom: 0px dotted #000000 !important;
+    border-top: 0px dotted #000000 !important;
+}
+div.box .selectDealer .unselected {
+    background-color: transparent !important;
+    border-bottom: 0px dotted #000000 !important;
+    border-top: 0px dotted #000000 !important;
+	}
+div.box .selectDealer .unselected:hover {
+    background-color: #dddddd !important;
+    border-bottom: 0px dotted #000000 !important;
+    border-top: 0px dotted #000000 !important;
+	}
+div.box .selectDealer input {
+    float: left;
+    left: -1000px;
+    position: absolute;
+}
+div.box div.radio {
+    float: left;
+    font-weight: bold;
+    margin-left: 1px;
+}
+div.box .dealerPriceCont {
+    color: #121212;
+    float: right;
+    margin-right: 2px;
+}
+div.box .dealerPrice {
+    color: #121212;
+    float: left;
+    text-align: right;
+    width: auto;
+}
+div.box .dealerStock {
+    float: left;
+    text-align: right;
+    width: 8px;
+}
+div.box .radio a {
+    color: #121212 !important;
+    text-decoration: none;
+}
+.tooltip {
+    background: transparent url("../img/tooltip.png") no-repeat scroll left top;
+    border: none !important;
+    display: block;
+    font: 11px Arial,Verdana,Helvetica,sans-serif;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    width: 163px;
+    height: 124px;
+    z-index: 666;
+    margin: 13px 0 0 0;
+}
+div.tooltip .EzBuyHeader {
+    background: transparent !important;
+    color: #FFFFFF;
+    height: 0;
+    padding: 60px 10px 0 0;
+    text-align: right;
+}
+div.tooltip .EzBuyHeader a {
+    display: none;
+    xwidth: 23px;
+    xheight: 23px;
+    xbackground: url("../img/btn.close.png") no-repeat scroll left top; 
+}
+div.tooltip .EzBuyHeader a img {
+    display: none !important;
+}
+div.tooltip .toolcontent {
+    color: #000000;
+    background: transparent !important;
+    height: 45px;
+    width: 135px;
+    margin: 0 1px 0 2px;
+    padding: 0 10px 10px 10px; 
+    overflow: auto;
+}
+a.infotip { 
+  background: url("../img/infotip.png") no-repeat scroll left top; 
+  width: 19px; 
+  height: 20px;
+  margin: 0 0 0 10px;
+  display: inline-block;
+}
+a.infotip img { display: none !important; }
+
+.box .nonpromo  {
+    margin: 10px;
+}
+.nonpromo .EzBuyHeader {
+    background: none !important;
+    color: black;
+}
+.nonpromo .EzBuyContent .priceContainer {
+    color: #336666;
+    line-height: 14px;
+    margin-left: 4px;
+}
+div.box .promo  {
+    margin: 10px;
+    overflow: hidden;
+}
+div.box .promo .EzBuyHeader {
+    xcolor: #FFFFFF;
+}
+div.box .promo .simple img { margin: 5px 0; }
+div.box .promo .priceHeader {
+    display: block;
+    height: 1em;
+    color: #666666 !important;
+}
+div.box .simple .priceHeader {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #666666 !important;
+}
+div.box .simple .promomessage {
+    color: #666666;
+}
+div.box .promo .priceBadgeContainer {
+}
+div.box .promo .priceBadge {
+    background:none !important;
+    //Priya : color: #FFFFFF;
+    color: #1d6600;
+    float: left;
+    height: 73px;
+    position: relative;
+    text-align: center;
+    width: 70px;
+}
+div.box .promo .priceBadgeLarge {
+    background-color: #ffffff;
+    background-image: none;
+    color: white;
+    float: left;
+    height: 68px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    width: 120px;
+}
+div.box .priceBadgeContainer .priceHeader {
+    color: #CCCCCC;
+    display: block;
+    font-size: 10px;
+    margin: 10px 0 2px 0;
+}
+div.box .promo .priceBadgeContainer .priceNum {
+    font-size: 18px !important;
+    margin: 2px 0;
+}
+div.box .priceVat {
+    font-size: 13px !important;
+    font-weight: normal;
+  	color:#121212;
+}
+div.box .priceVat a {
+    font-size: 10px;
+  	color:#666666;
+    padding: 3px 0 0 0;
+    display: inline-block;
+}
+div.box .priceVat a:visited { color:#5f76a5; }
+div.box .priceVat a:hover { text-decoration:underline; }
+div.box .promo .priceBadgeContainer .priceVat {
+    font-size: 13x;
+    margin-top: 5px;
+    display: inline-block;
+}
+div.box .promo .priceBadgeContainer .priceLasts {
+    color: #CC0000;
+    font-weight: bold;
+    left: 76px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 5px;
+    width: 100px;
+}
+div.box .promo .priceBadgeContainer .priceBadge .priceLasts {
+    width: 42px;
+}
+div.box .delivery {
+    position: relative;
+    color: #666666;
+}
+div.simple, div.simple_rtl {
+    color: #000000;
+}
+div.simple .price, div.simple_rtl .price {
+    float: left;
+    font-size: 17px !important;
+    font-weight: bold;
+    margin: 4px 15px 4px 0;
+}
+div.simple .price .priceVat, div.simple_rtl .price .priceVat {
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+div.simple_rtl .price {
+    float: right;
+    margin: 4px 0 4px 15px;
+}
+div.box .simple form, div.box .simple_rtl form {
+    white-space: nowrap;
+}
+div.box .simple_rtl form {
+    float: right;
+}
+div.box .simple_rtl input.txt {
+    float: left;
+    margin-left: 4px;
+}
+div.box .EzBuyContent a.primButtonEnhanced {
+    vertical-align: middle;
+}
+div.box .sc2 .primButtonEnhanced {
+     float:left; display:inline; width:auto !important; height:10px; background:none!important; padding:0px 0px 0px 0px; margin-left:0px; font-size:10px; font-weight:bold; color:#00a0d2!important; text-transform:uppercase; white-space:nowrap; cursor:pointer;
+	
+}
+div.box .sc2 .commButtonEnhanced {
+    float:left; display:inline; width:auto !important; height:10px; background:none!important; padding:0px 0px 0px 0px; margin-right:25px; font:bold 10px Arial,Verdana,Helvetica,sans-serif !important; color:#186d94 !important; white-space:nowrap; cursor:pointer; margin-right:0 !important;
+}
+div.box .sc2 .commButtonEnhanced:visited { color: #5f76a5 !important; }
+div.box .sc2 .commButtonEnhanced:hover { text-decoration: underline !important; }
+div.box .EzBuyContent .EzBuyFooter .secButtonEnhanced_ezb, div.box .EzBuyContent .simplefooter .secButtonEnhanced_ezb {
+     float:left; display:inline; width:auto !important; height:10px; background-color:#007CA2; border-radius:3px; font:bold 10px Arial,Verdana,Helvetica,sans-serif !important; color:#fff; text-transform:uppercase; white-space:nowrap; cursor:pointer; margin-right:0 !important; text-decoration: none !important;
+}
+div.box .EzBuyContent .EzBuyFooter .secButtonEnhanced_ezb { padding:3px 5px 8px 8px; }
+div.box .EzBuyContent .simplefooter .secButtonEnhanced_ezb { padding:4px 5px 7px 8px; }
+div.box  .EzBuyFooter .secButtonEnhanced_ezb:hover, div.box .EzBuyContent .simplefooter .secButtonEnhanced_ezb:hover { background-color:#1a89ab; text-decoration: none !important; }
+div.box .EzBuyContent .footer2 .secButtonEnhanced_ezb {
+     display:inline; width:auto !important; height:10px; background-color:#007CA2; border-radius:3px; padding:4px 8px 4px 8px; font: bold 10px Arial,Verdana,Helvetica,sans-serif !important; color:#fff; text-transform:uppercase; white-space:nowrap; cursor:pointer; margin-right:4px !important; text-decoration: none !important;
+}
+div.box .EzBuyContent .footer2 .secButtonEnhanced_ezb:hover { background-color:#1a89ab; text-decoration: none !important; }
+div.box .sc2 .secButtonEnhanced_ezb {
+    float:left; display:inline_block; width:auto !important; height:10px; background:none!important; padding:0px 0px 0px 0px !important; margin-right:25px; margin-left:-10px; font: bold 11px Arial,Verdana,Helvetica,sans-serif !important; color:#186d94 !important; text-transform:uppercase; white-space:nowrap; cursor:pointer;
+}
+div.box .sc2 .secButtonEnhanced_ezb:visited { color: #5f76a5 !important; }
+div.box .sc2 .secButtonEnhanced_ezb:hover { text-decoration: underline !important; }
+.ezbFindPartnerLink {
+    color: #186d94 !important;
+    font: bold 10px Arial,Verdana,Helvetica,sans-serif !important;
+    padding: 5px 0 0 0;
+}
+.ezbFindPartnerLink:hover { text-decoration: underline; }
+.ezbFindPartnerLink:visited { color: #5f76a5; }
+.ezbBackLink {
+    color: #186d94 !important;
+    font: bold 10px Arial,Verdana,Helvetica,sans-serif !important;
+    display: inline-block;
+    padding: 0;
+    margin-top: 5px !important;
+}
+.ezbBackLink:hover { text-decoration: underline; }
+.ezbBackLink:visited { color: #5f76a5; }
+.ezbPartnerBackLink {
+    color: #186d94 !important;
+    font: bold 10px Arial,Verdana,Helvetica,sans-serif !important;
+    display: inline-block;
+    padding: 0;
+    margin-top: 5px !important;
+}
+.ezbPartnerBackLink:hover { text-decoration: underline; }
+.ezbPartnerBackLink:visited { color: #5f76a5; }
+div.box .simple .EzBuyContent {
+    background: none repeat scroll 0 0 transparent !important;
+}
+div.box .simple .price {
+    float: none;
+    color: #1d6600;
+    font-weight: bold !important;
+}
+div.box .simple .delivery {
+    margin-bottom: 5px;
+    text-align: center;
+}
+div.simple .EzBuyContent {
+    background-image: none;
+}
+div.box .simple h1 {
+    font-weight: bold;
+}
+.addedtocart {
+    border: 1px solid #FF0000;
+    font-weight: bold !important;
+    margin: 10px !important;
+    padding: 10px !important;
+    text-align: center;
+}
+.simplefooter {
+    padding-top: 5px;
+}
+
+div.box .EzBuyContent .footer3 {
+    color: #336666;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.ezb {
+    color: black;
+    font: 11px Arial,Verdana,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+    text-align: left;
+}
+.ezb-pricing {
+    color: #ff6000;
+    display: block;
+    margin-top: 0;
+}
+.ezb-price {
+    display: inline;
+}
+.ezb-vat {
+    font-size: 10px;
+    color: #121212;
+}
+.ezb-vat a { color:#666666; }
+.ezb-vat a:visited { color:#5f76a5; }
+.ezb-vat a:hover { text-decoration:underline }
+.ok{
+	width:300px;
+	margin-right: 500px;
+}
+a:link {color:#666666; text-decoration:none; }
+a:visited {color:#5f76a5; text-decoration:none; }
+a:hover { text-decoration:underline; }
+a:focus { text-decoration:underline; }
+a:active { text-decoration:underline; }

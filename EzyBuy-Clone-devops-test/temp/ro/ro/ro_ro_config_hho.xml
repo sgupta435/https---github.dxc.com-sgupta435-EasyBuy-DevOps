@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">începând de la #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">preţ #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Doriţi să cumpăraţi?]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Preţ recomandat]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[TVA inclus]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Selectati un magazin]]>
+		</field>
+		<field func="warning">
+			<![CDATA[]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[stoc limitat]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Multumim ca ati ales un partener preferat HP]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 secunde veti parasi pagina HP]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Cumpără]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Cumpara]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Localizaţi un magazin]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Localizaţi un magazin]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Mergi]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Produse HP Personalizate</label>
+				<action>config</action>
+			</link>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Cumpără]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Mergi]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Cumpara]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Localizaţi un magazin]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Localizaţi un magazin]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Mergi]]></label>
+			<action>buy</action>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Personalizeaza]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+				<label>Produse HP Personalizate</label>
+				<action>config</action>
+			</link>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[Personalizeaza]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+</root>

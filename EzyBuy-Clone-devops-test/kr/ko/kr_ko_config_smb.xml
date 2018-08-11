@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[￦]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[ 원]]>
+		</setting>		
+  <!--  <setting func="startpricedirect">
+			<![CDATA[<span class="bold">Available Direct:</span><BR>]]>
+		</setting>		-->
+  <!--		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">최저가 (여러 제품)</span>]]>
+		</setting>		-->
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">가격 (한 제품)</span>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[,]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[구매하시겠습니까?]]>
+		</field>
+<!--	<field func="promo">  
+		<![CDATA[HP Best Buy]]> 
+		</field> -->
+		<field func="pricedesc">
+			<![CDATA[가격 표시]]>
+		</field>
+<!--	<field func="pricedescinfo">
+			<![CDATA[가격 표시 정보 창]]>
+		</field> -->
+		<field func="vat">
+			<![CDATA[]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[현재 재고 없음전화: 			0845 270 4215]]>
+		</field>
+		<field func="or">
+			<![CDATA[or]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[온라인 쇼핑몰 선택:]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a shop]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[* 마감 임박 상품]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[선택해 주셔서 감사합니다.]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[가까운 판매점 찾기]]></label>
+			<txt id="sub">
+				<txt><![CDATA[권장 온라인 소매업체 또는 구매처 찾기 ]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[지금 구입]]></label>
+			<action>buy</action>
+		</btn>
+    <btn func="customize" type="primary">
+			<label><![CDATA[Customize]]></label>
+			<txt id="sub">
+				<txt><![CDATA[제품 직접 구성 후 HP에서 직접 구입]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[구매처 찾기]]></label>
+			<txt id="sub">
+				<txt><![CDATA[구매처 찾기]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[지금 이동]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[장바구니에 추가]]></label>
+			<txt id="sub">
+				<txt><![CDATA[재고 있음, 주문 당일 출고]]></txt>
+				<txt><![CDATA[재고 있음, 주문 당일 출고]]></txt>
+				<txt><![CDATA[재고 있음, 주문 당일 출고]]></txt>								
+			</txt>
+			<link>
+    		<label>HP 제품으로 내 제품 직접 구성하기</label>
+		    <action>config</action>
+    	</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[HP 파트너를 통해 구입(버튼)]]></label>
+			<txt id="sub">
+					<txt><![CDATA[권장 온라인 소매업체 또는 구매처 찾기 ]]></txt>
+			</txt>			
+	  </btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[지금 구입]]></label>
+			<action>buy</action>
+		</btn>		
+	  <btn func="customize" type="primary">
+      <label><![CDATA[직접 구성]]></label>
+        <txt id="sub">
+          <txt><![CDATA[제품 직접 구성 후 HP에서 직접 구입]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>
+    <btn func="findreseller" type="secondary">
+			<label><![CDATA[구매처 찾기]]></label>
+			<txt id="sub">
+				<txt><![CDATA[구매처 찾기]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[지금 이동]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[장바구니에 추가]]></label>
+			<txt id="sub">
+				<txt><![CDATA[재고 있음, 주문 당일 출고]]></txt>
+				<txt><![CDATA[주문 후 2주 내 출고]]></txt>
+				<txt><![CDATA[주문 후 4주 내 출고]]></txt>								
+			</txt>
+			<link>
+    		<label>HP 제품으로 내 제품 직접 구성하기</label>
+		    <action>config</action>
+    	</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[장바구니 보기 및 결재]]></label>
+			<txt id="pre">
+				<txt><![CDATA[이 품목을 장바구니에 넣었습니다.]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+      <label><![CDATA[직접 구성]]></label>
+        <txt id="sub">
+          <txt><![CDATA[제품 직접 구성 후 HP에서 직접 구입]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>
+    <btn func="customize" type="primary">
+			<label><![CDATA[Customise]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customise and buy direct from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+</root>

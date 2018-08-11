@@ -1,0 +1,24 @@
+#LABELS:lang id,web site path
+#VARIABLES:lang,url
+fr,http://www.intel.com/intelinside/weblinks/english/
+de,http://www.intel.com/intelinside/weblinks/english/
+it,http://www.intel.com/intelinside/weblinks/english/
+es,http://www.intel.com/intelinside/weblinks/english/
+pt,http://www.intel.com/intelinside/weblinks/english/
+cs,http://www.intel.com/intelinside/weblinks/english/
+hu,http://www.intel.com/intelinside/weblinks/english/
+pl,http://www.intel.com/intelinside/weblinks/english/
+ru,http://www.intel.com/intelinside/weblinks/english/
+others,http://www.intel.com/intelinside/weblinks/english/
+fr_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+de_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+it_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+es_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+pt_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+cs_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+hu_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+pl_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+ru_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+tr_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+others_special,http://syndication.intel.com/DistributeModule.aspx?ppc_cid=XXX01&cc=GB&contentType=0
+il_special,http://intelinside.intel.com/index.htm

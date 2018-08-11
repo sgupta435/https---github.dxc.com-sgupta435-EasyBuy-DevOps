@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[£]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">Available Direct:</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# starting from #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# price #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Shopping information]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[SRP]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[inc VAT]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[Call 0845 601 7611 to <br>discuss options.<br> Currently may not be <br>available direct from HP<br>]]>
+		</field>
+		<field func="or">
+			<![CDATA[]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[SELECT A STORE]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a partner]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limited stock]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Thank you for selecting an]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 seconds you will leave the HP website.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+  <buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Buy now]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Recommended online resellers,     find a local store or buy direct]]></txt>
+				<txt><![CDATA[Recommended online retailers or find a local partner]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+			<action>buy</action>
+		</btn>	
+    <btn func="customize" type="primary">
+			<label><![CDATA[Customise]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customise and buy direct from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>	
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local retailer]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Add to basket]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Immediate Availability]]></txt>
+				<txt><![CDATA[Normally within 2 weeks]]></txt>
+				<txt><![CDATA[Normally within 4 weeks]]></txt>								
+			</txt>
+			<link>
+    		<label>Customize with HP</label>
+		    <action>config</action>
+    	</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Buy now]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>	
+    </btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+			<action>buy</action>
+		</btn>
+    <btn func="customize" type="primary">
+      <label><![CDATA[Customise]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Customise and buy direct from HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local retailer]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Add to basket]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Immediate Availability]]></txt>
+				<txt><![CDATA[Normally within 2 weeks]]></txt>
+				<txt><![CDATA[Normally within 4 weeks]]></txt>								
+			</txt>
+			<link>
+    		<label>Customize with HP</label>
+		    <action>config</action>
+    	</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[View and Checkout]]></label>
+			<txt id="pre">
+				<txt><![CDATA[The product was added to your basket.]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+      <label><![CDATA[Customize]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Customize and buy directly from HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>
+    <btn func="customize" type="primary">
+			<label><![CDATA[Customize]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customize and buy directly from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+   <dynamic>
+ 	<jscontext>
+		<text>
+		<field func="vat" incl="1" cond="s_ProductLine=1N">
+			<![CDATA[inc VAT]]>
+		</field>
+		<field func="vat" incl="1" cond="s_ProductLine=5T">
+			<![CDATA[inc VAT]]>
+		</field>
+		<field func="vat" incl="1" cond="s_ProductLine=AU">
+			<![CDATA[inc VAT (Free Delivery!)]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=1N">
+			<![CDATA[Free delivery]]> 
+		</field>
+		<field func="force_promo" cond="s_ProductLine=5T">
+    	  <![CDATA[Free delivery]]> 
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=TW">
+			<![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		</text>
+	</jscontext>
+ </dynamic>
+</root>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[Rs.]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>
+    <setting func="hpstorename">
+			<![CDATA[Buy online]]>
+		</setting>				
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# starting from #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# starting from #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[,]]>
+		</setting>
+		<setting func="decimalsymbol">
+			<![CDATA[.]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Ready to buy]]>
+		</field>
+		<field func="promo">
+		  <![CDATA[]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Indicative Price]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[Maximum or Suggested Retail Price + Taxes]]>
+			</field>
+		<field func="telnr"> 
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[or]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Select a shop to buy online]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a shop]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limited stock]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Thank you for selecting an]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 seconds you will leave the HP website]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Buy now]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local store, buy direct or       Call HP toll free: 1800 42 54 999 (From MTNL/ BSNL in India)]]></txt>
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find an HP Reseller]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find an HP Reseller or                  Call HP toll free: 1800 42 54 999 (From MTNL/ BSNL in India)]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Buy]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Buy]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy Direct from HP]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find an HP Reseller]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find an HP Reseller or                  Call HP toll free: 1800 42 54 999 (From MTNL/ BSNL in India)]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Order cartridge online]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[View cart & checkout]]></label>
+			<txt id="pre">
+				<txt><![CDATA[This item was added to you cart]]></txt>
+			</txt>
+		</btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find an HP Reseller]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local store]]></txt>
+			</txt>			
+		</btn>	
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+ <dynamic>
+   <jscontext>
+      <text>
+           <field func="vat" cond="s_ProductLine=KV">
+           <![CDATA[Suggested Retail Price + Taxes]]>
+           </field>     
+		   <field func="vat" cond="s_ProductLine=6J">
+           <![CDATA[Suggested Retail Price + Taxes (this  CPU price is with 18.5” monitor)]]>
+           	</field>
+		</text> 
+    </jscontext>
+ </dynamic>
+</root>

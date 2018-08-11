@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[kr]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P# #C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[HP Store]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">från #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">pris #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Köp online]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Pris]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[inkl. moms]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Varan är slut hos HP Store, sök gärna bland HP återförsäljare]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Välj butik (priser inkl.moms)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Välj en butik]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Begränsad tillgänglighet]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Tack för att du väljer en]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Om 5 sekunder lämnar du HP´s hemsida]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Hitta en återförsäljare]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Hitta en återförsäljare]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Gå till butiken]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Hitta en återförsäljare]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Hitta en återförsäljare]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Gå direkt]]></label>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Lägg i kundvagn]]></label>
+			<txt id="sub">
+				<txt><![CDATA[I lager, omgående leverans]]></txt>
+				<txt><![CDATA[Levereras normalt inom 2 veckor]]></txt>
+				<txt><![CDATA[Levereras normalt inom 4 veckor]]></txt>								
+			</txt>
+			<link>
+    		<label>Konfigurera din HP-produkt</label>
+		    <action>config</action>
+    		</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Hitta en återförsäljare]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Hitta en återförsäljare]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Gå till butiken]]></label>
+		</btn>		
+		<btn func="customize" type="primary">
+		    <label><![CDATA[Konfigurera]]></label>
+ 			<txt id="sub">
+	        	<txt><![CDATA[Konfigurera och köp direkt från HP]]></txt>
+	    	</txt>
+		    <action>config</action>
+	    </btn>
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Hitta en återförsäljare]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Hitta en återförsäljare]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Gå direkt]]></label>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Lägg i kundvagn]]></label>
+			<txt id="sub">
+				<txt><![CDATA[I lager, omgående leverans]]></txt>
+				<txt><![CDATA[Levereras normalt inom 2 veckor]]></txt>
+				<txt><![CDATA[Levereras normalt inom 4 veckor]]></txt>								
+			</txt>
+			<link>
+    		<label>Konfigurera din HP-produkt</label>
+		    <action>config</action>
+    		</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Till kassan]]></label>
+			<txt id="pre">
+				<txt><![CDATA[Produkten har lagts i din varukorg]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+		    <label><![CDATA[Konfigurera]]></label>
+ 		   	<txt id="sub">
+	        	<txt><![CDATA[Konfigurera och köp direkt från HP]]></txt>
+	    	</txt>
+		    <action>config</action>
+	    </btn>
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+  <dynamic>
+    <jscontext>
+		  <text>
+			 <field func="telnr" cond="s_ProductLine=SY">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+			 <field func="telnr" cond="s_ProductLine=LA">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+			 <field func="telnr" cond="s_ProductLine=4U">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+			 <field func="telnr" cond="s_ProductLine=MV">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+			 <field func="telnr" cond="s_ProductLine=SI">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+			 <field func="telnr" cond="s_ProductLine=LI">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+			 <field func="telnr" cond="s_ProductLine=R6">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	
+			 <field func="telnr" cond="s_ProductLine=R4">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	
+			 <field func="telnr" cond="s_ProductLine=7G">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	
+       <field func="telnr" cond="s_ProductLine=JN">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	
+       <field func="telnr" cond="s_ProductLine=3C">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	 
+       <field func="telnr" cond="s_ProductLine=LJ">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	 
+       <field func="telnr" cond="s_ProductLine=LN">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	  
+       <field func="telnr" cond="s_ProductLine=LK">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	 
+       <field func="telnr" cond="s_ProductLine=7A">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+       <field func="telnr" cond="s_ProductLine=LM">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>	  
+       <field func="telnr" cond="s_ProductLine=LH">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+       <field func="telnr" cond="s_ProductLine=TN">
+				  <![CDATA[Säljs endast via återförsäljare]]>
+			 </field>
+			 <field func="telnr" cond="s_ProductLine=2S">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=4J">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=1Y">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=6L">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=A5">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=72">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=TE">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=6H">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=TQ">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=LL">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=KP">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=1X">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=30">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=2M">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=9C">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=23">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=91">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=HA">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=ME">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="telnr" cond="s_ProductLine=LF">
+  				<![CDATA[Säljs endast via återförsäljare]]>
+  		 </field>
+  		 <field func="vat" incl="1" cond="s_ProductLine=1N">
+			   <![CDATA[inkl. moms]]>
+		   </field>
+		   		   <field func="vat" incl="1" cond="s_ProductLine=5T">
+			   <![CDATA[inkl. moms]]>
+		   </field>
+		   <field func="vat" incl="1" cond="s_ProductLine=AU">
+			   <![CDATA[inkl. moms (Fri frakt!)]]>
+		   </field> 
+  		 <field func="force_promo" cond="s_ProductLine=1N">
+      	  <![CDATA[Fri frakt]]> 
+       </field>
+       <field func="force_promo" cond="s_ProductLine=5T">
+        	<![CDATA[Fri frakt]]> 
+       </field>
+	   <field func="telnr" cond="s_ProductLine=6J">
+  			<![CDATA[Beställ online eller ring:<br> 08 524 96800]]>
+  		</field>
+		<field func="telnr" cond="s_ProductLine=KV">
+  			<![CDATA[Beställ online eller ring:<br> 08 524 96800]]>
+  		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[Produkten är för tillfället inte tillgänglig hos HP. Var vänlig ring 0771 30 30 00 för alternativ produkt]]>
+		</field>
+		</text>		
+	 </jscontext>
+  </dynamic>
+</root>

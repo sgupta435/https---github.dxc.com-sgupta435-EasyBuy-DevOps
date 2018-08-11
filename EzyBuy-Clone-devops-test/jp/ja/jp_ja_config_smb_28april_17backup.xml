@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[￥]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">Available Direct:</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# #PF# (税込) ～</span><BR>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# #PF# (税込) ～</span><BR>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[,]]>
+		</setting>
+		<setting func="decimalsymbol">
+			<![CDATA[.]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[]]>
+		</field>
+		<field func="promo">
+		<![CDATA[ダイレクトプラス価格]]> 
+		</field>
+		<field func="promo2">
+		<![CDATA[希望小売価格]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[(税抜)]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[オンライン販売店の選択]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a partner]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[台数限定]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[有難うございました]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[秒後に日本HP外のウェブサイトへご案内いたします]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+  <buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[HPがお勧めする販売店から購入する]]></label>
+			<txt id="sub">
+				<txt><![CDATA[HPがお勧めする販売店から購入する]]></txt>
+				<txt><![CDATA[HPがお勧めする販売店から購入する]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[すぐにご購入]]></label>
+			<action>buy</action>
+		</btn>	
+ 		<btn func="customize" type="primary">
+			<label><![CDATA[Customise]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customise and buy direct from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>	
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[HP販売店検索]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[すぐに移動]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[オンラインで購入]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+    				<label>Customize with HP</label>
+		   		 <action>config</action>
+    			</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[HPがお勧めする販売店から購入する]]></label>
+			<txt id="sub">
+				<txt><![CDATA[HPがお勧めする販売店から購入する]]></txt>
+			</txt>	
+    		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[すぐにご購入]]></label>
+			<action>buy</action>
+		</btn>
+   		<btn func="customize" type="primary">
+    			<label><![CDATA[Customise]]></label>
+    			<txt id="sub">
+        		<txt><![CDATA[Customise and buy direct from HP]]></txt>
+        		</txt>
+    		<action>config</action>
+   		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[HP販売店検索]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[すぐに移動]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[オンラインで購入]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+			<link>
+    				<label>Customize with HP</label>
+		  		<action>config</action>
+    			</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[カートを確認して購入する]]></label>
+			<txt id="pre">
+				<txt><![CDATA[この製品をカートに付け加えました]]></txt>
+			</txt>
+		</btn>
+		<btn func="findreseller" type="secondary">
+		   <label><![CDATA[HP販売店検索]]></label>
+		   <txt id="sub">
+			    <txt><![CDATA[]]></txt>
+		   </txt>   
+		</btn> 
+  		<btn func="customize" type="primary">
+			<label><![CDATA[Customize]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customize and buy directly from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+</root>
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[€]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">Η τιμή ξεκινάει από #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">Τιμή #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Θέλετε να αγοράσετε;]]>
+		</field>
+		<field func="promo">
+		<![CDATA[]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[]]>
+		</field>
+		<field func="pricedescinfo">
+			<![CDATA[Οι τιμές είναι ενδεικτικές και περιλαμβάνουν Φ.Π.Α. 19%]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[Με ΦΠΑ]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Επιλέξτε κατάστημα]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Παρακαλώ επιλέξτε κατάστημα]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Περιορισμένο απόθεμα]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Ευχαριστούμε που επιλέξατε έναν]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[Σε 5 δευτερόλεπτα, θα φύγετε από το website της HP]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Αγοραστε online]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Προτεινόμενα online καταστήματα Ή βρείτε ένα τοπικό κατάστημα]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Αγοράστε τώρα]]></label>
+			<tooltip><![CDATA[Μεταβείτε στο ηλεκ. κατάστημα]]></tooltip>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Επιλογες αγορας]]></label>
+			<tooltip><![CDATA[HP partners κοντά σας]]></tooltip>
+			<txt id="sub">
+				<txt><![CDATA[HP partners κοντά σαςς]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Άμεση μετάβαση]]></label>
+			<tooltip><![CDATA[Μεταβείτε άμεσα στο κατάστημα]]></tooltip>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[s]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Αγοραστε online]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Προτεινόμενα online καταστήματα Ή βρείτε ένα τοπικό κατάστημα]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Αγοράστε τώρα]]></label>
+			<tooltip><![CDATA[Μεταβείτε στο ηλεκ. κατάστημα]]></tooltip>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Επιλογες αγορας]]></label>
+			<tooltip><![CDATA[HP partners κοντά σας]]></tooltip>
+			<txt id="sub">
+				<txt><![CDATA[HP partners κοντά σας]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Άμεση μετάβαση]]></label>
+			<tooltip><![CDATA[Μεταβείτε άμεσα στο κατάστημα]]></tooltip>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+	</buttons>
+</root>

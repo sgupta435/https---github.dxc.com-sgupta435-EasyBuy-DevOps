@@ -1,0 +1,583 @@
+/**
+ * HP easyBuy Redesign 2006
+ *
+ * Common styles used by all easyBuy boxes
+ *
+ * @author  Ralf Barth (21torr Agency); Silke Stolle (21torr Agency)
+ 
+ * @version 0.1 2006-07-20
+ */
+
+ 
+div.box div,
+div.box h1,
+div.box p,
+div.box ul,
+div.box ol,
+div.box form,
+div.box input,
+div.box select {
+  margin: 0;
+  padding: 0;
+  font: normal 11px/13px Arial, Verdana, Helvetica, sans-serif;
+}
+
+
+div.box {
+  /* Remove the 2 lines below here - they're only for the demo page! */
+  width: 185px;
+  height: auto;
+  font: normal 11px Arial, Verdana, Helvetica, sans-serif;
+  position: relative;
+}
+
+div.box .sc2 label {
+  font-weight: bold;
+}
+
+div.box .sc2 label.err {
+  font-weight: bold;
+  color:#F00;
+}
+
+div.box .sc2 select {
+  width: 99%;
+}
+
+div.box .sc2 .bold{
+  font-weight:bold;
+}
+
+div.box .header {
+  height: 1%;
+  padding:2px 0;
+}
+
+div.box .header h1 {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 0 0 0;
+  margin: 0;
+}
+
+div.box .content {
+  background: transparent url(http://h41213.www4.hp.com/ezbuy/html/img/ezb.v3/white/bg.png) top left repeat-y;
+  padding: 6px 8px;
+  height: 1%;
+}
+
+div.box .content .priceContainer {
+  color: rgb(51, 102, 102);
+  background: white;
+  /*height: 93px;*/
+  height:auto;
+  font-weight: bold;
+  margin-left: 1px;
+  position:relative;
+  width:123px;
+}
+
+div.box .simple .content .priceContainer {
+  color: #000;
+}
+
+div.box .content .priceContainer span.priceNum {
+  display: block;
+  font-size: 22px;
+  margin-top:2px;
+  margin-bottom:3px;
+  padding:px 0;
+}
+
+div.box .content .priceContainer span.priceNum span.small {
+  font-size: 16px;
+  display:block;
+}
+
+div.box .content .priceContainer span.priceNum span.promosmall {
+  font-size: 12px;
+}
+
+div.box .content .priceContainer span.priceNum sup {
+  font-size: 14px;
+}
+
+div.box .content .priceContainer .logo {
+  float: right;
+  border: 0;
+  margin-left: 0px;
+	position: absolute;
+	right:-20px;
+	top:1px;
+}
+
+div.box .content .priceContainer img {
+  border: 0;
+  margin-left: 3px;
+}
+
+div.box .addToBasket {
+  margin-top: 5px;
+  clear:left;
+}
+
+div.box .content .addToBasketdone{
+  border:2px solid #F00;
+  padding:2px;
+  text-align:center;
+  color:#000;
+  font-weight:bold;
+}
+
+
+div.box .content .noBasket {
+  visibility: hidden;
+}
+
+
+div.box .addToBasket input {
+  font: normal 11px Arial, Verdana, Helvetica, sans-serif;
+}
+
+div.box .addToBasket input.txt, 
+div.box .simple input.txt,
+div.box .simple_rtl input.txt {
+  width: 20px;
+  text-align: center;
+  border: 1px solid #aaa;
+  padding: 2px 1px;
+  margin-right:3px;
+  vertical-align:middle;
+}
+
+div.box .addToBasket a {
+  text-decoration: none;
+  font-size: 12px;
+  vertical-align: -1px;
+  font-weight: bold;
+  height:17px;
+  vertical-align:0px; /* important for IE */
+}
+
+html>body div.box .addToBasket a {
+  vertical-align:middle;
+}
+
+div.box .addToBasket a img,
+div.box .simple a img, 
+div.box .simple_rtl a img {
+  padding-left:5px;
+  border:0;
+  margin-bottom: 3px;
+  vertical-align:middle;
+}
+
+div.box .content .customiseButton {
+  color: rgb(51, 102, 102);
+  font-weight: bold;
+  margin: 5px -8px 0 -8px;
+  padding: 5px 8px 5px 8px;
+}
+
+
+div.box .sc2 input.red {
+  width:auto;
+  background-color: #c00;
+  border-color: #e00;
+}
+
+
+div.box .content .line {
+	border-top: 1px solid #ccc;
+	margin: 5px -5px 0 -5px;
+  padding: 5px 8px 0 8px;
+}
+
+div.box .content .footer {
+  color: rgb(51, 102, 102);
+  font-weight: bold;
+  margin: 0 -8px 0 -8px;
+  padding: 0 8px 8px 8px;
+}
+
+div.box .content .footer2 {
+  color: rgb(51, 102, 102);
+  font-weight: bold;
+  margin: 5px -8px 0 -8px;
+  padding: 10px 8px 0 8px;
+}
+
+div.box .content p {
+  padding-top:4px;
+  padding-bottom:7px;
+  font-weight:bold;
+}
+
+
+div.box .boxend {
+  height: 13px;
+  background: transparent url(http://h41213.www4.hp.com/ezbuy/html/img/ezb.v3/white/footer.png) top left no-repeat;
+}
+
+div.box .strikeThrough {
+  text-decoration: line-through;
+}
+
+/* Dealer Box ***********************/
+
+div.box .selectDealer {
+  position:relative;
+  overflow: auto;
+  overflow-x: hidden;
+  width:99%;
+  height:75px;
+  border: 1px solid rgb(102, 153, 204);
+  margin-top:10px;
+  cursor: default;
+  background-color: #FFF;
+}
+
+div.box .selectDealer img{
+  margin-left:1px;
+  border:none;
+}
+
+  div.box .unselected {
+    background-color:rgb(255, 255, 255);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  div.box .selectDealer .selected{
+    background-color:rgb(178, 180, 191);
+    border-top: 1px dotted rgb(0, 0, 0);
+    border-bottom: 1px dotted rgb(0, 0, 0);
+  }
+
+    div.box .selectDealer input {
+      position:absolute;
+      left:-1000px;
+      float:left;
+    }
+
+    div.box div.radio {
+      float:left;
+      margin-left:1px;
+      font-weight:bold;
+    }
+    
+    div.box .dealerPriceCont {
+      float:right;
+      margin-right:2px;
+      color:#000;
+    }
+
+      div.box .dealerPrice {
+        float:left;
+        text-align:right;
+        width:auto;
+        
+      }
+      div.box .dealerStock {
+        float:left;
+        text-align:right;
+        width:8px;
+      }
+
+    div.box .radio a{
+      color:#000;
+      text-decoration:none;
+    }
+
+
+/* info-tooltip ***********************/
+.tooltip {
+  position:absolute;
+	top:0;
+	left:0;
+  width:120px;
+  height:80px;
+  border: 1px solid #000;
+  visibility:hidden;
+  display:block;
+  z-index:666;
+  background-color:#FFF;
+  font: normal 11px Arial, Verdana, Helvetica, sans-serif;
+}
+  div.tooltip .header {
+    background-color: rgb(0, 51, 102);
+    background-image: url(http://h41213.www4.hp.com/ezbuy/html/img/ezb.v3/icon.info.gif);
+    background-repeat: no-repeat;
+    background-position:left;
+    height:15px;
+    text-align: right;
+    color: #FFF;
+  }
+  
+  div.tooltip .header a{
+    padding:1px;
+  }
+  
+  div.tooltip .toolcontent {
+    height:65px;
+    overflow: auto;
+    margin:0 1px 0 2px;
+    color:#000;
+  }
+
+/* non Promo */
+.nonpromo .header {
+  color: black;
+  background: white url(http://h41213.www4.hp.com/ezbuy/html/img/ezb.v3/white/headers/header.grey.png) top left no-repeat;
+}
+
+.nonpromo .content .priceContainer {
+  color: rgb(51, 102, 102);
+  line-height: 14px;
+  margin-left: 4px;
+}
+
+/* Promo */
+div.box .promo .header {
+  color: #FFF;
+}
+
+div.box .promo .priceHeader {
+  display:block;
+  height:1em;
+}
+
+div.box .simple .priceHeader {
+  margin-bottom:2px;
+  font-weight:bold;
+  font-size:11px;
+}
+
+div.box .simple .promomessage{
+  color:#666;
+}
+
+div.box .promo .priceBadgeContainer {
+}
+
+div.box .promo .priceBadge {
+  background: #FFF url(http://h41213.www4.hp.com/ezbuy/html/img/ezb.v3/bg.badge.red.png) top left no-repeat;
+  float: left;
+  height: 73px;
+  width: 70px;
+  color: #FFF;
+  text-align: center;
+  position:relative;
+}
+
+div.box .promo .priceBadgeLarge {
+  background: #FFF url(http://h41213.www4.hp.com/ezbuy/html/img/ezb.v3/bg.badgelarge.red.png) top left no-repeat;
+  float: left;
+  height: 68px;
+  width: 107px;
+  color: white;
+  margin-bottom:10px;
+  text-align: center;
+  position:relative;
+}
+
+div.box .priceBadgeContainer .priceHeader {
+  display: block;
+  margin: 10px 0 2px 0;
+  font-size: 10px;
+  color:#CCC;
+}
+
+div.box .promo .priceBadgeContainer .priceNum {
+  font-size: 18px !important;
+  margin: 2px 0;
+}
+
+div.box .priceVat {
+  font-size:10px;
+}
+
+div.box .promo .priceBadgeContainer .priceVat {
+  font-size: 10px;
+}
+
+div.box .promo .priceBadgeContainer .priceLasts {
+  position: absolute;
+  color: #c00;
+  left: 76px;
+  top: 5px;
+  width:100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.box .promo .priceBadgeContainer .priceBadge .priceLasts  {
+  width:42px;
+}
+
+
+div.box .delivery {
+  position:relative;
+  top:6px;
+}
+
+/* simple template *********************************************/
+div.simple, 
+div.simple_rtl {
+	color: #000;
+}
+div.simple .price, 
+div.simple_rtl .price {
+	font-weight:bold;
+	float:left;
+	font-size:16px !important;
+	margin: 4px 15px 4px 0;
+  
+}
+
+div.simple .price .priceVat,
+div.simple_rtl .price .priceVat {
+	font-weight:bold;
+	font-size:11px;
+  white-space:nowrap;
+}
+
+div.simple_rtl .price {
+	float:right;
+	margin: 4px 0 4px 15px;
+}
+
+
+div.box .simple form, 
+div.box .simple_rtl form {
+	white-space:nowrap;
+	
+}
+
+div.box .simple_rtl form {
+	float:right;
+}
+
+
+div.box .simple_rtl input.txt {
+	float:left;
+	margin-left:4px;
+}
+
+div.box .content a.primButtonEnhanced {
+  vertical-align: middle;
+}
+
+div.box .sc2 .primButtonEnhanced {
+  float:right;
+}
+
+
+
+
+div.box .sc2 .secButtonEnhanced {
+  float:left;
+}
+
+div.box .sc2 .commButtonEnhanced {
+  float:right;
+}
+
+/***** Adds 11/13/2007 ******/
+div.box .simple {
+  
+}
+ 
+div.box .simple .content {
+  background:none !important;
+}
+
+div.box .simple .price {
+  float:none;
+}
+
+div.box .simple .delivery {
+  text-align:center;
+  margin-bottom:5px;
+}
+
+div.simple .content {
+  background-image:none;
+}
+
+div.box .simple h1 {
+  font-weight:bold;
+}
+.addedtocart {
+  font-weight:bold !important;
+  text-align: center;
+  margin:10px !important;
+  padding:10px !important;
+  border:1px solid #F00;
+}
+
+.simplefooter {
+  padding-top:5px;
+}
+
+/*** Ezbuy on colored background ****/
+div.ezbBlackBg .content,
+div.ezbThemeBg .content{
+  background-color:transparent;
+}
+
+
+div.ezbBlackBg .content, 
+div.ezbThemeBg .content, 
+div.ezbBlackBg .priceHeader, 
+div.ezbThemeBg .priceHeader {
+  color:#FFF !important;
+}
+
+div.ezbBlackBg .secButtonEnhanced {
+  background: #FF0000 url(http://welcome.hp-ww.com/img/button_commerce.gif) repeat-x bottom;
+}
+
+div.ezbBlackBg .secButtonEnhanced:hover {
+  background: #FF0000 url(http://welcome.hp-ww.com/img/button_commerce_over.gif) repeat-x top;
+}
+
+div.ezbThemeBg .commButtonEnhanced {
+  background: #666666 url(http://welcome.hp-ww.com/img/button_secondary.gif) repeat-x bottom;
+}
+
+div.ezbThemeBg .commButtonEnhanced:hover {
+  background: #666666 url(http://welcome.hp-ww.com/img/button_secondary_over.gif) repeat-x bottom;
+}
+
+
+/** Ireleand Product Recycling Fund Fee Footoer **/
+div.box .content .footer3 {
+  color: rgb(51, 102, 102);
+  font-size:10px;
+  margin: 0px -8px 0 -8px;
+  padding: 0px 8px 0 8px;
+}
+
+/** small single product price **/
+.ezb{
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	margin-left: 5px;
+}
+
+.ezb-pricing {
+	display: block;
+	margin-top: 0px;
+	color: #ff0000;
+}
+
+.ezb-price {
+	display: inline;
+}
+.ezb-vat {
+	font-size: 11px;
+}

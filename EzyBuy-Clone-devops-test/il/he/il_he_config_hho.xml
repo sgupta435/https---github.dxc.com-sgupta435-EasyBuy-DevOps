@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[₪]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[.00]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">מחיר מומלץ לצרכן החל מ-<br><span dir="ltr">#PF#</span><br>#VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">מחיר מומלץ לצרכן<br><span dir="ltr">#PF#</span><br>#VAT#</span>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[,]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[מוכן לקנות?]]>
+		</field>
+		<field func="promo">
+			<![CDATA[מחיר מבצע חסר תקדים!]]>
+		</field>
+	  <field func="pricedesc">
+			<![CDATA[מחיר מומלץ לצרכן]]>
+		</field>		
+		<field func="vat" incl="1">
+			<![CDATA[כולל מע"מ]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[כרגע חסר במלאי]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[בחר חנות (המחירים כוללים מע"מ)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[בחר חנות]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[מלאי מוגבל]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[תודה על שבחרת ב]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[תוך 5 שניות הינך עוזב/ת את אתר HP]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[קנה/י ממשווק מורשה של HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[קנה/י עכשיו]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[מצא משווק מורשה]]></label>
+			<txt id="sub">
+				<txt><![CDATA[מצא משווק מורשה]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[המשך]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[הוסף לסל]]></label>
+			<txt id="sub">
+				<txt><![CDATA[במידה וקיים במלאי, שלח באותו יום]]></txt>
+				<txt><![CDATA[זמן משלוח ממוצע שבועיים ימים]]></txt>
+				<txt><![CDATA[זמן משלוח ממוצע ארבעה שבועות]]></txt>								
+			</txt>
+			<link>
+				<label>HP התאם את המוצר שלך עם</label>
+				<action>config</action>
+			</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[קנה/י ממשווק מורשה של HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[קנה/י עכשיו]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[מצא משווק מורשה]]></label>
+			<txt id="sub">
+				<txt><![CDATA[מצא משווק מורשה]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[המשך]]></label>
+			<action>buy</action>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[התאם]]></label>
+			<txt id="sub">
+				<txt><![CDATA[[התאם וקנה ישירות מ HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[הוסף לסל]]></label>
+			<txt id="sub">
+				<txt><![CDATA[במידה וקיים במלאי, שלח באותו יום]]></txt>
+				<txt><![CDATA[זמן משלוח ממוצע שבועיים ימים]]></txt>
+				<txt><![CDATA[זמן משלוח ממוצע ארבעה שבועות]]></txt>								
+			</txt>
+			<link>
+				<label>HP התאם את המוצר שלך עם</label>
+				<action>config</action>
+			</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[פריט זה התווסף לעגלה שלך]]></label>
+			<txt id="pre">
+				<txt><![CDATA[התבונן בעגלה שלך וסיים ]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+			<label><![CDATA[התאם]]></label>
+			<txt id="sub">
+				<txt><![CDATA[[התאם וקנה ישירות מ HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+</root>

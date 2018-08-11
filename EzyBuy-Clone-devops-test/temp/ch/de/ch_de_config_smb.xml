@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[CHF ]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[.-]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[Direkt bei HP]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">ab #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">ab #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[]]>
+		</field>
+		<field func="promo">
+		<![CDATA[Golden Offer]]> 
+		</field>
+		<field func="or">
+			<![CDATA[oder]]>
+		</field>		
+		<field func="pricedesc">
+			<![CDATA[ ]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[inkl. MwSt.]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[Online nicht verfügbar]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Partner-Shop auswählen:]]>
+		</field>
+		<field func="lbvat">
+			<![CDATA[(alle Preise inkl. MwSt.)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Bitte Shop auswählen]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[Beschränkte Verfügbarkeit]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Vielen Dank für die Auswahl eines E-Preferred Partners]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 Sekunden verlassen Sie die HP Website.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Kaufen beim HP Partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[HP Preferred Partner]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kaufen beim HP Partner]]></label>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Fachhändler suchen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Fachhändler suchen]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Weiter]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[In den Warenkorb]]></label>
+			<txt id="sub">
+				<txt><![CDATA[An Lager, Lieferung in 48 h]]></txt>
+				<txt><![CDATA[Innerh. 14 Tage verfügbar]]></txt>
+				<txt><![CDATA[Innerh. 4 Wochen verfügbar]]></txt>								
+			</txt>
+			<link>
+    			<label>Konfigurieren</label>
+			    <action>config</action>
+		   	</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Kaufen beim HP Partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[HP Preferred Partner]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Kaufen beim HP Partner]]></label>
+			<action>buy</action>
+		</btn>		
+  		<btn func="customize" type="primary">
+			<label><![CDATA[Konfigurieren bei HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Direkt bei HP kaufen]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>	
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Fachhändler suchen]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Fachhändler suchen]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Weiter]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[In den Warenkorb]]></label>
+			<txt id="sub">
+				<txt><![CDATA[An Lager, Lieferung in 48 h]]></txt>
+				<txt><![CDATA[Innerh. 14 Tage verfügbar]]></txt>
+				<txt><![CDATA[Innerh. 4 Wochen verfügbar]]></txt>								
+			</txt>
+			<link>
+    			<label>Konfigurieren</label>
+			    <action>config</action>
+		   	</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[Weiter zur Kasse]]></label>
+			<txt id="pre">
+				<txt><![CDATA[Dieser Artikel ist im Warenkorb]]></txt>
+			</txt>
+		</btn>
+ 		<btn func="customize" type="primary">
+			<label><![CDATA[Konfigurieren bei HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Direkt bei HP kaufen]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>	
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+  <dynamic>
+ 	<jscontext>
+		<text>
+		<field func="vat" incl="1" cond="s_ProductLine=1N">
+			<![CDATA[inkl. MwSt.]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=1N">
+		  <![CDATA[Kostenlose Lieferung]]> 
+	  </field>
+		<field func="vat" incl="1" cond="s_ProductLine=5T">
+			<![CDATA[inkl. MwSt.]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=5T">
+		  <![CDATA[Kostenlose Lieferung]]> 
+	  </field>
+		<field func="vat" incl="1" cond="s_ProductLine=AU">
+			<![CDATA[inkl. MwSt. (Versandkostenfrei!)]]>
+		</field>		
+		<field func="telnr" cond="s_ProductLine=2C">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=7F">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=9F">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=BO">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=JT">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=AN">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=MP">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=9G">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=KV">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=2G">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=2H">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=6J">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=JU">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=21">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=9J">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=BQ">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=HK">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=52">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=8W">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=E1">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=JM">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=KW">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=KX">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=ME">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=MF">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=MG">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=MM">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=MN">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=LD">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=5X">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=9H">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=HV">
+<![CDATA[Das Produkt ist nicht im HP Store verfügbar. <BR>Für Alternativen rufen Sie <BR>bitte 0800 80 44 70 an.]]>
+</field>
+<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[Das Produkt ist nicht im HP Store verfügbar. Für Alternativen rufen Sie bitte 0844 00 0082 an]]>
+		</field>
+		</text>
+	</jscontext>
+ </dynamic>
+</root>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[₺]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#P##C#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="hpstorename">
+			<![CDATA[]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">başlangıç fiyatı #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#PF# #VAT#</span>]]>
+		</setting>
+		<setting func="digitgroupingsymbol">
+			<![CDATA[,]]>
+		</setting>
+		<setting func="decimalsymbol">
+			<![CDATA[.]]>
+		</setting>	
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Satın almak ister misiniz?]]>
+		</field>
+		<field func="promo">
+		<![CDATA[Kampanya Fiyatıdır!]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Önerilen fiyat]]>
+		</field>
+		<field func="pricedescinfo">
+			<![CDATA[Fiyat bilgisi]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[+ KDV]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="lbintro">
+			<![CDATA[Lütfen seçin (KDV hariç fiyat)]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Lütfen bir mağaza seçin]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[sınırlı stok]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Seçiminiz için teşekkürler]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[5 saniye içinde, HP web sitesinden ayrılacaksınız.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[HP İş ortağından satın al]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[Önerilen online mağazalar]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Satın al]]></label>
+			<tooltip><![CDATA[Satın almak için tıklayın]]></tooltip>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Bir iş ortağı bulun]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Devam et]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+		<link>
+    		<label>customize this product</label>
+		    <action>config</action>
+    	</link> 
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[HP İş ortağından satın al]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Önerilen online mağazalar]]></txt>
+			</txt>			
+		</btn>
+	    <btn func="customize" type="primary">
+	 		<label><![CDATA[Customize]]></label>
+	        <txt id="sub">
+     		   <txt><![CDATA[Customize and buy directly from HP]]></txt>
+        	</txt>
+		    <action>config</action>
+		</btn>		
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Satın al]]></label>
+			<tooltip><![CDATA[Satın almak için tıklayın]]></tooltip>
+			<action>buy</action>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Bir iş ortağı bulun]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Devam et]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Compre directamente à HP]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>
+				<txt><![CDATA[]]></txt>								
+		<link>
+    		<label>customize this product</label>
+		    <action>config</action>
+    	</link> 
+			</txt>
+		</btn>
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[]]></label>
+			<txt id="pre">
+				<txt><![CDATA[]]></txt>
+			</txt>
+		</btn>
+	    <btn func="customize" type="primary">
+	 		<label><![CDATA[Customize]]></label>
+	        <txt id="sub">
+     		   <txt><![CDATA[Customize and buy directly from HP]]></txt>
+        	</txt>
+		    <action>config</action>
+		</btn>		
+	</buttons>
+
+</root>

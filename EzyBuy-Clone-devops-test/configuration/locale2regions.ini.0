@@ -1,0 +1,6 @@
+[Genaral] 
+server=https://h10000.www1.hp.com
+[ie/en] 
+label = /cma/region/emea/country/metricsEMEAie_en.js 
+[ca/en] 
+label =/cma/region/na/country/metricsNAca_eng.js 

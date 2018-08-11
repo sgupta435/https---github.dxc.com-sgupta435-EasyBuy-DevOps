@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<!-- START OF PRICE INFO PARAMETERS -->
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[£]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricedirect">
+			<![CDATA[<span class="bold">Available Direct:</span><BR>]]>
+		</setting>
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">#DIR# starting from #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">#DIR# price #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+<!-- START OF SCREEN INFO PARAMETERS -->
+	<text>
+		<field func="intro">
+			<![CDATA[Shopping information]]>
+		</field>
+		<field func="pricedesc">
+			<![CDATA[SRP]]>
+		</field>
+		<field func="vat" incl="1">
+			<![CDATA[inc VAT]]>
+		</field>
+		<field func="telnr"> 
+			<![CDATA[Call 0845 270 4142 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<field func="or">
+			<![CDATA[]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[SELECT A STORE:]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a partner]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limited stock]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Thank you for selecting an]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 seconds you will leave the HP website.]]>
+		</field>																
+	</text>
+<!-- START OF CHANNEL EXPERIENCE -->
+  <buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Buy now]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Recommended online resellers,     find a local store or buy direct]]></txt>
+				<txt><![CDATA[Recommended online retailers or find a local partner]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+			<action>buy</action>
+		</btn>	
+    <btn func="customize" type="primary">
+			<label><![CDATA[Customise]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customise and buy direct from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>	
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local retailer]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF NEUTRAL EXPERIENCE -->
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Add to basket]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Immediate Availability]]></txt>
+				<txt><![CDATA[Normally within 2 weeks]]></txt>
+				<txt><![CDATA[Normally within 4 weeks]]></txt>								
+			</txt>
+			<link>
+    		<label>Customize with HP</label>
+		    <action>config</action>
+    	</link> 
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Buy now]]></label>
+			<txt id="sub">
+				<txt><![CDATA[]]></txt>
+			</txt>	
+    </btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+			<action>buy</action>
+		</btn>
+    <btn func="customize" type="primary">
+      <label><![CDATA[Customise]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Customise and buy direct from HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local retailer]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a local retailer]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+			<action>buy</action>
+		</btn>
+	</buttons>
+<!-- START OF DIRECT EXPERIENCE -->
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Add to basket]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Immediate Availability]]></txt>
+				<txt><![CDATA[Normally within 2 weeks]]></txt>
+				<txt><![CDATA[Normally within 4 weeks]]></txt>								
+			</txt>
+			<link>
+    		<label>Customize with HP</label>
+		    <action>config</action>
+    	</link> 
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[View and Checkout]]></label>
+			<txt id="pre">
+				<txt><![CDATA[The product was added to your basket.]]></txt>
+			</txt>
+		</btn>
+		<btn func="customize" type="primary">
+      <label><![CDATA[Customize]]></label>
+        <txt id="sub">
+          <txt><![CDATA[Customize and buy directly from HP]]></txt>
+        </txt>
+      <action>config</action>
+    </btn>
+    <btn func="customize" type="primary">
+			<label><![CDATA[Customize]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Customize and buy directly from HP]]></txt>
+			</txt>
+			<action>config</action>
+		</btn>
+	</buttons>
+<!-- START OF DYNAMIC PARAMETERS -->
+   <dynamic>
+ 	<jscontext>
+		<text>
+		<!-- page_generic_id used instead s_ProductLine=1N-->
+		<field func="telnr" cond="page_generic_id=12771-64199-69422-391565-3322790">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329261-3995999-3769799-3769800-4056818">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329261-3995999-3546771">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329261-3995999-3298424-3298238-3309953">
+			<![CDATA[Currently may not be available direct from HP]]>
+			</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329261-3995999-3298424">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965984-3996010-3309963-3309964-3309966">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-69998-329254-254183-344660-3299513-3309955">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965882-365099-3309958-3309959-3309961">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329260-329296-3309975-3309976-3309978">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		  <!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-70657-342314-329306-3410931-3410932-3377925">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965984-3996010-3551570-3551571-3551573">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-70657-342314-329306-3551095-3551096-3551097">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329260-329296-3552722-3552723-3552726">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-70657-342314-329306-3552741-3552742-3552744">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-69998-329269-329318-3551149-3551151-3551155">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-69998-329269-329318-3552762-3552763-3552765">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		 <field func="telnr" cond="page_generic_id=329290-70657-3965892-1830852-3551035-3551036-3551090">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=3329290-64273-3965914-384321-3551194-3551262-3551266">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+			<field func="telnr" cond="page_generic_id=329290-329223-329260-329296-3551521-3551522-3551524">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		   <field func="telnr" cond="page_generic_id=329290-70657-3965892-1830852-3551091-3551092-3551094">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-70657-3965892-1830852-3552766-3552767-3552769">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-64273-3965914-384321-3551566-3551567-3551569">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965984-3996010-3559863-3559864-3559866">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-64274-356880-219288-3707828-3707829-3707831">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329260-329296-3770048-3770049-3770052">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329260-329296-3770060-3770061-3770063">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329260-329296-3770064-3770065-3770067">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965984-3996010-3770100-3770101-3770103">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329229-3965893-3996003-3792903-3792904-3792906">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329264-353695-3981929-3981937-3981939">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329261-3995999-3769799-3769800-4056818">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9J-->
+		<field func="telnr" cond="page_generic_id=329290-329223-329261-3995999-3769799-3769800-4056818">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-332469-3965948-254295-1841817-1841818-1841819">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-1844696-1102279-3228434-3228435-3311786">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965934-3996971-3230665-3230666-3230667">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-3316182-3316183-3365055-3365056-3365058">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-1844696-3226554-3304214-3304220-3304222">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+			<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-1844696-3226554-3304226-3304227-3304229">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+			<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-1834651-378314-3540642-3540643-3228815">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-1834651-378314-3808884-3808892-3808894">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-3316182-3316183-3788548-3788617-3788619">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-1827103-348739-3765644-3956430-3956431-3956433">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-1827103-348739-3765644-3928118-3928119-3928121">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-1834651-378314-3895307-3895308-3895334">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-1834651-378314-3895339-3895421-3895423">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-3924237-3924242-3924292-3924293-3924296">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-3924237-3924242-3924292-3924293-3924296">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-3924237-3924242-3949179-3949180-3949182">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64268-348724-329317-3924111-3924112-3924114">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64268-348724-329317-3928102-3928103-3928105">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64268-348724-329317-3924093-3924094-3924096">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64268-348724-329317-3924093-3924094-3924096">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-3693827-3766410-3834497-3834502-3834504">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64273-356878-329321-3542428-3542431-3542433">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-332469-3965948-254295-3642816-3642817-3642819">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-1844696-3226554-3557836-3557843-3557846">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-1844696-3226554-3700013-3700056-3700064">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64274-332466-331809-3724774-3724775-3724777">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-3693827-3766410-3834509-3834510-3834512">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3880693-3880695-3880698">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3880699-3880715-3880717">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3880727-3880728-3880736">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3880737-3880739-3880745">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3880751-3880752-3880754">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3880755-3880770-3880776">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3880780-3880781-3880783">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3880747-3880748-3880750">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64273-356877-384256-3915673-3915746-3915748">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64273-356878-329321-3915669-3915670-3915672">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64273-356878-329321-3895235-3895236-3895238">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-365029-254110-3911199-3911249-3911254">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-3924237-3924242-4015788-4015789-4015791">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-3924237-3924242-3928110-3928111-3928113">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64264-3965947-396250-396251-396253-396254">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965899-3993934-3928126-3928127-3928129">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-1827103-348739-3765644-3928122-3928123-3928125">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965876-3989861-3929966-3929967-3929969">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-3832402-3951026-3949183-3949184-3949186">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-420402-420564-3983971-3983972-3983974">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-420402-420564-3983979-3983980-3983982">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64268-1844682-1837754-1119178-1119169-1119170">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<field func="telnr" cond="page_generic_id=329290-329233-1834651-378314-1834676-1102311-1102312">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-420402-420564-3376734-3376735-3376737">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-420402-420564-3654704-3654707-3654710">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+			<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-69998-3965873-329291-3446310-3446317-3446337">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64293-337097-369111-3983983-3983984-3983986">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64265-3965876-3989861-3899096-3899112-3977980">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64268-3970264-3971593-3971596-3971605-3971607">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-3965870-3965931-3983531-3987580-3987581-3987583">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-64186-1844696-3226554-3987587-3987588-3987590">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=9H-->
+		<field func="telnr" cond="page_generic_id=329290-329233-1834651-378314-4021929-4021930-4021932">
+			<![CDATA[Currently may not be available direct from HP]]>	
+		</field>				
+		<!-- page_generic_id used instead s_ProductLine=5M-->
+		<field func="telnr" cond="page_generic_id=18972-238444-410635-3655557-3655558">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+				<!-- page_generic_id used instead s_ProductLine=2B-->
+		<field func="telnr" cond="page_generic_id=18972-3328059-3328066-3435673-3435682">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+				<!-- page_generic_id used instead s_ProductLine=2A-->
+		<field func="telnr" cond="page_generic_id=329290-64265-348055-298854-1119183-3298245-3298247">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=C2-->
+		<field func="telnr" cond="page_generic_id=18972-3328063-3328077-3851667-3851689">
+		 	<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+			<!-- page_generic_id used instead s_ProductLine=C2-->
+		<field func="telnr" cond="page_generic_id=18972-3328063-3328077-3256917-3256918">
+      <![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=AU-->
+		<field func="telnr" cond="page_generic_id=12771-64199-460056-448662-3726185">
+      <![CDATA[Not in stock in the HP store]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328080-4122731-4122732">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328079-352386-352387">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328079-352386-352387">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-5200069-5053949-5053950">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-5200069-5149445-5149446">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<!-- page_generic_id used instead s_ProductLine=None-->
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328080-4122731-4122732">
+      <![CDATA[Call 0800 408 0784 to discuss options. Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2N">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5M">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C2">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DL">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=M3">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9C">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4X">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2B">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2Q">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MC">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PL">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9G">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2H">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MP">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9F">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9J">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9H">
+			<![CDATA[Currently may not be available direct from HP]]>
+		</field>
+		<field func="vat" incl="1" cond="s_ProductLine=1N">
+			<![CDATA[inc VAT]]>
+		</field>
+		<field func="vat" incl="1" cond="s_ProductLine=5T">
+			<![CDATA[inc VAT]]>
+		</field>
+		<field func="vat" incl="1" cond="s_ProductLine=AU">
+			<![CDATA[inc VAT (Free Delivery!)]]>
+		</field>
+		<field func="force_promo" cond="s_ProductLine=1N">
+			<![CDATA[Free delivery]]> 
+		</field>
+		<field func="force_promo" cond="s_ProductLine=5T">
+    	  <![CDATA[Free delivery]]> 
+		</field>
+		<!-- START OF IPG specific telephone numbers -->
+		<field func="telnr" cond="s_ProductLine=ML">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KS">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=66">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=04">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=1N">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AU">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=03">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5T">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2A">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KL">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7A">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=65">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=43">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C2">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KN">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=44">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=A5">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DE">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HM">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=M3">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=64">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=20">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HI">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=JP">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=42">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DN">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KP">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=SR">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=24">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5J">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DA">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=B7">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=40">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=46">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=4X">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=7T">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9C">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DU">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=45">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2N">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=5M">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=83">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=DL">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HN">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=68">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=21">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=9D">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=47">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HP">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MC">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=01">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=27">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2B">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2Q">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LF">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MB">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=67">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=26">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=2D">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=3G">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HQ">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MK">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MQ">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=R6">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=32">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=HO">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=KU">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T8">
+			<![CDATA[Not in stock in the HP store]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=P1">
+			<![CDATA[This product is not available direct]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=P2">
+			<![CDATA[This product is not available direct]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=C5">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=ST">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=PQ">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=LY">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=AK">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=8A">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=T2">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=MA">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=6A">
+			<![CDATA[Call HP’s Maintenance Kit and out of warranty commercial support Phone 0845 602 7438*]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=30">
+			<![CDATA[]]>
+		</field>
+		<field func="telnr" cond="s_ProductLine=TW">
+			<![CDATA[]]>
+		</field>
+		<field func="telnr" cond="page_generic_id=18972-3328061-5200069-5053949-5053950">
+      <![CDATA[]]>
+		</field>
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328080-4122731-4122732">
+      <![CDATA[]]>
+		</field>
+		<field func="telnr" cond="page_generic_id=18972-3328061-3328080-4122731-4122732">
+      <![CDATA[]]>
+		</field>
+		<!-- END OF IPG specific telephone numbers -->
+	  </text>
+	</jscontext>
+ </dynamic>
+</root>

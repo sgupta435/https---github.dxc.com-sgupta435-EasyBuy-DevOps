@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<ctryconfig>
+		<setting func="currencychar">
+			<![CDATA[£]]>
+		</setting>
+		<setting func="priceformat">
+			<![CDATA[#C# #P#]]>
+		</setting>
+		<setting func="abbrchars">
+			<![CDATA[]]>
+		</setting>				
+		<setting func="startpricemultiple">
+			<![CDATA[<span class="bold">starting from #PF# #VAT#</span>]]>
+		</setting>
+		<setting func="startpricesingle">
+			<![CDATA[<span class="bold">price #PF# #VAT#</span>]]>
+		</setting>
+	</ctryconfig>
+	<text>
+		<field func="intro">
+			<![CDATA[Ready to buy?]]>
+		</field>
+		<field func="promo">
+		<![CDATA[HP Best Buy]]> 
+		</field>
+		<field func="pricedesc">
+			<![CDATA[Price]]>
+		</field>
+		<field func="vat" incl="0">
+			<![CDATA[Ex. VAT]]>
+		</field>
+		<field func="telnr">
+			<![CDATA[]]>
+		</field>
+		<field func="or">
+			<![CDATA[or]]>
+		</field>		
+		<field func="lbintro">
+			<![CDATA[Select a shop to buy online:]]>
+		</field>
+		<field func="warning">
+			<![CDATA[Please select a shop]]>
+		</field>	
+		<field func="stock">
+			<![CDATA[limited stock]]>
+		</field>	
+		<field func="bp1">
+			<![CDATA[Thank you for selecting an e-Preferred Specialist]]>
+		</field>		
+		<field func="bp2">
+			<![CDATA[In 5 seconds you will leave the HP website.]]>
+		</field>																
+	</text>
+	<buttons id="channel">
+		<btn func="viewshops" type="primary">
+			<label><![CDATA[Buy]]></label>
+			<txt id="sub">
+				<txt><![CDATA[See recommended online resellers, find a local partner or buy direct]]></txt>
+				<txt><![CDATA[See recommended online resellers or find a local HP partner]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a partner]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+		</btn>
+	</buttons>
+	<buttons id="neutral">
+		<btn func="addbasket" type="primary">
+			<label><![CDATA[Add to basket]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Immediate Availability]]></txt>
+				<txt><![CDATA[Normally within 2 weeks]]></txt>
+				<txt><![CDATA[Normally within 4 weeks]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="viewshops" type="secondary">
+			<label><![CDATA[Buy from an HP partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[See recommended online resellers or find a local HP partner]]></txt>
+			</txt>			
+		</btn>
+		<btn func="buy" type="commerce">
+			<label><![CDATA[Buy now]]></label>
+		</btn>		
+		<btn func="findreseller" type="secondary">
+			<label><![CDATA[Find a local partner]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Find a partner]]></txt>
+			</txt>			
+		</btn>			
+		<btn func="gonow" type="primary">
+			<label><![CDATA[Go now]]></label>
+		</btn>
+	</buttons>
+	<buttons id="direct">
+		<btn func="addbasket" type="commerce">
+			<label><![CDATA[Add to basket]]></label>
+			<txt id="sub">
+				<txt><![CDATA[Immediate Availability               Ships same day (order by 4pm)]]></txt>
+				<txt><![CDATA[Normally within 2 weeks]]></txt>
+				<txt><![CDATA[Normally within 4 weeks]]></txt>								
+			</txt>
+		</btn>	
+		<btn func="basketadded" type="commerce">
+			<label><![CDATA[View and Checkout]]></label>
+			<txt id="pre">
+				<txt><![CDATA[The product was added to your basket.]]></txt>
+			</txt>
+		</btn>
+	</buttons>
+</root>

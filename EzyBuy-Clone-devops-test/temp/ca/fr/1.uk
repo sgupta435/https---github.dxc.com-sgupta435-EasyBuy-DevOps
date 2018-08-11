@@ -1,0 +1,5 @@
+[SureSupply]
+priceDecimal=true
+partnersExcludeIds=12767024,12767104,12767114
+partnersRestrictIds=12767094
+
